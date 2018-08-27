@@ -6,16 +6,19 @@
         </el-header>
         <el-container>
             <el-aside id="asideNav">
-                <el-menu :default-active="defaultActive" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" @select="selectmenu" :collapse="isCollapse" background-color="#222d32" text-color="#ffffff" :router="true">
+                <el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" @select="selectmenu" :collapse="isCollapse" background-color="#222d32" text-color="#ffffff" :router="true">
                     <template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
-                        <el-submenu v-if="item.children.length>0" :index="index+''">
+                        <el-submenu v-if="item.children.length>0" :index="item.path">
                             <template slot="title">
                                 <i :class="item.iconCls"></i>
                                 <span slot="title">{{item.name}}</span>
                             </template>
                             <template v-for="child in item.children">
                                 <el-submenu v-if="child.children.length>0" :index="child.path">
+                                  <template slot="title">
+                                    <i :class="item.iconCls"></i>
                                     <span slot="title">{{child.name}}</span>
+                                  </template>
                                     <el-menu-item v-for="threeChild in child.children" :index="threeChild.path">{{threeChild.name}}</el-menu-item>
                                 </el-submenu>
 
@@ -36,12 +39,7 @@
             <el-container>
               <div class="tabnavBox">
                 <ul>
-                  <li><a href="#">首页</a><i class="el-icon-error"></i></li>
-                  <li><a href="#">新闻</a><i class="el-icon-error"></i></li>
-                  <li><a href="#">用户</a><i class="el-icon-error"></i></li>
-                  <li><a href="#">用户用户</a><i class="el-icon-error"></i></li>
-                  <li><a href="#">用户用户</a><i class="el-icon-error"></i></li>
-                  <li><a href="#">用户用户用户</a><i class="el-icon-error"></i></li>
+                  <li v-for="(item, index) in tabnavBox" @click="tabnav(item)" :class="{active:isActive == item.href}"><router-link :to="item.href">{{item.tabnav}}</router-link><i class="el-icon-error"></i></li>
                 </ul>
               </div>
                 <el-main>
@@ -65,14 +63,33 @@ export default {
     return {
       isCollapse: false,
       editableTabsValue: '1',
+      isActive: '/index',
       // menus:router,
       editableTabs: [{
         title: '首页',
         name: '1',
         closable: false
       }],
-      defaultActive: '',
+      defaultActive: '/index',
       tabIndex: 1,
+      tabnavBox: [
+        {
+          href: '/index',
+          tabnav: '首页'
+        },
+        {
+          href: '/table',
+          tabnav: '表格'
+        },
+        {
+          href: '/select',
+          tabnav: '选择'
+        },
+        {
+          href: '/form',
+          tabnav: '表单'
+        }
+      ],
       navtabs: {
         '/index': '首页',
         '/table': '表格',
@@ -90,12 +107,13 @@ export default {
     handleClose (key, keyPath) {
       console.log(key, keyPath)
     },
-    selectmenu (key, keyPath) {
-      console.log(key, keyPath)
+    selectmenu (index, keyPath) {
+      console.log(arguments)
       console.log(this.$route)
       console.log(this.$router)
       // var thisRouter = keyPath.join()
-      this.addTab(key)
+      this.isActive = index
+      // this.addTab(key)
     },
     addTab (targetName) {
       for (var i = 0; i < this.editableTabs.length; i++) {
@@ -152,6 +170,10 @@ export default {
           return false
         }
       }
+    },
+    tabnav (defaul) {
+      this.defaultActive = defaul.href
+      this.isActive = defaul.href
     }
   },
   created () {
@@ -180,6 +202,12 @@ export default {
   $left:left;
   $right:right;
   $leftright: ($left, $right);
+  %h100{
+    height: 100%;
+  }
+  html,body,#app,.el-container,#asideNav,ul.el-menu{
+    @extend %h100;
+  }
   @mixin set-value($side, $value) {
     @each $prop in $leftright {
       #{$side}-#{$prop}: $value;
@@ -194,6 +222,9 @@ export default {
       line-height: 60px;
       margin-left: 20px;
     }
+  }
+  #asideNav{
+    width: 180px !important;
   }
   .tabnavBox{
     width: 100%;
@@ -210,10 +241,29 @@ export default {
       li{
         height: 30px;
         line-height: 31px;
+        cursor: pointer;
         @include set-value(padding, 10px);
-        @include set-value(margin, 10px);
         margin-#{$top}: 6px;
+        margin-#{$right}: 5px;
         border: 1px solid #cccccc;
+        a{
+          font-size: 12px;
+          color: #999999;
+          margin-#{$right}: 5px;
+        }
+        i{
+          cursor: pointer;
+          &:hover{
+            color: red;
+          }
+        }
+      }
+      li.active{
+        background: #409eff;
+        color: #ffffff;
+        a{
+          color: #ffffff;
+        }
       }
     }
   }

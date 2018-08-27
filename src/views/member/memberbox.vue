@@ -1,11 +1,11 @@
 <template>
-<div>main</div>
+
 </template>
 
 <script>
-export default {
-  name: 'dc-main'
-}
+  export default {
+    name: 'memberbox'
+  }
 </script>
 
 <style scoped>

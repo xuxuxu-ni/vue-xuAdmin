@@ -1,10 +1,12 @@
 <template>
-<div>main</div>
+  <div>
+    删除人员
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'dc-main'
+  name: 'remMember'
 }
 </script>
 

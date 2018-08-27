@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home.vue'
-import HomeMain from '@/views/main.vue'
+import Main from '@/views/main.vue'
 import Table from '@/views/Table.vue'
 import Form from '@/views/Form.vue'
 import Select from '@/views/Select.vue'
@@ -58,9 +58,10 @@ export default new Router({
       children: []
     },
     {
-      path: '/member',
+      path: '/',
       iconCls: 'dc dc-customer', // 图标样式class
       name: '会员',
+      component: Home,
       children: [
         {
           path: '/addMember',

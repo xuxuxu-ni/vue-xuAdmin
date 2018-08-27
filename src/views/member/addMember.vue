@@ -1,10 +1,12 @@
 <template>
-<div>main</div>
+    <div>
+      增加人员
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'dc-main'
+  name: 'addMember'
 }
 </script>
 
