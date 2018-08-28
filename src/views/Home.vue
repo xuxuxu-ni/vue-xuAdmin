@@ -39,7 +39,7 @@
             <el-container>
               <div class="tabnavBox">
                 <ul>
-                  <li v-for="(item, index) in tabnavBox" @click="tabnav(item)" :class="{active:isActive == item.path}"><router-link :to="item.path">{{item.title}}</router-link><i class="el-icon-error"></i></li>
+                  <li v-for="(item, index) in tabnavBox" @click="tabnav(item)" :class="{active:isActive == item.path}"><router-link :to="item.path">{{item.title}}</router-link><i @click="removeTab(item)" class="el-icon-error" v-if="index != 0"></i></li>
                 </ul>
               </div>
                 <el-main>
@@ -125,22 +125,18 @@ export default {
         path: path
       })
     },
-    removeTab (targetName) {
-      let tabs = this.editableTabs
-      let activeName = this.editableTabsValue
-      if (activeName === targetName) {
-        tabs.forEach((tab, index) => {
-          if (tab.name === targetName) {
-            let nextTab = tabs[index + 1] || tabs[index - 1]
-            if (nextTab) {
-              activeName = nextTab.name
-            }
-          }
-        })
+    removeTab (tabItem) {
+      console.log(this.isActive);
+      debugger
+      for (let i = 0; i < this.tabnavBox.length; i++) {
+        if (this.tabnavBox[i].title == tabItem.title) {
+          this.tabnavBox.splice(i,1);
+          let tabActive = this.tabnavBox[i] || this.tabnavBox[i-1];
+          this.isActive = tabActive.path;
+          break
+        }
       }
-
-      this.editableTabsValue = activeName
-      this.editableTabs = tabs.filter(tab => tab.name !== targetName)
+      console.log(this.isActive);
     },
     tabClick (VueComponent) {
       console.log(VueComponent)
@@ -237,7 +233,11 @@ export default {
         a{
           font-size: 12px;
           color: #999999;
-          margin-#{$right}: 15px;
+        }
+        &:nth-child(n+2){
+          a{
+            margin-#{$right}: 15px;
+          }
         }
         i{
           cursor: pointer;
