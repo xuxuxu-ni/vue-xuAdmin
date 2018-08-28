@@ -14,53 +14,89 @@ export default new Router({
   routes: [
     { path: '/',
       redirect: '/index',
-      component: Home,
-      hidden: true
+      hidden: true,
+      children: []
     },
     {
       path: '/login',
       // component: Login,
       name: '',
-      hidden: true
+      hidden: true,
+      children: []
     },
     {
       path: '/404',
       // component: NotFound,
       name: '',
-      hidden: true
-    },
-    {
-      path: '/index',
-      name: '首页',
-      iconCls: 'dc dc-customer', // 图标样式class
-      component: Home,
+      hidden: true,
       children: []
     },
     {
-      path: '/table',
+      path: '/',
+      iconCls: 'dc dc-customer', // 图标样式class
+      name: '首页',
+      component: Home,
+      alone: true,
+      children: [
+        {
+          path: '/index',
+          iconCls: 'dc dc-customer', // 图标样式class
+          name: '首页',
+          component: HomeMain,
+          children: []
+        }
+      ]
+    },
+    {
+      path: '/',
       iconCls: 'dc dc-customer', // 图标样式class
       name: '表格',
-      component: Table,
-      children: []
+      component: Home,
+      children: [
+        {
+          path: '/table',
+          iconCls: 'dc dc-customer', // 图标样式class
+          name: '表格1',
+          component: Table,
+          children: []
+        }
+      ]
     },
     {
-      path: '/select',
+      path: '/',
       iconCls: 'dc dc-customer', // 图标样式class
       name: '选择',
-      component: Select,
-      children: []
+      component: Home,
+      children: [
+        {
+          path: '/select',
+          iconCls: 'dc dc-customer', // 图标样式class
+          name: '选择1',
+          component: Select,
+          children: []
+        }
+      ]
     },
     {
-      path: '/form',
+      path: '/',
       iconCls: 'dc dc-customer', // 图标样式class
       name: '表单',
-      component: Form,
-      children: []
+      component: Home,
+      children: [
+        {
+          path: '/form',
+          iconCls: 'dc dc-customer', // 图标样式class
+          name: '表单',
+          component: Form,
+          children: []
+        }
+      ]
     },
     {
-      path: '/member',
+      path: '/',
       iconCls: 'dc dc-customer', // 图标样式class
       name: '会员',
+      component: Home,
       children: [
         {
           path: '/addMember',
@@ -70,9 +106,10 @@ export default new Router({
           children: []
         },
         {
-          path: '/rem',
+          path: '/remMember',
           iconCls: 'dc dc-customer', // 图标样式class
           name: '删除',
+          component: RemMember,
           children: [
             {
               path: '/remMember',
