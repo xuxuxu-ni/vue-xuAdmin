@@ -39,7 +39,10 @@
             <el-container>
               <div class="tabnavBox">
                 <ul>
-                  <li v-for="(item, index) in tabnavBox" @click="tabnav(item)" :class="{active:isActive == item.path}"><router-link :to="item.path">{{item.title}}</router-link><i @click="removeTab(item)" class="el-icon-error" v-if="index != 0"></i></li>
+                  <li v-for="(item, index) in tabnavBox" @contextmenu.prevent="openMenu(item,$event)" @click="tabnav(item)" :class="{active: $route.path == item.path}">
+                    <router-link :to="item.path">{{item.title}}</router-link>
+                    <i @click="removeTab(item)" class="el-icon-error" v-if="index != 0"></i>
+                  </li>
                 </ul>
               </div>
                 <el-main>
@@ -52,19 +55,27 @@
             </el-container>
         </el-container>
     </el-container>
+    <ul v-show="visible" :style="{left:left+'px',top:top+'px'}" class="menuBox">
+      <li @click="removeTab(rightNav)">关闭</li>
+      <li @click="removeOtherTab(rightNav)">关闭其他</li>
+      <li @click="removeAllTab">全部关闭</li>
+    </ul>
   </div>
 </template>
 
 <script>
-import router from '../router/index'
 export default {
   name: 'dc-home',
   data () {
     return {
+      visible: false,
+      top: 0,
+      left: 0,
       isCollapse: false,
       uniquerouter: true,
       editableTabsValue: '1',
       isActive: '/index',
+      rightNav: {},
       // menus:router,
       editableTabs: [{
         title: '首页',
@@ -79,6 +90,15 @@ export default {
           path: '/index'
         }
       ]
+    }
+  },
+  watch: {
+    visible (value) {
+      if (value) {
+        document.body.addEventListener('click', () => { this.visible = false })
+      } else {
+        document.body.removeEventListener('click', () => { this.visible = false })
+      }
     }
   },
   methods: {
@@ -112,8 +132,15 @@ export default {
       }
       this.addTab(navTitle(key, router), key)
     },
+    openMenu (item, e) {
+      this.visible = true
+      this.rightNav = item
+      const offsetLeft = this.$el.getBoundingClientRect().left
+      this.left = e.clientX - offsetLeft + 15
+      this.top = e.clientY
+    },
     addTab (title, path) {
-      //debugger
+      // debugger
       this.isActive = path
       for (var i = 0; i < this.tabnavBox.length; i++) {
         if (this.tabnavBox[i].path === path) {
@@ -126,33 +153,44 @@ export default {
       })
     },
     removeTab (tabItem) {
-      console.log(this.isActive);
+      console.log(this.isActive)
       debugger
-      for (let i = 0; i < this.tabnavBox.length; i++) {
-        if (this.tabnavBox[i].title == tabItem.title) {
-          this.tabnavBox.splice(i,1);
-          let tabActive = this.tabnavBox[i] || this.tabnavBox[i-1];
-          this.isActive = tabActive.path;
-          break
-        }
+      let index = this.tabnavBox.findIndex(function (value, key) {
+        return value.path == tabItem.path
+      })
+      this.tabnavBox.splice(index, 1)
+      if (tabItem.path == this.$route.fullPath){
+        let tabActive = this.tabnavBox[index] || this.tabnavBox[index - 1]
+        this.$router.push(tabActive.path)
       }
-      console.log(this.isActive);
+      console.log(this.isActive)
     },
-    tabClick (VueComponent) {
-      console.log(VueComponent)
-      for (var i = 0; i < this.editableTabs.length; i++) {
-        if (VueComponent.name == this.editableTabs[i].name) {
-          this.defaultActive = this.editableTabs[i].path
-          return false
-        }
-      }
+    removeOtherTab (tabItem) {
+      this.tabnavBox = [{
+        title: '首页',
+        path: '/index'
+      }]
+      this.tabnavBox.push(tabItem)
+      this.$router.push(tabItem.path)
+    },
+    removeAllTab () {
+      this.tabnavBox = [{
+        title: '首页',
+        path: '/index'
+      }]
+      this.$router.push('/index')
     },
     tabnav (defaul) {
       this.isActive = defaul.path
     }
   },
   created () {
-
+    this.$router.push('/index')
+  },
+  computed: {
+    isActivee () {
+      return this.$route.path
+    }
   }
 }
 </script>
@@ -177,6 +215,9 @@ export default {
   $left:left;
   $right:right;
   $leftright: ($left, $right);
+  %w100{
+    width: 100%;
+  }
   %h100{
     height: 100%;
   }
@@ -213,7 +254,7 @@ export default {
     }
   }
   .tabnavBox{
-    width: 100%;
+    @extend %w100;
     height: 44px;
     overflow: hidden;
     border-#{$top}: 1px solid #cccccc;
@@ -226,17 +267,20 @@ export default {
         height: 30px;
         line-height: 31px;
         cursor: pointer;
-        @include set-value(padding, 13px);
         margin-#{$top}: 6px;
         margin-#{$right}: 5px;
+        padding-#{$right}: 10px;
         border: 1px solid #cccccc;
         a{
+          @include set-value(padding, 13px);
+          display: inline-block;
+          @extend %h100;
           font-size: 12px;
           color: #999999;
         }
         &:nth-child(n+2){
           a{
-            margin-#{$right}: 15px;
+            padding-#{$right}: 15px;
           }
         }
         i{
@@ -252,6 +296,26 @@ export default {
         a{
           color: #ffffff;
         }
+      }
+    }
+  }
+  .menuBox{
+    margin: 0;
+    background: #fff;
+    z-index: 999;
+    position: absolute;
+    padding: 5px 0;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    box-shadow: 2px 1px 6px 0 rgba(0, 0, 0, .3);
+    li {
+      margin: 0;
+      padding: 7px 16px;
+      cursor: pointer;
+      &:hover {
+        background: #e1e6ea;
       }
     }
   }
