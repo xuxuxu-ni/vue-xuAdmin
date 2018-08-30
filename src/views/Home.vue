@@ -1,62 +1,89 @@
 <template>
   <div id="app">
     <el-container>
-        <el-header id="header">
-          <p class="topName">xucms后台模板</p>
-        </el-header>
-        <el-container>
-            <el-aside id="asideNav">
-                <el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" @select="selectmenu" :collapse="isCollapse" background-color="#eef1f6" text-color="#48576a" active-text-color="#ffffff" :router= "uniquerouter" :unique-opened= "uniquerouter">
-                    <template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
-                        <el-submenu v-if="!item.alone && item.children.length>0" :index="index+''">
+      <div id="asideNav">
+        <div class="logo-name">
+          <p v-if="logoShow">XU</p>
+          <p v-else>xuAdmin后台模板</p>
+        </div>
+          <el-menu :default-active="$route.path" class="el-menu-vertical"
+                   @select="selectmenu"
+                   :collapse="isCollapse"
+                   background-color="#03152A"
+                   text-color="rgba(255,255,255,.7)"
+                   active-text-color="#ffffff"
+                   :router= "uniquerouter"
+                   :unique-opened= "uniquerouter"
+                   :collapse-transition= "true"
+          >
+              <template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
+                  <el-submenu v-if="!item.alone && item.children.length>0" :index="index+''">
+                      <template slot="title">
+                          <i :class="item.iconCls?item.iconCls:[fa,fa-server]"></i>
+                          <span slot="title">{{item.name}}</span>
+                      </template>
+                      <template v-for="child in item.children">
+                          <el-submenu v-if="child.children.length>0" :index="child.path">
                             <template slot="title">
-                                <i :class="item.iconCls"></i>
-                                <span slot="title">{{item.name}}</span>
+                              <i :class="item.iconCls?item.iconCls:[fa,fa-file]"></i>
+                              <span slot="title">{{child.name}}</span>
                             </template>
-                            <template v-for="child in item.children">
-                                <el-submenu v-if="child.children.length>0" :index="child.path">
-                                  <template slot="title">
-                                    <i :class="item.iconCls"></i>
-                                    <span slot="title">{{child.name}}</span>
-                                  </template>
-                                    <el-menu-item v-for="threeChild in child.children" :index="threeChild.path">{{threeChild.name}}</el-menu-item>
-                                </el-submenu>
+                              <el-menu-item v-for="threeChild in child.children" :index="threeChild.path">{{threeChild.name}}</el-menu-item>
+                          </el-submenu>
 
-                                <el-menu-item v-else :index="child.path">
-                                    <i :class="item.iconCls"></i>
-                                    <span slot="title">{{child.name}}</span>
-                                </el-menu-item>
-                            </template>
-                        </el-submenu>
-                        <el-menu-item :index="item.children[0].path" v-else>
-                            <i :class="item.iconCls"></i>
-                            <span slot="title">{{item.name}}</span>
-                        </el-menu-item>
-                    </template>
+                          <el-menu-item v-else :index="child.path">
+                              <i :class="item.iconCls?item.iconCls:[fa,fa-file]"></i>
+                              <span slot="title">{{child.name}}</span>
+                          </el-menu-item>
+                      </template>
+                  </el-submenu>
+                  <el-menu-item :index="item.children[0].path" v-else>
+                      <i :class="item.iconCls?item.iconCls:[fa,fa-file]"></i>
+                      <span slot="title">{{item.name}}</span>
+                  </el-menu-item>
+              </template>
 
-                </el-menu>
-            </el-aside>
-            <el-container>
-              <div class="tabnavBox">
-                <ul>
-                  <li v-for="(item, index) in tabnavBox" @contextmenu.prevent="openMenu(item,$event)" @click="tabnav(item)" :class="{active: $route.path == item.path}">
-                    <router-link :to="item.path">{{item.title}}</router-link>
-                    <i @click="removeTab(item)" class="el-icon-error" v-if="index != 0"></i>
-                  </li>
-                </ul>
-              </div>
-                <el-main>
-
-                  <transition name="fade" mode="out-in">
-                    <router-view></router-view>
-                  </transition>
-                </el-main>
-                <el-footer>Footer</el-footer>
-            </el-container>
-        </el-container>
+          </el-menu>
+      </div>
+      <el-container>
+        <el-header id="header">
+          <span class="hideAside" @click="collapse"><i class="fa fa-indent fa-lg"></i></span>
+          <ul class="personal">
+            <li class="fullScreen" @click="fullScreen"><i class="fa fa-arrows-alt fa-lg"></i></li>
+            <li>超级管理员</li>
+            <li>
+                <el-dropdown @command="handleCommand">
+                  <span class="el-dropdown-link">
+                    夏洛克丶旭<i class="el-icon-arrow-down el-icon--right"></i>
+                  </span>
+                  <el-dropdown-menu slot="dropdown">
+                    <el-dropdown-item command="a">基本资料</el-dropdown-item>
+                    <el-dropdown-item command="b">修改密码</el-dropdown-item>
+                    <el-dropdown-item command="e" divided>退出</el-dropdown-item>
+                  </el-dropdown-menu>
+                </el-dropdown>
+            </li>
+            <li class="icon"><img src="@/static/images/icon.jpg" /> </li>
+          </ul>
+        </el-header>
+        <div class="tabnavBox" ref="tabnavbox">
+          <ul ref="tabnavul">
+            <li v-for="(item, index) in tabnavBox" @contextmenu.prevent="openMenu(item,$event)" @click="tabnav(item)" :class="{active: $route.path == item.path}">
+              <router-link :to="item.path">{{item.title}}</router-link>
+              <i @click="removeTab(item)" class="el-icon-error" v-if="index != 0"></i>
+            </li>
+          </ul>
+        </div>
+        <el-main id="elmain">
+          <transition name="fade" mode="out-in">
+            <router-view></router-view>
+          </transition>
+        </el-main>
+        <el-footer>Footer</el-footer>
+      </el-container>
     </el-container>
     <ul v-show="visible" :style="{left:left+'px',top:top+'px'}" class="menuBox">
-      <li @click="removeTab(rightNav)">关闭</li>
+      <li @click="removeTab(rightNav)"><i class="fa fa-remove"></i>关闭</li>
       <li @click="removeOtherTab(rightNav)">关闭其他</li>
       <li @click="removeAllTab">全部关闭</li>
     </ul>
@@ -71,7 +98,10 @@ export default {
       visible: false,
       top: 0,
       left: 0,
+      tableft:0,
       isCollapse: false,
+      isfullScreen: true,
+      logoShow: false,
       uniquerouter: true,
       editableTabsValue: '1',
       isActive: '/index',
@@ -102,24 +132,31 @@ export default {
     }
   },
   methods: {
-    handleOpen (key, keyPath) {
-      console.log(key, keyPath)
-      console.log(this.$route)
-      console.log(this.$router)
-    },
-    handleClose (key, keyPath) {
-      console.log(key, keyPath)
+    collapse () {
+      let that = this
+      this.isCollapse = !this.isCollapse
+      if(this.logoShow){
+        setTimeout(function () {
+          that.logoShow = false
+        },300)
+      }else {
+        this.logoShow = true
+      }
+
     },
     selectmenu (key, index) {
       // console.log(this.$route)
-      // console.log(this.$router)
+      console.log(this.$refs.tabnavul.getBoundingClientRect().width)
       console.log(key, index)
+      if (this.$refs.tabnavul.getBoundingClientRect().width >= this.$refs.tabnavbox.getBoundingClientRect().width) {
+
+      }
       var router = this.$router.options.routes
       let name = ''
       var navTitle = function (path, routerARR) {
         for (let i = 0; i < routerARR.length; i++) {
-          if (routerARR[i].children.length > 0 || routerARR[i].path == path) {
-            if (routerARR[i].path == path && routerARR[i].children.length < 1) {
+          if (routerARR[i].children.length > 0 || routerARR[i].path === path) {
+            if (routerARR[i].path === path && routerARR[i].children.length < 1) {
               // debugger
               name = routerARR[i].name
               console.log(name)
@@ -159,7 +196,7 @@ export default {
         return value.path == tabItem.path
       })
       this.tabnavBox.splice(index, 1)
-      if (tabItem.path == this.$route.fullPath){
+      if (tabItem.path == this.$route.fullPath) {
         let tabActive = this.tabnavBox[index] || this.tabnavBox[index - 1]
         this.$router.push(tabActive.path)
       }
@@ -182,6 +219,41 @@ export default {
     },
     tabnav (defaul) {
       this.isActive = defaul.path
+    },
+    fullScreen () {
+      if (this.isfullScreen) {
+        var docElm = document.documentElement;
+        if (docElm.requestFullscreen) {
+          docElm.requestFullscreen();
+        }
+        else if (docElm.mozRequestFullScreen) {
+          docElm.mozRequestFullScreen();
+        }
+        else if (docElm.webkitRequestFullScreen) {
+          docElm.webkitRequestFullScreen();
+        }
+        else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen();
+        }
+        this.isfullScreen = false;
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+        else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        }
+        else if (document.webkitCancelFullScreen) {
+          document.webkitCancelFullScreen();
+        }
+        else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+        this.isfullScreen = true;
+      }
+    },
+    handleCommand(command) {
+      this.$message('click on item ' + command);
     }
   },
   created () {
@@ -201,6 +273,7 @@ export default {
     padding: 0px;
   }
   body{
+    background-color: #f2f2f2;
     font-size: 14px;
     color: #333333;
   }
@@ -221,6 +294,9 @@ export default {
   %h100{
     height: 100%;
   }
+  %cursor{
+    cursor: pointer;
+  }
   html,body,#app,.el-container,#asideNav,ul.el-menu{
     @extend %h100;
   }
@@ -230,47 +306,112 @@ export default {
     }
   }
   #header{
-      max-height: 60px;
-      background: #409EFF;
-    .topName{
-      color: #ffffff;
-      height: 60px;
-      line-height: 60px;
-      margin-left: 20px;
+    max-height: 50px;
+    line-height: 50px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    display: flex;
+    justify-content: space-between;
+    .hideAside{
+      @extend %cursor;
+    }
+    .personal{
+      display: flex;
+      flex-direction: row;
+      li{
+        @include set-value(margin, 15px);
+        font-size: 12px;
+      }
+      .fullScreen{
+        @extend %cursor;
+      }
+      .el-dropdown-link {
+        @extend %cursor;
+      }
+      .icon img{
+        margin-#{$top}: 7px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+         width: 40px;
+         height: 40px;
+       }
     }
   }
   #asideNav{
-    width: 180px !important;
     overflow-x: hidden;
-    .el-menu-item{
-      background-color: #e1e6ea !important;
-      border-bottom: 1px solid #dddddd;
-      &:hover{
-        background-color: #bec1c5 !important;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px #e6e6e6;
+    .logo-name{
+      color: rgba(255,255,255,.8);
+      background-color: #03152A !important;
+      @extend %w100;
+      font-weight: 300;
+      z-index: 999;
+      p{
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 16px;
       }
     }
-    .el-menu-item.is-active{
-      background-color: #56a9ff !important
+    .el-menu-vertical:not(.el-menu--collapse) {
+      width: 200px;
     }
+    .el-menu{
+      flex: 1;
+      overflow: inherit;
+      border-right: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .el-menu-item{
+        background-color: #020f1d !important;
+        border-bottom: 1px solid #020f1d;
+        &:hover{
+          color: #ffffff !important;
+          background-color: #375573 !important;
+        }
+      }
+      .el-menu-item.is-active{
+        background-color: #56a9ff !important
+      }
+      .is-opened>.el-submenu__title>.el-icon-arrow-down{
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+
+  }
+  #elmain{
+    background-color: #f0f2f5;
   }
   .tabnavBox{
     @extend %w100;
-    height: 44px;
+    height: 42px;
     overflow: hidden;
-    border-#{$top}: 1px solid #cccccc;
-    border-#{$bottom}: 1px solid #cccccc;
+    border-#{$top}: 1px solid #f6f6f6;
+    border-#{$bottom}: 1px solid #d8dce5;
+
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
     ul{
       display: flex;
       justify-content: flex-start;
       padding-#{$left}: 20px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
       li{
         height: 30px;
         line-height: 31px;
-        cursor: pointer;
+        @extend %cursor;
         margin-#{$top}: 6px;
         margin-#{$right}: 5px;
         padding-#{$right}: 10px;
         border: 1px solid #cccccc;
+        min-width: 80px;
+        overflow: hidden;
         a{
           @include set-value(padding, 13px);
           display: inline-block;
@@ -284,7 +425,7 @@ export default {
           }
         }
         i{
-          cursor: pointer;
+          @extend %cursor;
           &:hover{
             color: red;
           }
@@ -313,7 +454,7 @@ export default {
     li {
       margin: 0;
       padding: 7px 16px;
-      cursor: pointer;
+      @extend %cursor;
       &:hover {
         background: #e1e6ea;
       }

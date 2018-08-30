@@ -33,14 +33,14 @@ export default new Router({
     },
     {
       path: '/',
-      iconCls: 'dc dc-customer', // 图标样式class
+      iconCls: 'fa fa-dashboard', // 图标样式class
       name: '首页',
       component: Home,
       alone: true,
       children: [
         {
           path: '/index',
-          iconCls: 'dc dc-customer', // 图标样式class
+          iconCls: 'fa fa-dashboard', // 图标样式class
           name: '首页',
           component: HomeMain,
           children: []
@@ -49,13 +49,13 @@ export default new Router({
     },
     {
       path: '/',
-      iconCls: 'dc dc-customer', // 图标样式class
+      iconCls: 'fa fa-server', // 图标样式class
       name: '表格',
       component: Home,
       children: [
         {
           path: '/table',
-          iconCls: 'dc dc-customer', // 图标样式class
+          iconCls: 'fa fa-server', // 图标样式class
           name: '表格1',
           component: Table,
           children: []
@@ -64,13 +64,13 @@ export default new Router({
     },
     {
       path: '/',
-      iconCls: 'dc dc-customer', // 图标样式class
+      iconCls: 'fa fa-server', // 图标样式class
       name: '选择',
       component: Home,
       children: [
         {
           path: '/select',
-          iconCls: 'dc dc-customer', // 图标样式class
+          iconCls: 'fa fa-server', // 图标样式class
           name: '选择1',
           component: Select,
           children: []
@@ -79,13 +79,13 @@ export default new Router({
     },
     {
       path: '/',
-      iconCls: 'dc dc-customer', // 图标样式class
+      iconCls: 'fa fa-server', // 图标样式class
       name: '表单',
       component: Home,
       children: [
         {
           path: '/form',
-          iconCls: 'dc dc-customer', // 图标样式class
+          iconCls: 'fa fa-server', // 图标样式class
           name: '表单',
           component: Form,
           children: []
@@ -94,26 +94,26 @@ export default new Router({
     },
     {
       path: '/',
-      iconCls: 'dc dc-customer', // 图标样式class
+      iconCls: 'fa fa-server', // 图标样式class
       name: '会员',
       component: Home,
       children: [
         {
           path: '/addMember',
-          iconCls: 'dc dc-customer', // 图标样式class
+          iconCls: 'fa fa-server', // 图标样式class
           name: '添加',
           component: AddMember,
           children: []
         },
         {
           path: '/remMember',
-          iconCls: 'dc dc-customer', // 图标样式class
+          iconCls: 'fa fa-server', // 图标样式class
           name: '删除',
           component: RemMember,
           children: [
             {
               path: '/remMember',
-              iconCls: 'dc dc-customer', // 图标样式class
+              iconCls: 'fa fa-server', // 图标样式class
               name: '删除人员',
               component: RemMember,
               children: []
