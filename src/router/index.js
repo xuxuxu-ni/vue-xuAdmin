@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home.vue'
 import HomeMain from '@/views/main.vue'
+import Icon from '@/views/icon/index'
 import Table from '@/views/Table.vue'
 import Form from '@/views/Form.vue'
 import Select from '@/views/Select.vue'
@@ -49,15 +50,15 @@ export default new Router({
     },
     {
       path: '/',
-      iconCls: 'fa fa-server', // 图标样式class
-      name: '表格',
+      iconCls: 'fa fa-paw', // 图标样式class
+      name: '图标',
       component: Home,
       children: [
         {
-          path: '/table',
-          iconCls: 'fa fa-server', // 图标样式class
-          name: '表格1',
-          component: Table,
+          path: '/icon',
+          iconCls: 'fa fa-meh-o', // 图标样式class
+          name: '图标',
+          component: Icon,
           children: []
         }
       ]

@@ -32,7 +32,7 @@
                           </el-submenu>
 
                           <el-menu-item v-else :index="child.path">
-                              <i :class="item.iconCls?item.iconCls:[fa,fa-file]"></i>
+                              <i :class="child.iconCls?child.iconCls:[fa,fa-file]"></i>
                               <span slot="title">{{child.name}}</span>
                           </el-menu-item>
                       </template>
@@ -74,7 +74,7 @@
             </li>
           </ul>
         </div>
-        <el-main id="elmain">
+        <el-main id="elain">
           <transition name="fade" mode="out-in">
             <router-view></router-view>
           </transition>
