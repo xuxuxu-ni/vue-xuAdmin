@@ -68,7 +68,7 @@
         </el-header>
         <div class="tabnavBox" ref="tabnavbox">
           <ul ref="tabnavul">
-            <li v-for="(item, index) in tabnavBox" @contextmenu.prevent="openMenu(item,$event)" @click="tabnav(item)" :class="{active: $route.path == item.path}">
+            <li v-for="(item, index) in tabnavBox" @contextmenu.prevent="openMenu(item,$event,index)" @click="tabnav(item)" :class="{active: $route.path == item.path}">
               <router-link :to="item.path">{{item.title}}</router-link>
               <i @click="removeTab(item)" class="el-icon-error" v-if="index != 0"></i>
             </li>
@@ -169,7 +169,10 @@ export default {
       }
       this.addTab(navTitle(key, router), key)
     },
-    openMenu (item, e) {
+    openMenu (item, e, index) {
+      if (index ==0){
+        return false
+      }
       this.visible = true
       this.rightNav = item
       const offsetLeft = this.$el.getBoundingClientRect().left
@@ -390,6 +393,7 @@ export default {
   .tabnavBox{
     @extend %w100;
     height: 42px;
+    min-height: 42px;
     overflow: hidden;
     border-#{$top}: 1px solid #f6f6f6;
     border-#{$bottom}: 1px solid #d8dce5;
@@ -408,10 +412,14 @@ export default {
         @extend %cursor;
         margin-#{$top}: 6px;
         margin-#{$right}: 5px;
-        padding-#{$right}: 10px;
+
         border: 1px solid #cccccc;
-        min-width: 80px;
+
         overflow: hidden;
+        &:not(:first-child){
+          padding-#{$right}: 10px;
+          min-width: 80px;
+        }
         a{
           @include set-value(padding, 13px);
           display: inline-block;
