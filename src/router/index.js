@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home.vue'
-import HomeMain from '@/views/main.vue'
+import HomeMain from '@/views/mainIndex.vue'
 import Icon from '@/views/icon/index'
 import Form from '@/views/Form.vue'
-import Select from '@/views/Select.vue'
 import AddMember from '@/views/member/addMember.vue'
 import RemMember from '@/views/member/remMember.vue'
+import Transfer from '@/views/transfer/transfer.vue'
+import dataTable from '@/views/table/dataTables.vue'
 
 Vue.use(Router)
 
@@ -65,14 +66,29 @@ export default new Router({
     {
       path: '/',
       iconCls: 'fa fa-server', // 图标样式class
-      name: '选择',
+      name: '穿梭框',
       component: Home,
       children: [
         {
-          path: '/select',
+          path: '/transfer',
           iconCls: 'fa fa-server', // 图标样式class
-          name: '选择1',
-          component: Select,
+          name: '穿梭框',
+          component: Transfer,
+          children: []
+        }
+      ]
+    },
+    {
+      path: '/',
+      iconCls: 'fa fa-server', // 图标样式class
+      name: '表格',
+      component: Home,
+      children: [
+        {
+          path: '/dataTable',
+          iconCls: 'fa fa-server', // 图标样式class
+          name: '表格',
+          component: dataTable,
           children: []
         }
       ]

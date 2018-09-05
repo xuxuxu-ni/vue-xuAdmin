@@ -49,7 +49,7 @@
         <el-header id="header">
           <span class="hideAside" @click="collapse"><i class="fa fa-indent fa-lg"></i></span>
           <ul class="personal">
-            <li class="fullScreen" @click="fullScreen"><i class="fa fa-arrows-alt fa-lg"></i></li>
+            <li class="fullScreen" @click="fullScreen"> <el-tooltip class="item" effect="dark" content="全屏" placement="bottom"><i class="fa fa-arrows-alt fa-lg"></i></el-tooltip></li>
             <li>超级管理员</li>
             <li>
                 <el-dropdown @command="handleCommand">
@@ -79,7 +79,9 @@
             <router-view></router-view>
           </transition>
         </el-main>
-        <el-footer>Footer</el-footer>
+        <el-footer>
+          <Bottom></Bottom>
+        </el-footer>
       </el-container>
     </el-container>
     <ul v-show="visible" :style="{left:left+'px',top:top+'px'}" class="menuBox">
@@ -91,6 +93,7 @@
 </template>
 
 <script>
+import Bottom from '../components/Footer/bottom'
 export default {
   name: 'dc-home',
   data () {
@@ -121,6 +124,9 @@ export default {
         }
       ]
     }
+  },
+  components: {
+    Bottom
   },
   watch: {
     visible (value) {

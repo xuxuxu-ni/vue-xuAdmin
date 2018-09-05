@@ -53,7 +53,6 @@
     </el-row>
     <el-row>
       <el-col :span="24">
-
         <maintable id="maintable"></maintable>
       </el-col>
     </el-row>
@@ -64,20 +63,20 @@
 import LineEcharts from '../components/ECharts/lineEcharts'
 import Maintable from './table/maintable'
 export default {
-  name: 'main',
+  name: 'mainIndex',
   components: {Maintable, LineEcharts},
   mounted () {
     this.selfAdaption()
   },
   methods: {
     // echart自适应
-    selfAdaption ()  {
-        setTimeout(() => {
-          let that = this
-          window.onresize = function () {
-            that.$refs.echarts.chart.resize()
-          }
-        }, 10)
+    selfAdaption () {
+      setTimeout(() => {
+        let that = this
+        window.onresize = function () {
+          that.$refs.echarts.chart.resize()
+        }
+      }, 10)
     }
   }
 }
