@@ -149,27 +149,27 @@ export default new Router({
           children: []
         },
         {
-          path: '/',
+          path: '/erji3',
           iconCls: 'fa fa-server',
           name: '二级-1',
-          component: Sanji2,
+          component: Sanji,
           children: [
             {
-              path: '/sanji',
+              path: '/erji3/sanji',
               iconCls: 'fa fa-server',
               name: '三级',
               component: Sanji,
               children: []
             },
             {
-              path: '/sanji2',
+              path: '/erji3/sanji2',
               iconCls: 'fa fa-server',
-              name: '三级1',
+              name: '三级',
               component: Sanji2,
               children: []
             },
             {
-              path: '/sanji1',
+              path: '/erji3/sanji1',
               iconCls: 'fa fa-server',
               name: '三级-1',
               component: Siji,

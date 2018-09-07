@@ -63,105 +63,105 @@
 </template>
 
 <script>
-  export default {
-    name: 'maintable',
-    data (){
-      return {
-        tableData: [{
-          odd: '201801012345601',
-          name: '王小虎',
-          status: '已付款',
-          amount: '580元',
-          date: '2018-01-01',
-          tag: '虚拟'
-        }, {
-          odd: '201801012345602',
-          name: '王小虎',
-          status: '已付款',
-          amount: '130元',
-          date: '2018-01-02',
-          tag: '实物'
-        },{
-          odd: '201801012345603',
-          name: '王小虎',
-          status: '已付款',
-          amount: '680元',
-          date: '2018-01-03',
-          tag: '虚拟'
-        },{
-          odd: '201801012345604',
-          name: '王小虎',
-          status: '已付款',
-          amount: '190元',
-          date: '2018-01-03',
-          tag: '虚拟'
-        },{
-          odd: '201801012345605',
-          name: '王小虎',
-          status: '已付款',
-          amount: '170元',
-          date: '2018-01-04',
-          tag: '实物'
-        },{
-          odd: '201801012345606',
-          name: '王小虎',
-          status: '已付款',
-          amount: '670元',
-          date: '2018-01-04',
-          tag: '虚拟'
-        },{
-          odd: '201801012345607',
-          name: '王小虎',
-          status: '已付款',
-          amount: '1780元',
-          date: '2018-01-04',
-          tag: '实物'
-        },{
-          odd: '201801012345608',
-          name: '王小虎',
-          status: '已付款',
-          amount: '3180元',
-          date: '2018-01-04',
-          tag: '虚拟'
-        },{
-          odd: '201801012345609',
-          name: '王小虎',
-          status: '已付款',
-          amount: '780元',
-          date: '2018-01-05',
-          tag: '实物'
-        },{
-          odd: '201801012345610',
-          name: '王小虎',
-          status: '已付款',
-          amount: '2130元',
-          date: '2018-01-05',
-          tag: '虚拟'
-        }]
-      }
+export default {
+  name: 'maintable',
+  data () {
+    return {
+      tableData: [{
+        odd: '201801012345601',
+        name: '王小虎',
+        status: '已付款',
+        amount: '580元',
+        date: '2018-01-01',
+        tag: '虚拟'
+      }, {
+        odd: '201801012345602',
+        name: '王小虎',
+        status: '已付款',
+        amount: '130元',
+        date: '2018-01-02',
+        tag: '实物'
+      }, {
+        odd: '201801012345603',
+        name: '王小虎',
+        status: '已付款',
+        amount: '680元',
+        date: '2018-01-03',
+        tag: '虚拟'
+      }, {
+        odd: '201801012345604',
+        name: '王小虎',
+        status: '已付款',
+        amount: '190元',
+        date: '2018-01-03',
+        tag: '虚拟'
+      }, {
+        odd: '201801012345605',
+        name: '王小虎',
+        status: '已付款',
+        amount: '170元',
+        date: '2018-01-04',
+        tag: '实物'
+      }, {
+        odd: '201801012345606',
+        name: '王小虎',
+        status: '已付款',
+        amount: '670元',
+        date: '2018-01-04',
+        tag: '虚拟'
+      }, {
+        odd: '201801012345607',
+        name: '王小虎',
+        status: '已付款',
+        amount: '1780元',
+        date: '2018-01-04',
+        tag: '实物'
+      }, {
+        odd: '201801012345608',
+        name: '王小虎',
+        status: '已付款',
+        amount: '3180元',
+        date: '2018-01-04',
+        tag: '虚拟'
+      }, {
+        odd: '201801012345609',
+        name: '王小虎',
+        status: '已付款',
+        amount: '780元',
+        date: '2018-01-05',
+        tag: '实物'
+      }, {
+        odd: '201801012345610',
+        name: '王小虎',
+        status: '已付款',
+        amount: '2130元',
+        date: '2018-01-05',
+        tag: '虚拟'
+      }]
+    }
+  },
+  methods: {
+    handleEdit (index, row) {
+      console.log(index, row)
     },
-    methods: {
-      handleEdit(index, row) {
-        console.log(index, row);
-      },
-      handleDelete(index, row) {
-        console.log(index, row);
-      },
-      formatter(row, column) {
-        return row.address;
-      },
-      filterTag(value, row) {
-        return row.tag === value;
-      },
-      filterHandler(value, row, column) {
-        const property = column['property'];
-        return row[property] === value;
-      },
-      indexMethod(index) {
-        return index * 2;
-      }
+    handleDelete (index, row) {
+      console.log(index, row)
+    },
+    formatter (row, column) {
+      return row.address
+    },
+    filterTag (value, row) {
+      return row.tag === value
+    },
+    filterHandler (value, row, column) {
+      const property = column['property']
+      return row[property] === value
+    },
+    indexMethod (index) {
+      return index * 2
     }
   }
+}
 </script>
 
 <style scoped>

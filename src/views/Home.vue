@@ -22,22 +22,11 @@
                           <i :class="item.iconCls?item.iconCls:[fa,fa-server]"></i>
                           <span slot="title">{{item.name}}</span>
                       </template>
-                      <template v-for="child in item.children">
-                          <el-submenu v-if="child.children.length>0" :index="child.path">
-                            <template slot="title">
-                              <i :class="item.iconCls?item.iconCls:[fa,fa-file]"></i>
-                              <span slot="title">{{child.name}}</span>
-                            </template>
-                              <el-menu-item v-for="threeChild in child.children" :index="threeChild.path">{{threeChild.name}}</el-menu-item>
-                          </el-submenu>
 
-                          <el-menu-item v-else :index="child.path">
-                              <i :class="child.iconCls?child.iconCls:[fa,fa-file]"></i>
-                              <span slot="title">{{child.name}}</span>
-                          </el-menu-item>
-                      </template>
+                    <menu-tree :menuData="item.children"></menu-tree>
+
                   </el-submenu>
-                  <el-menu-item :index="item.children[0].path" v-else>
+                  <el-menu-item :index="item.path" v-else>
                       <i :class="item.iconCls?item.iconCls:[fa,fa-file]"></i>
                       <span slot="title">{{item.name}}</span>
                   </el-menu-item>
@@ -94,6 +83,7 @@
 
 <script>
 import Bottom from '../components/Footer/bottom'
+import menuTree from '../components/menuTree/menuTree'
 export default {
   name: 'dc-home',
   data () {
@@ -101,7 +91,7 @@ export default {
       visible: false,
       top: 0,
       left: 0,
-      tableft:0,
+      tableft: 0,
       isCollapse: false,
       isfullScreen: true,
       logoShow: false,
@@ -126,7 +116,8 @@ export default {
     }
   },
   components: {
-    Bottom
+    Bottom,
+    menuTree
   },
   watch: {
     visible (value) {
@@ -141,18 +132,18 @@ export default {
     collapse () {
       let that = this
       this.isCollapse = !this.isCollapse
-      if(this.logoShow){
+      if (this.logoShow) {
         setTimeout(function () {
           that.logoShow = false
-        },300)
-      }else {
+        }, 300)
+      } else {
         this.logoShow = true
       }
-
     },
     selectmenu (key, index) {
-      // console.log(this.$route)
-      console.log(this.$refs.tabnavul.getBoundingClientRect().width)
+      console.log(this.$route)
+      console.log(this.$router)
+      // console.log(this.$refs.tabnavul.getBoundingClientRect().width)
       console.log(key, index)
       if (this.$refs.tabnavul.getBoundingClientRect().width >= this.$refs.tabnavbox.getBoundingClientRect().width) {
 
@@ -176,7 +167,7 @@ export default {
       this.addTab(navTitle(key, router), key)
     },
     openMenu (item, e, index) {
-      if (index ==0){
+      if (index == 0) {
         return false
       }
       this.visible = true
@@ -231,38 +222,32 @@ export default {
     },
     fullScreen () {
       if (this.isfullScreen) {
-        var docElm = document.documentElement;
+        var docElm = document.documentElement
         if (docElm.requestFullscreen) {
-          docElm.requestFullscreen();
+          docElm.requestFullscreen()
+        } else if (docElm.mozRequestFullScreen) {
+          docElm.mozRequestFullScreen()
+        } else if (docElm.webkitRequestFullScreen) {
+          docElm.webkitRequestFullScreen()
+        } else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen()
         }
-        else if (docElm.mozRequestFullScreen) {
-          docElm.mozRequestFullScreen();
-        }
-        else if (docElm.webkitRequestFullScreen) {
-          docElm.webkitRequestFullScreen();
-        }
-        else if (elem.msRequestFullscreen) {
-          elem.msRequestFullscreen();
-        }
-        this.isfullScreen = false;
+        this.isfullScreen = false
       } else {
         if (document.exitFullscreen) {
-          document.exitFullscreen();
+          document.exitFullscreen()
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen()
+        } else if (document.webkitCancelFullScreen) {
+          document.webkitCancelFullScreen()
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen()
         }
-        else if (document.mozCancelFullScreen) {
-          document.mozCancelFullScreen();
-        }
-        else if (document.webkitCancelFullScreen) {
-          document.webkitCancelFullScreen();
-        }
-        else if (document.msExitFullscreen) {
-          document.msExitFullscreen();
-        }
-        this.isfullScreen = true;
+        this.isfullScreen = true
       }
     },
-    handleCommand(command) {
-      this.$message('click on item ' + command);
+    handleCommand (command) {
+      this.$message('click on item ' + command)
     }
   },
   created () {

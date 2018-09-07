@@ -71,8 +71,8 @@ export default {
   methods: {
     // echart自适应
     selfAdaption () {
+      let that = this
       setTimeout(() => {
-        let that = this
         window.onresize = function () {
           that.$refs.echarts.chart.resize()
         }

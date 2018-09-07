@@ -1,12 +1,12 @@
 <template>
   <div>
-    删除人员
+    无限级菜单测试======四级页面
   </div>
 </template>
 
 <script>
 export default {
-  name: 'remMember'
+  name: 'siji'
 }
 </script>
 
