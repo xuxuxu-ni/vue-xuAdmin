@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import CommerViews from '@/views/commerViews.vue'
 import Home from '@/views/Home.vue'
 import HomeMain from '@/views/mainIndex.vue'
 import Icon from '@/views/icon/index'
@@ -39,7 +40,7 @@ export default new Router({
       children: []
     },
     {
-      path: '/',
+      path: '/index',
       iconCls: 'fa fa-dashboard', // 图标样式class
       name: '首页',
       component: Home,
@@ -149,10 +150,10 @@ export default new Router({
           children: []
         },
         {
-          path: '/',
+          path: '/erji6',
           iconCls: 'fa fa-server',
           name: '二级-1',
-          component: Sanji2,
+          component: CommerViews,
           children: [
             {
               path: '/sanji',
@@ -162,33 +163,33 @@ export default new Router({
               children: []
             },
             {
-              path: '/sanji2',
+              path: '/sanji1',
               iconCls: 'fa fa-server',
               name: '三级1',
               component: Sanji2,
               children: []
             },
             {
-              path: '/sanji1',
+              path: '/sanji2',
               iconCls: 'fa fa-server',
               name: '三级-1',
-              component: Siji,
+              component: CommerViews,
               children: [
                 {
-                  path: '/erji3/sanji1/siji',
+                  path: '/siji',
                   iconCls: 'fa fa-server',
                   name: '四级',
                   component: Siji,
                   children: []
                 },
                 {
-                  path: '/erji3/sanji1/siji1',
+                  path: '/siji1',
                   iconCls: 'fa fa-server',
                   name: '四级-1',
-                  component: Wuji,
+                  component: CommerViews,
                   children: [
                     {
-                      path: '/erji3/sanji1/siji1/wuji',
+                      path: '/wuji',
                       iconCls: 'fa fa-server',
                       name: '五级',
                       component: Wuji,

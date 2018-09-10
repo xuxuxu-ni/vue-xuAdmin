@@ -8,6 +8,7 @@
         </div>
           <el-menu :default-active="$route.path" class="el-menu-vertical"
                    @select="selectmenu"
+                   @open="handleOpen"
                    :collapse="isCollapse"
                    background-color="#03152A"
                    text-color="rgba(255,255,255,.7)"
@@ -139,6 +140,9 @@ export default {
       } else {
         this.logoShow = true
       }
+    },
+    handleOpen(key, keyPath) {
+      console.log(key, keyPath);
     },
     selectmenu (key, index) {
       console.log(this.$route)
@@ -348,6 +352,9 @@ export default {
         text-align: center;
         font-size: 16px;
       }
+    }
+    .sidebar::-webkit-scrollbar{
+      width: 0;
     }
     .el-menu-vertical:not(.el-menu--collapse) {
       width: 200px;

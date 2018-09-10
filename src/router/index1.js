@@ -152,7 +152,7 @@ export default new Router({
           path: '/erji3',
           iconCls: 'fa fa-server',
           name: '二级-1',
-          component: Sanji,
+          component: Home,
           children: [
             {
               path: '/erji3/sanji',
