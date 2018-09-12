@@ -15,6 +15,7 @@ import DataTable from '@/views/table/dataTables.vue'
 import FilterTable from '@/views/table/filterTable.vue'
 import DragTabe from '@/views/table/dragTabe.vue'
 import Upload from '@/views/upload/upload.vue'
+import Markdown from '@/views/markdown/markdownView.vue'
 
 Vue.use(Router)
 
@@ -125,6 +126,21 @@ export default new Router({
           iconCls: 'fa fa-server', // 图标样式class
           name: '上传',
           component: Upload,
+          children: []
+        }
+      ]
+    },
+    {
+      path: '/',
+      iconCls: 'fa fa-server', // 图标样式class
+      name: '编辑器',
+      component: Home,
+      children: [
+        {
+          path: '/markdown',
+          iconCls: 'fa fa-server', // 图标样式class
+          name: 'markdown',
+          component: Markdown,
           children: []
         }
       ]

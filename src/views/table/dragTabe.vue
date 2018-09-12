@@ -55,7 +55,7 @@
         </el-table-column>
       </el-table>
     </template>
-    <p>依赖模块<a target="_blank" href="https://github.com/RubaXa/Sortable">Sortable</a> </p>
+    <p class="dragtabe">依赖模块<a target="_blank" href="https://github.com/RubaXa/Sortable">Sortable</a> </p>
   </div>
 </template>
 
@@ -122,11 +122,11 @@ export default {
   .sortable-ghost{
     opacity: .8;
     color: #fff!important;
-    background: #8ebcea!important;
+    background: #56a9ff!important;
   }
 </style>
 <style lang="scss">
-p{
+p.dragtabe{
   margin-top: 30px;
 }
 </style>

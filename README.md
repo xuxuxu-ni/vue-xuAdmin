@@ -1,6 +1,6 @@
-# xu-webplatform
+# xuadmin
 
-> xu-webplatform1
+> xuadmin
 
 ## Build Setup
 

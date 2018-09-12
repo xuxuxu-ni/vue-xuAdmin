@@ -6,7 +6,7 @@
           <p v-if="logoShow">XU</p>
           <p v-else>xuAdmin后台模板</p>
         </div>
-          <el-menu :default-active="$route.path" class="el-menu-vertical"
+          <el-menu :default-active="$route.path" class="el-menu-vertical-demo"
                    @select="selectmenu"
                    @open="handleOpen"
                    :collapse="isCollapse"
@@ -53,7 +53,7 @@
                   </el-dropdown-menu>
                 </el-dropdown>
             </li>
-            <li class="icon"><img src="@/static/images/icon.jpg" /> </li>
+            <li class="icon"><img src="/static/images/icon.jpg" /> </li>
           </ul>
         </el-header>
         <div class="tabnavBox" ref="tabnavbox">
@@ -353,11 +353,9 @@ export default {
         font-size: 16px;
       }
     }
-    .sidebar::-webkit-scrollbar{
-      width: 0;
-    }
-    .el-menu-vertical:not(.el-menu--collapse) {
+    .el-menu-vertical-demo:not(.el-menu--collapse) {
       width: 200px;
+      height: 100%;
     }
     .el-menu{
       flex: 1;

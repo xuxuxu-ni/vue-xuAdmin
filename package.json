@@ -1,5 +1,5 @@
 {
-  "name": "xu-webplatform",
+  "name": "xuadmin",
   "version": "1.0.0",
   "description": "dc-webplatform",
   "author": "NiRongxu",
@@ -18,6 +18,7 @@
     "element-ui": "^2.4.6",
     "figlet": "^1.2.0",
     "font-awesome": "^4.7.0",
+    "scriptjs": "^2.5.8",
     "sortablejs": "^1.7.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
@@ -54,6 +55,7 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "gulp": "^3.9.1",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.4",
     "jest-serializer-vue": "^0.3.0",

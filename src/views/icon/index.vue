@@ -2,152 +2,153 @@
   <div>
     <h3>框架内置了element ui和Font Awesome两种图标库</h3>
     <p class="text"><span class="name">element ui图标</span>使用方法直接通过设置类名为 el-icon-iconName 来使用即可。例如：<span class="code">&lt;i class="el-icon-edit"&gt;&lt;/i&gt;</span></p>
-    <!--<ul class="ele-icoo">-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-info"></i>-->
-            <!--<span class="iconame">el-icon-info</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-error"></i>-->
-            <!--<span class="iconame">el-icon-error</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-success"></i>-->
-            <!--<span class="iconame">el-icon-success</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-warning"></i>-->
-            <!--<span class="iconame">el-icon-warning</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-question"></i>-->
-            <!--<span class="iconame">el-icon-question</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-back"></i>-->
-            <!--<span class="iconame">el-icon-back</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-arrow-left"></i>-->
-            <!--<span class="iconame">el-icon-arrow-left</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-arrow-down"></i>-->
-            <!--<span class="iconame">el-icon-arrow-down</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-arrow-right"></i>-->
-            <!--<span class="iconame">el-icon-arrow-right</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-arrow-up"></i>-->
-            <!--<span class="iconame">el-icon-arrow-up</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-caret-left"></i>-->
-            <!--<span class="iconame">el-icon-caret-left</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-caret-bottom"></i>-->
-            <!--<span class="iconame">el-icon-caret-bottom</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-caret-top"></i>-->
-            <!--<span class="iconame">el-icon-caret-top</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-caret-right"></i>-->
-            <!--<span class="iconame">el-icon-caret-right</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-d-arrow-left"></i>-->
-            <!--<span class="iconame">el-icon-d-arrow-left</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-d-arrow-right"></i>-->
-            <!--<span class="iconame">el-icon-d-arrow-right</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-minus"></i>-->
-            <!--<span class="iconame">el-icon-minus</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-plus"></i>-->
-            <!--<span class="iconame">el-icon-plus</span>-->
-          <!--</span>-->
-        <!--</li>-->
+    <ul class="ele-icoo">
+      <li>
+        <span>
+          <i class="el-icon-info"></i>
+          <span class="iconame">el-icon-info</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-error"></i>
+          <span class="iconame">el-icon-error</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-success"></i>
+          <span class="iconame">el-icon-success</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-warning"></i>
+          <span class="iconame">el-icon-warning</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-question"></i>
+          <span class="iconame">el-icon-question</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-back"></i>
+          <span class="iconame">el-icon-back</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-arrow-left"></i>
+          <span class="iconame">el-icon-arrow-left</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-arrow-down"></i>
+          <span class="iconame">el-icon-arrow-down</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-arrow-right"></i>
+          <span class="iconame">el-icon-arrow-right</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-arrow-up"></i>
+          <span class="iconame">el-icon-arrow-up</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-caret-left"></i>
+          <span class="iconame">el-icon-caret-left</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-caret-bottom"></i>
+          <span class="iconame">el-icon-caret-bottom</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-caret-top"></i>
+          <span class="iconame">el-icon-caret-top</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-caret-right"></i>
+          <span class="iconame">el-icon-caret-right</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-d-arrow-left"></i>
+          <span class="iconame">el-icon-d-arrow-left</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-d-arrow-right"></i>
+          <span class="iconame">el-icon-d-arrow-right</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-minus"></i>
+          <span class="iconame">el-icon-minus</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-plus"></i>
+          <span class="iconame">el-icon-plus</span>
+        </span>
+      </li>
 
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-upload"></i>-->
-            <!--<span class="iconame">el-icon-upload</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-upload2"></i>-->
-            <!--<span class="iconame">el-icon-upload2</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-download"></i>-->
-            <!--<span class="iconame">el-icon-download</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-loading"></i>-->
-            <!--<span class="iconame">el-icon-loading</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<i class="el-icon-setting"></i>-->
-            <!--<span class="iconame">el-icon-setting</span>-->
-          <!--</span>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<span>-->
-            <!--<a target="_blank" href="http://element-cn.eleme.io/#/zh-CN/component/icon">更多element ui图标</a>-->
-          <!--</span>-->
-        <!--</li>-->
-      <!--</ul>-->
+      <li>
+        <span>
+          <i class="el-icon-upload"></i>
+          <span class="iconame">el-icon-upload</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-upload2"></i>
+          <span class="iconame">el-icon-upload2</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-download"></i>
+          <span class="iconame">el-icon-download</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-loading"></i>
+          <span class="iconame">el-icon-loading</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <i class="el-icon-setting"></i>
+          <span class="iconame">el-icon-setting</span>
+        </span>
+      </li>
+      <li>
+        <span>
+          <a target="_blank" href="http://element-cn.eleme.io/#/zh-CN/component/icon">更多element ui图标</a>
+        </span>
+      </li>
+    </ul>
+    <div style="clear: both"></div>
     <p class="text"><span class="name">Font Awesome图标</span>本框架已经内置该图标库675个图标,不需要另外引入安装,可以直接使用,使用方法直接通过设置类名为 'fa fa-iconName' 来使用即可。例如：<span class="code">&lt;i class="fa fa-camera-retro"&gt;&lt;/i&gt;</span>
     <p class="text">使用 fa-lg (33%递增)、fa-2x、 fa-3x、fa-4x，或者 fa-5x 类 来放大图标,例如：<span class="code">&lt;i class="fa fa-camera-retro fa-2x"&gt;&lt;/i&gt;</span></p>
     <p class="text">更多功能及用法点击 <a target="_blank" href="http://fontawesome.dashgame.com/#basic"><strong>此处</strong></a> </p>
@@ -328,6 +329,7 @@ export default {
     margin: 5px 0px;
   }
   .ele-icoo{
+    max-width: 100%;
     li{
       float: left;
       width: 12.5%;
