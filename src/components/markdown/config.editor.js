@@ -3,8 +3,8 @@ const defaultConfig = {
   height: 600,
   path: '/static/markdown/lib/',
   // theme: 'dark',
-  previewTheme: 'elegant',
-  editorTheme: 'elegant-dark',
+  previewTheme: 'default',
+  editorTheme: 'pastel-on-dark',
   // markdown: '默认填充内容', // 默认填充内容
   lineWrapping: true, // 编辑框不换行
   codeFold: true, // 代码折叠
@@ -163,11 +163,15 @@ const codeThemes = [
   },
   {
     label: 'tranquil-heart',
-    value: 'tranquil-heart.min.css'
+    value: 'previewTheme-xu.css'
   },
   {
     label: 'vibrant-ink',
     value: 'vibrant-ink.min.css'
+  },
+  {
+    label: 'pastel-on-dark-xu',
+    value: 'pastel-on-dark-xu.css'
   }
 ]
 export {

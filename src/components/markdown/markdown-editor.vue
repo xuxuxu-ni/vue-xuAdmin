@@ -1,7 +1,7 @@
 <template>
   <div class="markdownBox">
     <link rel="stylesheet" href="/static/markdown/css/editormd.min.css">
-    <link rel="stylesheet" :href="'/static/markdown/css/googleCodePrettifyThemes/' + codeTheme">
+    <link rel="stylesheet" href="/static/markdown/css/googleCodePrettifyThemes/previewTheme-xu.css">
     <div :id="editorId"></div>
   </div>
 </template>

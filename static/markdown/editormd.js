@@ -4062,7 +4062,7 @@
         "lesser-dark",
         "mbo", "mdn-like", "midnight", "monokai",
         "neat", "neo", "night",
-        "paraiso-dark", "paraiso-light", "pastel-on-dark",
+        "paraiso-dark", "paraiso-light", "pastel-on-dark", "pastel-on-dark-xu",
         "rubyblue",
         "solarized",
         "the-matrix", "tomorrow-night-eighties", "twilight",
