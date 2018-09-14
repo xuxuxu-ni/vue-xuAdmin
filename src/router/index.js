@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import CommerViews from '@/views/commerViews.vue'
+import Login from '@/views/login/index.vue'
 import Home from '@/views/Home.vue'
 import HomeMain from '@/views/mainIndex.vue'
 import Icon from '@/views/icon/index'
@@ -28,7 +29,7 @@ export default new Router({
     },
     {
       path: '/login',
-      component: DragTabe,
+      component: Login,
       name: '',
       hidden: true,
       children: []

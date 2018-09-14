@@ -5,127 +5,6 @@
     <ul class="ele-icoo">
       <li>
         <span>
-          <i class="el-icon-info"></i>
-          <span class="iconame">el-icon-info</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-error"></i>
-          <span class="iconame">el-icon-error</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-success"></i>
-          <span class="iconame">el-icon-success</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-warning"></i>
-          <span class="iconame">el-icon-warning</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-question"></i>
-          <span class="iconame">el-icon-question</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-back"></i>
-          <span class="iconame">el-icon-back</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-arrow-left"></i>
-          <span class="iconame">el-icon-arrow-left</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-arrow-down"></i>
-          <span class="iconame">el-icon-arrow-down</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-arrow-right"></i>
-          <span class="iconame">el-icon-arrow-right</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-arrow-up"></i>
-          <span class="iconame">el-icon-arrow-up</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-caret-left"></i>
-          <span class="iconame">el-icon-caret-left</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-caret-bottom"></i>
-          <span class="iconame">el-icon-caret-bottom</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-caret-top"></i>
-          <span class="iconame">el-icon-caret-top</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-caret-right"></i>
-          <span class="iconame">el-icon-caret-right</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-d-arrow-left"></i>
-          <span class="iconame">el-icon-d-arrow-left</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-d-arrow-right"></i>
-          <span class="iconame">el-icon-d-arrow-right</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-minus"></i>
-          <span class="iconame">el-icon-minus</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-plus"></i>
-          <span class="iconame">el-icon-plus</span>
-        </span>
-      </li>
-
-      <li>
-        <span>
-          <i class="el-icon-upload"></i>
-          <span class="iconame">el-icon-upload</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="el-icon-upload2"></i>
-          <span class="iconame">el-icon-upload2</span>
-        </span>
-      </li>
-      <li>
-        <span>
           <i class="el-icon-download"></i>
           <span class="iconame">el-icon-download</span>
         </span>
@@ -154,150 +33,30 @@
     <p class="text">更多功能及用法点击 <a target="_blank" href="http://fontawesome.dashgame.com/#basic"><strong>此处</strong></a> </p>
     <div>
       <ul class="ele-icoo">
-      <li>
-        <span>
-          <i class="fa fa-address-book"></i>
-          <span class="iconame">address-book</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-address-card"></i>
-          <span class="iconame">address-card</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-address-card-o"></i>
-          <span class="iconame">address-card-o</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-area-chart"></i>
-          <span class="iconame">area-chart</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-bar-chart"></i>
-          <span class="iconame">bar-chart</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-balance-scale"></i>
-          <span class="iconame">balance-scale</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-battery-0"></i>
-          <span class="iconame">battery-0</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-battery-1"></i>
-          <span class="iconame">battery-1</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-battery-2"></i>
-          <span class="iconame">battery-2</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-battery-3"></i>
-          <span class="iconame">battery-3</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-battery-4"></i>
-          <span class="iconame">battery-4</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-bluetooth"></i>
-          <span class="iconame">bluetooth</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-bug"></i>
-          <span class="iconame">bug</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-building"></i>
-          <span class="iconame">building</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-building-o"></i>
-          <span class="iconame">building-o</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-coffee"></i>
-          <span class="iconame">coffee</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-database"></i>
-          <span class="iconame">database</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-file-code-o"></i>
-          <span class="iconame">file-code-o</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-inbox"></i>
-          <span class="iconame">inbox</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-laptop"></i>
-          <span class="iconame">laptop</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-power-off"></i>
-          <span class="iconame">power-off</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-server"></i>
-          <span class="iconame">server</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <i class="fa fa-tags"></i>
-          <span class="iconame">tags</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <a target="_blank" href="http://fontawesome.dashgame.com/">更多Font Awesome图标</a>
-        </span>
-      </li>
-    </ul>
+        <li>
+          <span>
+            <i class="fa fa-power-off"></i>
+            <span class="iconame">power-off</span>
+          </span>
+        </li>
+        <li>
+          <span>
+            <i class="fa fa-server"></i>
+            <span class="iconame">server</span>
+          </span>
+        </li>
+        <li>
+          <span>
+            <i class="fa fa-tags"></i>
+            <span class="iconame">tags</span>
+          </span>
+        </li>
+        <li>
+          <span>
+            <a target="_blank" href="http://fontawesome.dashgame.com/">更多Font Awesome图标</a>
+          </span>
+        </li>
+      </ul>
     </div>
   </div>
 </template>

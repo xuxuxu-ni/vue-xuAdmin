@@ -1,34 +1,80 @@
 <template>
-  <el-form label-width="80px">
-    <el-form-item label="账号">
-      <el-input v-model="loginForm.name"></el-input>
-    </el-form-item>
-    <el-form-item label="密码" prop="pass">
-      <el-input type="password" v-model="loginForm.pass" auto-complete="off"></el-input>
-    </el-form-item>
-    <el-form-item>
-      <el-button type="primary" @click="onSubmit">登录</el-button>
-    </el-form-item>
-  </el-form>
+  <div>
+    <h3 class="loginTitle">xuAdmin后台管理系统模板</h3>
+    <div class="loginBox">
+      <el-form :model="ruleForm" status-icon label-width="100px" class="demo-ruleForm">
+        <el-form-item>
+          <span class="ico"><i class="fa fa-user fa-lg"></i></span><el-input type="text" v-model="ruleForm.username" auto-complete="off"></el-input>
+        </el-form-item>
+        <el-form-item>
+          <span class="ico"><i class="fa fa-unlock-alt fa-lg"></i></span><el-input type="password" v-model="ruleForm.password" auto-complete="off"></el-input>
+        </el-form-item>
+        <el-form-item>
+          <el-button class="subBtn" type="primary" @click="submitForm">提交</el-button>
+        </el-form-item>
+      </el-form>
+    </div>
+  </div>
 </template>
 <script>
 export default {
   data () {
     return {
-      loginForm: {
-        name: '',
-        pass: ''
+      ruleForm: {
+        username: '',
+        password: ''
       }
     }
   },
   methods: {
-    onSubmit () {
-      this.$store.dispatch('LoginByUsername', this.loginForm).then(() => {
-        this.$router.push({ path: '/' }) // 登录成功之后重定向到首页
-      }).catch(err => {
-        this.$message.error(err) // 登录失败提示错误
-      })
+    submitForm () {
+      if (this.ruleForm.username == '' || this.ruleForm.password == '') {
+        this.$message({
+          showClose: true,
+          message: '账号或密码不能为空',
+          type: 'error'
+        })
+        return false
+      } else {
+        this.$router.push({path: '/'})
+      }
     }
   }
 }
 </script>
+<style lang="scss">
+body{
+  background: #2d3a4b;
+  .loginTitle{
+    margin-top: 230px;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .loginBox{
+    width: 300px;
+    height: 600px;
+    margin: 20px auto;
+    .el-form-item__content{
+      margin-left: 0px !important;
+      .subBtn{
+        width: 100%;
+
+      }
+    }
+    input{
+      padding-left: 50px;
+    }
+    .el-form-item__content .ico{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 999;
+      width: 40px;
+      height: 39px;
+      text-align: center;
+      border-right: 1px solid #ccc;
+    }
+  }
+}
+</style>

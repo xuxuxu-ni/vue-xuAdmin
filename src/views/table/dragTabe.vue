@@ -3,7 +3,7 @@
     <template>
       <el-table
         :data="tableData"
-        style="width: 100%">
+        style="width: 100%;padding-bottom: 3px">
         <el-table-column
           type="index">
         </el-table-column>
@@ -120,9 +120,19 @@ export default {
 
 <style>
   .sortable-ghost{
-    opacity: .8;
+    opacity: .9;
+  }
+  .sortable-ghost td{
+    border-top: 1px dashed #666666 !important;
+    border-bottom: 1px dashed #666666 !important;
     color: #fff!important;
-    background: #56a9ff!important;
+  }
+  .sortable-ghost td:first-child{
+    border-left: 1px dashed #666666 !important;
+  }
+  .sortable-ghost td:last-child{
+    border-right: 1px dashed #666666 !important;
+    border-bottom: 1px dashed #666666 !important;
   }
 </style>
 <style lang="scss">
