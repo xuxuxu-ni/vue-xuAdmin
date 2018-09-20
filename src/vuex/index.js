@@ -1,8 +1,29 @@
 import Vue from 'vue'
-import vuex from 'vuex'
+import Vuex from 'vuex'
+// import app from './modules/app'
+// import errorLog from './modules/errorLog'
+import permission from './permission'
+// import tagsView from './modules/tagsView'
+// import user from './modules/user'
+import getters from './getters'
 
-Vue.use(vuex)
+Vue.use(Vuex)
 
-export default new vuex.Store({
-
+const store = new Vuex.Store({
+  state: {
+    user: {
+      token: ''
+    }
+  },
+  modules: {
+    permission
+  },
+  getters,
+  mutations: {
+    GetInfo () {
+      // 请求用户信息的方法
+    }
+  }
 })
+
+export default store
