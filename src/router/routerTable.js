@@ -1,9 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import CommerViews from '@/views/commerViews.vue'
 import Login from '@/views/login/index.vue'
 import Home from '@/views/Home.vue'
 import HomeMain from '@/views/mainIndex.vue'
 import Icon from '@/views/icon/index'
+import Erji from '@/views/duoji/erji.vue'
+import Erji2 from '@/views/duoji/erji2.vue'
+import Sanji from '@/views/duoji/sanji.vue'
+import Sanji2 from '@/views/duoji/sanji2.vue'
+import Siji from '@/views/duoji/siji.vue'
+import Wuji from '@/views/duoji/wuji.vue'
 import Transfer from '@/views/transfer/transfer.vue'
 import DataTable from '@/views/table/dataTables.vue'
 import FilterTable from '@/views/table/filterTable.vue'
@@ -135,6 +142,80 @@ let routes = [
         name: 'markdown',
         component: Markdown,
         children: []
+      }
+    ]
+  },
+  {
+    path: '/',
+    iconCls: 'fa fa-server',
+    name: '多级目录',
+    component: Home,
+    children: [
+      {
+        path: '/erji',
+        iconCls: 'fa fa-server',
+        name: '二级',
+        component: Erji,
+        children: []
+      },
+      {
+        path: '/erji2',
+        iconCls: 'fa fa-server',
+        name: '二级2',
+        component: Erji2,
+        children: []
+      },
+      {
+        path: '/erji6',
+        iconCls: 'fa fa-server',
+        name: '二级-1',
+        component: CommerViews,
+        children: [
+          {
+            path: '/sanji',
+            iconCls: 'fa fa-server',
+            name: '三级',
+            component: Sanji,
+            children: []
+          },
+          {
+            path: '/sanji1',
+            iconCls: 'fa fa-server',
+            name: '三级1',
+            component: Sanji2,
+            children: []
+          },
+          {
+            path: '/sanji2',
+            iconCls: 'fa fa-server',
+            name: '三级-1',
+            component: CommerViews,
+            children: [
+              {
+                path: '/siji',
+                iconCls: 'fa fa-server',
+                name: '四级',
+                component: Siji,
+                children: []
+              },
+              {
+                path: '/siji1',
+                iconCls: 'fa fa-server',
+                name: '四级-1',
+                component: CommerViews,
+                children: [
+                  {
+                    path: '/wuji',
+                    iconCls: 'fa fa-server',
+                    name: '五级',
+                    component: Wuji,
+                    children: []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

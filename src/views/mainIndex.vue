@@ -74,7 +74,9 @@ export default {
       let that = this
       setTimeout(() => {
         window.onresize = function () {
-          that.$refs.echarts.chart.resize()
+          if (that.$refs.echarts) {
+            that.$refs.echarts.chart.resize()
+          }
         }
       }, 10)
     }

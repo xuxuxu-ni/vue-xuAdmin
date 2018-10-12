@@ -17,7 +17,7 @@
                    :unique-opened= "uniquerouter"
                    :collapse-transition= "true"
           >
-              <template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
+              <template v-for="(item,index) in $store.getters.addRouters" v-if="!item.hidden">
                   <el-submenu v-if="!item.alone && item.children.length>0" :index="index+''">
                       <template slot="title">
                           <i :class="item.iconCls?item.iconCls:[fa,fa-server]"></i>
@@ -141,8 +141,8 @@ export default {
         this.logoShow = true
       }
     },
-    handleOpen(key, keyPath) {
-      console.log(key, keyPath);
+    handleOpen (key, keyPath) {
+      console.log(key, keyPath)
     },
     selectmenu (key, index) {
       console.log(this.$route)
@@ -336,7 +336,6 @@ export default {
     }
   }
   #asideNav{
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     border-right: solid 1px #e6e6e6;

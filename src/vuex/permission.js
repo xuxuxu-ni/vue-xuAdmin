@@ -18,21 +18,24 @@ import routerTable from '@/router/routerTable'
  * @param asyncRouterMap
  * @param roles
  */
-let newarr = []
+
 function filterAsyncRouter (router, permi) {
-  const accessedRouters = router.filter(route => {
-    if (route.children && route.children.length) {
-      debugger
-      filterAsyncRouter(route.children, permi);
-      route.children.push(newarr)
-    } else {
-      let onoff = permi.some(per => route.path === per)
-      debugger
-      return onoff
+  console.log(router, permi)
+  for (let i = 0; i < permi.length; i++) {
+    f(router, permi[i])
+  }
+
+  function f (routers, per) {
+    for (let j = 0; j < routers.length; j++) {
+      if (routers[j].children && router[j].children.length) {
+        f(routers[j].children, per)
+      } else if (routers[j].path === per) {
+        routers.splice(j, 1)
+      }
     }
-  })
-  debugger
-  return accessedRouters
+  }
+  console.log(router)
+  return router
 }
 
 const permission = {
@@ -48,7 +51,6 @@ const permission = {
   },
   actions: {
     GenerateRoutes ({ commit }, data) {
-      debugger
       return new Promise(resolve => {
         const permission = data
         let accessedRouters
@@ -57,9 +59,8 @@ const permission = {
         // } else {
         accessedRouters = filterAsyncRouter(routerTable, permission)
         console.log(accessedRouters)
-        debugger
         // }
-        // commit('SET_ROUTERS', accessedRouters)
+        commit('SET_ROUTERS', accessedRouters)
         resolve()
       })
     }
