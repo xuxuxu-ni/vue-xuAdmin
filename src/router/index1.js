@@ -17,6 +17,7 @@ import FilterTable from '@/views/table/filterTable.vue'
 import DragTabe from '@/views/table/dragTabe.vue'
 import Upload from '@/views/upload/upload.vue'
 import Markdown from '@/views/markdown/markdownView.vue'
+import NotFound from '@/page404.vue'
 
 Vue.use(Router)
 
@@ -36,7 +37,7 @@ export default new Router({
     },
     {
       path: '/404',
-      // component: NotFound,
+      component: NotFound,
       name: '',
       hidden: true,
       children: []

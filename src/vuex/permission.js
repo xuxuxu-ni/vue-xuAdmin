@@ -22,13 +22,13 @@ import routerTable from '@/router/routerTable'
 function filterAsyncRouter (router, permi) {
   console.log(router, permi)
   for (let i = 0; i < permi.length; i++) {
-    f(router, permi[i])
+    eachSelect(router, permi[i])
   }
 
-  function f (routers, per) {
+  function eachSelect (routers, per) {
     for (let j = 0; j < routers.length; j++) {
       if (routers[j].children && router[j].children.length) {
-        f(routers[j].children, per)
+        eachSelect(routers[j].children, per)
       } else if (routers[j].path === per) {
         routers.splice(j, 1)
       }
