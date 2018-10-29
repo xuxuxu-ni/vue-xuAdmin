@@ -17,6 +17,8 @@ import FilterTable from '@/views/table/filterTable.vue'
 import DragTabe from '@/views/table/dragTabe.vue'
 import Upload from '@/views/upload/upload.vue'
 import Markdown from '@/views/markdown/markdownView.vue'
+import NotFound from '@/page404.vue'
+import AddArticle from '@/views/article/addArticle.vue'
 
 Vue.use(Router)
 
@@ -36,7 +38,7 @@ export default new Router({
     },
     {
       path: '/404',
-      // component: NotFound,
+      component: NotFound,
       name: '',
       hidden: true,
       children: []
@@ -53,6 +55,21 @@ export default new Router({
           iconCls: 'fa fa-dashboard', // 图标样式class
           name: '首页',
           component: HomeMain,
+          children: []
+        }
+      ]
+    },
+    {
+      path: '/',
+      iconCls: 'fa fa-paw', // 图标样式class
+      name: '文章管理',
+      component: Home,
+      children: [
+        {
+          path: '/addArticle',
+          iconCls: 'fa fa-meh-o', // 图标样式class
+          name: '发表文章',
+          component: AddArticle,
           children: []
         }
       ]
