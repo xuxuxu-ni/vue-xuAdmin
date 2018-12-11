@@ -1,7 +1,7 @@
 <template>
   <div class="markdownBox">
-    <link rel="stylesheet" href="/static/markdown/css/editormd.min.css">
-    <link rel="stylesheet" href="/static/markdown/css/googleCodePrettifyThemes/previewTheme-xu.css">
+    <link rel="stylesheet" href="./static/markdown/css/editormd.min.css">
+    <link rel="stylesheet" href="./static/markdown/css/googleCodePrettifyThemes/previewTheme-xu.css">
     <div :id="editorId"></div>
   </div>
 </template>
@@ -54,9 +54,9 @@ export default {
     },
     initEditor: function () {
       (async () => {
-        await this.fetchScript('/static/markdown/jquery.min.js')
-        await this.fetchScript('/static/markdown/editormd.min.js')
-        // await this.fetchScript('/static/editor.md/editormd.js');
+        await this.fetchScript('./static/markdown/jquery.min.js')
+        await this.fetchScript('./static/markdown/editormd.min.js')
+        // await this.fetchScript('./static/editor.md/editormd.js');
         this.$nextTick(() => {
           let editor = window.editormd(this.editorId, this.getConfig())
           editor.on('load', () => {

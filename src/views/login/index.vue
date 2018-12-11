@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="login">
     <h3 class="loginTitle">vue-xuadmin权限管理后台模板</h3>
     <div class="loginBox">
       <el-form :model="loginForm" status-icon label-width="100px" class="demo-ruleForm">
@@ -64,13 +64,16 @@ export default {
 }
 </script>
 <style lang="scss">
-body{
+#login{
+  width: 100%;
+  height: 100%;
   background: #2d3a4b;
   .loginTitle{
-    margin-top: 230px;
+    padding-top: 230px;
     font-size: 30px;
     color: #ffffff;
     text-align: center;
+    margin-top: 0px;
   }
   .loginBox{
     width: 300px;

@@ -23,7 +23,7 @@
             </el-dropdown-menu>
           </el-dropdown>
         </li>
-        <li class="icon"><img src="/static/images/icon.jpg"/></li>
+        <li class="icon"><img :src="avatar"/></li>
       </ul>
     </el-header>
     <tabNav></tabNav>
@@ -40,6 +40,7 @@
     data () {
       return {
         isfullScreen: true,
+        avatar: './static/images/icon.jpg'
       }
     },
     methods: {

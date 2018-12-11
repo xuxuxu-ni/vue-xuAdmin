@@ -33,9 +33,9 @@
         <div class="card bbxx">
           <p class="title"><i class="fa fa-server"></i>版本信息</p>
           <div class="table">
-            <p><span class="tit">当前版本</span>v1.0.0 pro</p>
-            <p><span class="tit">基于框架</span>element 2.4.6</p>
-            <p><span class="tit">主要特色</span>单页面 / 响应式 / 清爽 / 极简</p>
+            <p><span class="tit">当前版本</span>v1.0.0</p>
+            <p><span class="tit">基于框架</span>vue2.0全家桶 + element-ui</p>
+            <p><span class="tit">主要特色</span>单页面 / 响应式 / 无限级菜单 / 权限管理 / 极简</p>
             <p><span class="tit">获取渠道</span>
                 <span class="gitbox">
                   <router-link to="https://github.com/"><el-button type="primary" icon="el-icon-download" size="small">github</el-button></router-link>
@@ -193,6 +193,7 @@ export default {
         height: 52px;
         line-height: 52px;
         border: 1px solid #cccccc;
+        overflow: hidden;
         border-#{$top}: none;
         @include flex( null,start);
         &:first-child{
@@ -201,16 +202,17 @@ export default {
         span{
         }
         .tit{
-          width: 100px;
-          min-width: 80px;
+          width: 90px;
+          min-width: 90px;
           height: 100%;
           text-align: center;
           border-#{$right}: 1px solid #cccccc;
-          margin-#{$right}: 30px;
+          margin-#{$right}: 18px;
         }
         span.gitbox{
           flex: 1;
           height: 100%;
+          overflow: hidden;
           @include flex(row,start);
           a{
             &:first-child{

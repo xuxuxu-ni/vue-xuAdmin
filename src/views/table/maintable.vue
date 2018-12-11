@@ -20,12 +20,11 @@
         <el-table-column
           prop="status"
           label="订单状态"
-          width="180">
+          width="130">
         </el-table-column>
         <el-table-column
           prop="amount"
-          label="金额"
-          width="180">
+          label="金额">
         </el-table-column>
         <el-table-column
           prop="date"
@@ -38,7 +37,7 @@
         <el-table-column
           prop="tag"
           label="订单分类"
-          width="180"
+          width="150"
           :filters="[{ text: '虚拟', value: '虚拟' }, { text: '实物', value: '实物' }]"
           :filter-method="filterTag"
           filter-placement="bottom-end">

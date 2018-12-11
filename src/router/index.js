@@ -1,27 +1,29 @@
 import en from '../i18n/lang/en'
 import Vue from 'vue'
 import Router from 'vue-router'
-import CommerViews from '@/views/commerViews.vue'
-import Login from '@/views/login/index.vue'
-import Layout from '@/views/layout/layout.vue'
-import HomeMain from '@/views/index/mainIndex.vue'
-import Icon from '@/views/icon/index'
-import Erji from '@/views/duoji/erji.vue'
-import Erji2 from '@/views/duoji/erji2.vue'
-import Sanji from '@/views/duoji/sanji.vue'
-import Sanji2 from '@/views/duoji/sanji2.vue'
-import Siji from '@/views/duoji/siji.vue'
-import Wuji from '@/views/duoji/wuji.vue'
-import Transfer from '@/views/transfer/transfer.vue'
-import DataTable from '@/views/table/dataTables.vue'
-import FilterTable from '@/views/table/filterTable.vue'
-import DragTable from '@/views/table/dragTabe.vue'
-import Upload from '@/views/upload/upload.vue'
-import Markdown from '@/views/markdown/markdownView.vue'
-import NotFound from '@/page404.vue'
-import AddArticle from '@/views/article/addArticle.vue'
-import NavClassify from '@/views/syssetting/navClassify.vue'
-import Permissions from '@/views/permissions/permissions.vue'
+import CommerViews from '@/views/commerViews'
+import Login from '@/views/login/index'
+import Layout from '@/views/layout/layout'
+import HomeMain from '@/views/index/mainIndex'
+
+// 不是必须加载的组件使用懒加载
+const Icon = () => import('@/views/icon/index')
+const Erji = () => import('@/views/duoji/erji')
+const Erji2 = () => import('@/views/duoji/erji2')
+const Sanji = () => import('@/views/duoji/sanji')
+const Sanji2 = () => import('@/views/duoji/sanji2')
+const Siji = () => import('@/views/duoji/siji')
+const Wuji = () => import('@/views/duoji/wuji')
+const Transfer = () => import('@/views/transfer/transfer')
+const DataTable = () => import('@/views/table/dataTables')
+const FilterTable = () => import('@/views/table/filterTable')
+const DragTable = () => import('@/views/table/dragTabe')
+const Upload = () => import('@/views/upload/upload')
+const Markdown = () => import('@/views/markdown/markdownView')
+const NotFound = () => import('@/page404')
+const AddArticle = () => import('@/views/article/addArticle')
+const NavClassify = () => import('@/views/syssetting/navClassify')
+const Permissions = () => import('@/views/permissions/permissions')
 
 Vue.use(Router)
 let routeNmae = en.routeNmae

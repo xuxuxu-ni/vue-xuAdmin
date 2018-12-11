@@ -1,7 +1,7 @@
 const defaultConfig = {
   width: '100%',
   height: 600,
-  path: '/static/markdown/lib/',
+  path: './static/markdown/lib/',
   // theme: 'dark',
   previewTheme: 'default',
   editorTheme: 'pastel-on-dark',

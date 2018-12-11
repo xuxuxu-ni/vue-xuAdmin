@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="loyout">
     <el-container>
       <layoutAside></layoutAside>
       <el-container>
@@ -21,7 +21,7 @@
 <script>
   import layoutAside from './aside/aside'
   import layoutHeader from './header/header'
-  import Bottom from '../../components/Footer/bottom'
+  import Bottom from './Footer/bottom'
   import langSelect from '../../components/lang/langSelect'
 
   export default {
@@ -94,7 +94,7 @@
     cursor: pointer;
   }
 
-  html, body, #app, .el-container, #asideNav, ul.el-menu {
+  html, body, #loyout, .el-container, #asideNav, ul.el-menu {
     @extend %h100;
   }
 

@@ -10,13 +10,4 @@ export default function fig () {
     debugger
     console.log(data)
   })
-
-  figlet(inputText, 'Standard', function(err, text) {
-    if (err) {
-      console.log('something went wrong...');
-      console.dir(err);
-      return;
-    }
-    console.log(text);
-  });
 }
