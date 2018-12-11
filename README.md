@@ -1,6 +1,6 @@
-# xuadmin
+# vue-xuadmin
 
-> xuadmin
+> vue-xuadmin
 
 ## Build Setup
 

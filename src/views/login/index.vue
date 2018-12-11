@@ -1,16 +1,16 @@
 <template>
   <div>
-    <h3 class="loginTitle">xuAdmin后台管理系统模板</h3>
+    <h3 class="loginTitle">vue-xuadmin权限管理后台模板</h3>
     <div class="loginBox">
-      <el-form :model="ruleForm" status-icon label-width="100px" class="demo-ruleForm">
+      <el-form :model="loginForm" status-icon label-width="100px" class="demo-ruleForm">
         <el-form-item>
-          <span class="ico"><i class="fa fa-user fa-lg"></i></span><el-input type="text" v-model="ruleForm.username" auto-complete="off"></el-input>
+          <span class="ico"><i class="fa fa-user fa-lg"></i></span><el-input type="text" v-model="loginForm.username" auto-complete="off"></el-input>
         </el-form-item>
         <el-form-item>
-          <span class="ico"><i class="fa fa-unlock-alt fa-lg"></i></span><el-input type="password" v-model="ruleForm.password" auto-complete="off"></el-input>
+          <span class="ico"><i class="fa fa-unlock-alt fa-lg"></i></span><el-input type="password" v-model="loginForm.password" auto-complete="off"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button class="subBtn" type="primary" @click="submitForm">提交</el-button>
+          <el-button class="subBtn" type="primary" @click="submitForm">登录</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -20,15 +20,16 @@
 export default {
   data () {
     return {
-      ruleForm: {
-        username: '',
-        password: ''
+      loginForm: {
+        username: 'vue-xuadmin',
+        password: '123456'
       }
     }
   },
   methods: {
     submitForm () {
-      if (this.ruleForm.username == '' || this.ruleForm.password == '') {
+      let that = this
+      if (this.loginForm.username === '' || this.loginForm.password === '') {
         this.$message({
           showClose: true,
           message: '账号或密码不能为空',
@@ -36,9 +37,29 @@ export default {
         })
         return false
       } else {
-        this.$router.push({path: '/'})
+        // 将 username 设置为 token 存储在 store，仅为测试效果，实际存储 token 以请求后台返回为准
+        that.$store.dispatch('setToken', that.loginForm.username).then(() => {
+          that.$router.push({path: '/'})
+        }).catch(res => {
+          that.$message({
+            showClose: true,
+            message: res,
+            type: 'error'
+          })
+        })
       }
-    }
+    },
+    message() {
+      const h = this.$createElement;
+      this.$notify({
+        title: '账号密码',
+        message: h('i', { style: 'color: teal'}, '账号密码可以随意填写，为了测试效果填写的账号将会被存储为临时假 token'),
+        duration: 6000
+      });
+    },
+  },
+  mounted() {
+    this.message()
   }
 }
 </script>

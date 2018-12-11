@@ -55,7 +55,6 @@
         </el-table-column>
       </el-table>
     </template>
-    <p class="dragtabe">依赖模块<a target="_blank" href="https://github.com/RubaXa/Sortable">Sortable</a> </p>
   </div>
 </template>
 

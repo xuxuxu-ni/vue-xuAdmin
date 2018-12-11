@@ -93,7 +93,7 @@ export default {
 
 <style scoped>
   h3{
-    margin: 55px 0 20px;
+    margin: 25px 0 20px;
     font-weight: 400;
     color: #1f2f3d;
     font-size: 22px;

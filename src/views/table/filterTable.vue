@@ -85,9 +85,19 @@ export default {
   methods: {
     handleEdit (index, row) {
       console.log(index, row)
+      this.$message({
+        showClose: true,
+        message: index, row,
+        type: 'success'
+      })
     },
     handleDelete (index, row) {
       console.log(index, row)
+      this.$message({
+        showClose: true,
+        message: index, row,
+        type: 'success'
+      })
     },
     filterHandler (value, row, column) {
       const property = column['property']

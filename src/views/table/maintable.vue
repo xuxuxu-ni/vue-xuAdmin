@@ -2,13 +2,14 @@
     <div>
       <p class="title"><i class="el-icon-tickets"></i>最新10条等待处理订单</p>
       <el-table
+        border
         :data="tableData"
         style="width: 100%">
         <el-table-column
-          type="index"
-          :index="indexMethod">
+          type="index">
         </el-table-column>
         <el-table-column
+          sortable
           prop="odd"
           label="订单号">
         </el-table-column>
@@ -143,9 +144,19 @@ export default {
   methods: {
     handleEdit (index, row) {
       console.log(index, row)
+      this.$message({
+        showClose: true,
+        message: index, row,
+        type: 'success'
+      })
     },
     handleDelete (index, row) {
       console.log(index, row)
+      this.$message({
+        showClose: true,
+        message: index, row,
+        type: 'success'
+      })
     },
     formatter (row, column) {
       return row.address
@@ -156,9 +167,6 @@ export default {
     filterHandler (value, row, column) {
       const property = column['property']
       return row[property] === value
-    },
-    indexMethod (index) {
-      return index * 2
     }
   }
 }
