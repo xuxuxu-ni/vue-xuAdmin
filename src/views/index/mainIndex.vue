@@ -3,16 +3,16 @@
     <el-row :gutter="20">
       <el-col :span="8">
         <div class="card kjfs">
-          <p class="title"><i class="fa fa-th-large fa-lg"></i>快捷方式1</p>
+          <p class="title"><i class="fa fa-th-large fa-lg"></i>快捷方式</p>
           <ul>
-            <li><router-link to="#" class="kjfs kjfs-bluee"><span><i class="fa fa-hand-o-up fa-2x"></i></span><span>新闻</span></router-link></li>
-            <li><router-link to="#" class="kjfs kjfs-pinkk"><span><i class="fa fa-hand-o-up fa-2x"></i></span><span>新闻</span></router-link></li>
-            <li><router-link to="#" class="kjfs kjfs-yelloww"><span><i class="fa fa-hand-o-up fa-2x"></i></span><span>新闻</span></router-link></li>
+            <li><router-link to="/addArticle" class="kjfs kjfs-bluee"><span><i class="el-icon-tickets fa-2x"></i></span><span>发表文章</span></router-link></li>
+            <li><router-link to="/dragTabe" class="kjfs kjfs-pinkk"><span><i class="fa fa-hand-stop-o fa-2x"></i></span><span>拖拽排序</span></router-link></li>
+            <li><router-link to="/permissions" class="kjfs kjfs-yelloww"><span><i class="fa fa-universal-access fa-2x"></i></span><span>权限测试</span></router-link></li>
           </ul>
           <ul>
-            <li><router-link to="#" class="kjfs kjfs-grennn"><span><i class="fa fa-hand-o-up fa-2x"></i></span><span>新闻</span></router-link></li>
-            <li><router-link to="#" class="kjfs kjfs-purplee"><span><i class="fa fa-hand-o-up fa-2x"></i></span><span>新闻</span></router-link></li>
-            <li><router-link to="#" class="kjfs kjfs-lightBluee"><span><i class="fa fa-hand-o-up fa-2x"></i></span><span>新闻</span></router-link></li>
+            <li><router-link to="/upload" class="kjfs kjfs-grennn"><span><i class="fa fa-cloud-upload fa-2x"></i></span><span>文件上传</span></router-link></li>
+            <li><router-link to="/navClassifies" class="kjfs kjfs-purplee"><span><i class="fa el-icon-menu fa-2x"></i></span><span>前台菜单</span></router-link></li>
+            <li><router-link to="/markdown" class="kjfs kjfs-lightBluee"><span><i class="fa fa-file-code-o fa-2x"></i></span><span>编辑器</span></router-link></li>
           </ul>
         </div>
       </el-col>
