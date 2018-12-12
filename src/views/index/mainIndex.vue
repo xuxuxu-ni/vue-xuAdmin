@@ -38,8 +38,8 @@
             <p><span class="tit">主要特色</span>单页面 / 响应式 / 无限级菜单 / 权限管理 / 极简</p>
             <p><span class="tit">获取渠道</span>
                 <span class="gitbox">
-                  <router-link to="https://github.com/"><el-button type="primary" icon="el-icon-download" size="small">github</el-button></router-link>
-                  <router-link to="https://github.com/"><el-button type="primary" icon="el-icon-download" size="small">码云</el-button></router-link>
+                  <a target="_blank" href="https://github.com/Nirongxu/vue-xuAdmin.git"><el-button type="primary" icon="el-icon-download" size="small">github</el-button></a>
+                  <a target="_blank" href="https://gitee.com/nirongxu/xu-webplatform.git"><el-button type="primary" icon="el-icon-download" size="small">码云</el-button></a>
                 </span>
             </p>
           </div>
