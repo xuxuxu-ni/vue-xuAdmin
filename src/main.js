@@ -32,6 +32,15 @@ router.beforeEach((to, from, next) => {
           next()
         }()
       } else {
+        let is404 = to.matched.some(record => {
+          if(record.meta.role){
+            return record.meta.role.indexOf(store.getters.info.role) === -1
+          }
+        })
+        if(is404){
+          next({path: '/404'})
+          return false
+        }
         next()
       }
     }

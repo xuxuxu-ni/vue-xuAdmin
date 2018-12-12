@@ -18,10 +18,10 @@
     name: 'permissions',
     data () {
       return {
-        permissions: 'superAdmin',
+        permissions: this.$store.getters.info.role,
         options: {
-          role: 'superAdmin',
-          permissions: '超级管理员'
+          role: this.$store.getters.info.role,
+          permissions: this.$store.getters.info.permissions,
         }
       };
     },
@@ -50,6 +50,8 @@
             }
         }
         this.$store.dispatch('setRole', this.options)
+
+        //  刷新 tabnav, 不是必须代码 权限管理测试需要，正式开发可以删除
         this.$store.dispatch('removeOtherTab', {tabItem: {
             title: 'control',
             path: '/permissions'

@@ -44,8 +44,13 @@
     components: {
       menuTree,
     },
+    watch: {
+      '$route.path': function (val) {
+        this.selectmenu(val)
+      }
+    },
     methods: {
-      selectmenu (key, index) {
+      selectmenu (key) {
         let router = this.$store.getters.routers
         let name = ''
         let navTitle = function (path, routerARR) {
