@@ -13,6 +13,7 @@ vue-xuAdmin是基于vue2.0全家桶 + element-ui 开发的一个后台模板，�
 - node.js v8.0+
 - webpack v3
 - git
+
 -技术栈
 - ES6+
 - vue v2.5+
