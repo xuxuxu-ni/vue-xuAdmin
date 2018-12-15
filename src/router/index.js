@@ -23,7 +23,8 @@ const Markdown = () => import('@/views/markdown/markdownView')
 const NotFound = () => import('@/page404')
 const AddArticle = () => import('@/views/article/addArticle')
 const NavClassify = () => import('@/views/syssetting/navClassify')
-const Permissions = () => import('@/views/permissions/permissions')
+const pagePermissions = () => import('@/views/permissions/pagePermissions')
+const btnPermissions = () => import('@/views/permissions/btnPermissions')
 
 Vue.use(Router)
 let routeNmae = en.routeNmae
@@ -118,10 +119,17 @@ let addRouter = [
     component: Layout,
     children: [
       {
-        path: '/permissions',
+        path: '/pagePermissions',
         iconCls: 'fa fa-expeditedssl', // 图标样式class
-        name: routeNmae.control,
-        component: Permissions,
+        name: routeNmae.pageControl,
+        component: pagePermissions,
+        children: []
+      },
+      {
+        path: '/btnPermissions',
+        iconCls: 'fa fa-toggle-on', // 图标样式class
+        name: routeNmae.btnControl,
+        component: btnPermissions,
         children: []
       }
     ]

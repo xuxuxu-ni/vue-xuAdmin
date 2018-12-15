@@ -31,6 +31,7 @@
 </template>
 
 <script>
+  import Cookies from 'js-cookie'
   import langSelect from '../../../components/lang/langSelect'
   import tabNav from './tabNav'
 
@@ -74,17 +75,10 @@
         }
       },
       handleCommand (command) {
-        let that = this
         if (command === 'logout') {
-          this.$store.dispatch('setToken', '').then(() => {
-            location.reload()
-          }).catch(res => {
-            that.$message({
-              showClose: true,
-              message: res,
-              type: 'error'
-            })
-          })
+          Cookies.remove('token');
+          location.reload()
+
         }
       }
     }

@@ -26,11 +26,6 @@
 
   export default {
     name: 'dc-home',
-    data () {
-      return {
-        visiblee: this.$store.getters.visible,
-      }
-    },
     components: {
       layoutHeader,
       Bottom,

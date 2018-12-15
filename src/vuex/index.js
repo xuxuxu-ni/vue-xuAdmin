@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import Cookies from 'js-cookie'
 import routerData from './modules/routerData'
 import role from './modules/role'
 import layout from './modules/layout/index'
@@ -8,13 +9,12 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    user: {
-      token: ''
-    }
+    token: Cookies.get('token')
   },
   mutations: {
     setToken (state, token) {
-      state.user.token = token
+      state.token = token
+      Cookies.set('token', token);
     }
   },
   actions: {
@@ -28,7 +28,7 @@ const store = new Vuex.Store({
   },
   getters: {
     addRouters: state => state.routerData.addRouters,
-    token: state => state.user.token,
+    token: state => state.token,
     info: state => state.role.info,
     routers: state => state.routerData.routers,
     logoShow: state => state.layout.logoShow,

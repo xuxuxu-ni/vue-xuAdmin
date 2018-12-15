@@ -1,6 +1,6 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
+import Vue from './btnPermission'
 import ElementUI from 'element-ui'
 
 import 'element-ui/lib/theme-chalk/index.css'
@@ -17,6 +17,7 @@ Vue.use(ElementUI)
 //  获取角色信息，根据用户权限动态加载路由
 router.beforeEach((to, from, next) => {
   console.log(store.getters.token)
+  // debugger
 
   if (store.getters.token) {
     if (to.path === '/login') {
@@ -29,7 +30,7 @@ router.beforeEach((to, from, next) => {
           await store.dispatch('newRoutes', store.getters.info.role)
           console.log(store.getters.addRouters)
           await router.addRoutes(store.getters.addRouters)
-          next()
+          next({path: '/index'})
         }()
       } else {
         let is404 = to.matched.some(record => {
