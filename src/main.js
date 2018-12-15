@@ -20,6 +20,7 @@ router.beforeEach((to, from, next) => {
   // debugger
 
   if (store.getters.token) {
+    store.dispatch('setToken', store.getters.token)
     if (to.path === '/login') {
       next({path: '/'})
     } else {
