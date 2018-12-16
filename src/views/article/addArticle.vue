@@ -17,7 +17,7 @@
         <el-switch v-model="article.top"></el-switch>
       </el-form-item>
     </el-form>
-    <markdown :onchange="change"></markdown>
+    <Markdown :onchange="change" v-bind:initData="initData"></Markdown>
     <el-row type="flex" class="row-bg" justify="end">
       <el-button class="subBtn" type="primary" @click="submitArticle">发布</el-button>
     </el-row>
@@ -36,6 +36,10 @@ export default {
         top: false,
         content: {}
       },
+      initData: '# vue-xuAdmin\n' +
+        '## 初\n' +
+        '### 始\n' +
+        '#### 值',
       restaurants: []
     }
   },

@@ -52,6 +52,10 @@ export default {
     getConfig: function () {
       return {...defaultConfig, ...this.config }
     },
+    setMarkdown: function (val) {
+      let editor = window.editormd(this.editorId, this.getConfig())
+      editor.setMarkdown(val)
+    },
     initEditor: function () {
       (async () => {
         await this.fetchScript('./static/markdown/jquery.min.js')

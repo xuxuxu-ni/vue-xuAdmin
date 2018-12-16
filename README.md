@@ -2,7 +2,8 @@
 
 项目预览地址：https://nirongxu.github.io/vue-xuAdmin/dist/
 
-vue-xuAdmin是基于vue2.0全家桶 + element-ui 开发的一个后台模板，实现了无限级菜单，为了做到彻底的前后端分离，页面级别的权限验证和动态路由表的存储校验，也都由前端完成，这样前端新建页面或者删除页面都不需要告诉后台去增加删除路由表
+vue-xuAdmin是基于vue2.0全家桶 + element-ui 开发的一个后台模板，实现了无限级菜单，页面、按钮级别的权限管理，为了减少前后端的沟通成本，页面、按钮级别的权限验证和动态路由表的存储校验，也都由前端完成，这样前端新建页面或者删除页面都不需要告诉后台去增加删除路由表
+
 ![enter description here](https://i.loli.net/2018/12/12/5c102baf4f986.jpg)
 ![enter description here](https://i.loli.net/2018/12/12/5c10a2f90e38a.jpg)
 
@@ -29,7 +30,7 @@ vue-xuAdmin是基于vue2.0全家桶 + element-ui 开发的一个后台模板，�
 + 基于token
 	- 状态拦截、404页面
 	- 动态加载路由
-	- 权限管理
+	- 页面、按钮指令权限管理
 	- 无限级菜单
 - 封装vue-i18n@8.x国际化组件
 - 系统全屏化
@@ -55,6 +56,7 @@ git clone https://github.com/Nirongxu/vue-xuAdmin.git
 npm install
 
 # 启动项目 (已经配置好启动服务自动打开浏览器，如果没自动打开按照控制台输出的地址自己打开)
+# 如果eslint语法检查报错，直接关掉eslint语法检查
 npm run dev
 
 # 启动单元测试
@@ -63,10 +65,16 @@ npm run unit
 # 启动端到端测试
  npm run e2e
 
-
 # 启动编译打包生产环境
  npm run build
 ```
+
+### 4.2使用
+在开发和使用之前请务必阅读 `vue-xuAdmin`的使用介绍，详细介绍了框架的开发和使用教程
+- [Vue2.0 + ElementUI 手写权限管理系统后台模板（一）——简述](https://juejin.im/post/5c15332be51d4513ea6ed291)
+- [Vue2.0 + ElementUI 手写权限管理系统后台模板（二）——权限管理](https://juejin.im/post/5c1552a65188250850604bb0)
+- [Vue2.0 + ElementUI 手写权限管理系统后台模板（三）——页面搭建](https://juejin.im/post/5c156ae16fb9a049e660250c)
+- [Vue2.0 + ElementUI 手写权限管理系统后台模板（四）——组件结尾](https://juejin.im/post/5c1605e76fb9a049b41c5cb0)
 
 ## 5. 项目结构说明
 ```

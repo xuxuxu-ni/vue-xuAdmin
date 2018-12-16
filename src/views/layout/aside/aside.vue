@@ -45,6 +45,7 @@
       menuTree,
     },
     watch: {
+      // 监听浏览器直接输入路由，将此路由添加到tabnavBox
       '$route.path': function (val) {
         this.selectmenu(val)
       }

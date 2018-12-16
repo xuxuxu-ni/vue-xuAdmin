@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="tabnavBox" ref="tabnavbox">
+    <div class="tabnavBox">
       <transition-group name="list" tag="ul">
         <li v-for="(item, index) in $store.getters.tabnavBox" @contextmenu.prevent="openMenu(item,$event,index)"
             :key="item.title" class="tabnav" :class="{ active: $route.path === item.path }">

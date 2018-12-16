@@ -7,9 +7,8 @@ const routerData = {
   },
   mutations: {
     setRouters: (state, routers) => {
-      //  保存动态路由用来addRouter 和 所有有权限的路由表，用来生成菜单列表
-      state.addRouters = routers
-      state.routers = defaultRouter.concat(routers)
+      state.addRouters = routers  // 保存动态路由用来addRouter
+      state.routers = defaultRouter.concat(routers) // 所有有权限的路由表，用来生成菜单列表
     }
   },
   actions: {
@@ -26,8 +25,6 @@ const routerData = {
           }
         }
       }
-
-
       // 拷贝这个数组是因为做权限测试的时候可以从低级切回到高级角色，仅限演示，正式开发时省略这步直接使用 addRouter
       // 仅限演示
       let newArr = [...addRouter]
@@ -37,8 +34,6 @@ const routerData = {
       // 正式开发
       // eachSelect(addRouter, role)
       // commit('setRouters', addRouter)
-
-
     }
   }
 }

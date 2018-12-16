@@ -23,7 +23,6 @@ const store = new Vuex.Store({
         commit('setToken', token)
         resolve()
       })
-
     }
   },
   getters: {

@@ -5,7 +5,7 @@
     <p>没权限按钮：<el-button type="primary" plain size="medium">查看</el-button></p>
     <p>需要 ["管理员"]：<el-button type="primary" plain size="medium" v-role-btn="['admin']">添加</el-button></p>
     <p>需要 ["超级管理员"]：<el-button type="danger" plain size="medium" v-role-btn="['superAdmin']">删除</el-button></p>
-    <p>需要 ["超级管理员", "管理员"]：<el-button type="primary" plain size="medium" v-role-btn="['superAdmin','admin']">修改</el-button></p></p>
+    <p>需要 ["超级管理员", "管理员"]：<el-button type="primary" plain size="medium" v-role-btn="['superAdmin','admin']">修改</el-button></p>
   </div>
 </template>
 
