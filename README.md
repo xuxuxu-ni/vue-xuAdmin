@@ -6,8 +6,8 @@ vue-xuAdmin是基于vue2.0全家桶 + element-ui 开发的一个后台模板，�
 
 ![enter description here](https://i.loli.net/2018/12/12/5c102baf4f986.jpg)
 ![enter description here](https://i.loli.net/2018/12/12/5c10a2f90e38a.jpg)
-
-![enter description here](https://i.loli.net/2018/12/12/5c102aefebb51.jpg)
+![enter description here](https://i.loli.net/2018/12/16/5c153f4998458.jpg)
+![enter description here](https://i.loli.net/2018/12/16/5c153fe516daf.jpg)
 ![enter description here](https://i.loli.net/2018/12/12/5c102c115c130.jpg)
 ## 2. 准备工作
 -开发环境
