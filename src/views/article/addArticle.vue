@@ -26,6 +26,7 @@
 
 <script>
 import Markdown from '../../components/markdown/markdown-editor'
+import initData from '../../markData.js'
 export default {
   name: 'addArticle',
   data () {
@@ -36,10 +37,7 @@ export default {
         top: false,
         content: {}
       },
-      initData: '# vue-xuAdmin\n' +
-        '## 初\n' +
-        '### 始\n' +
-        '#### 值',
+      initData: initData,
       restaurants: []
     }
   },
