@@ -175,7 +175,8 @@ let initData = '# vue-xuAdmin 初始值\n' +
   '         {1+\\cdots} }\n' +
   '        } \n' +
   '    }\n' +
-  '```### 绘制流程图 Flowchart\n' +
+  '```' +
+  '\n### 绘制流程图 Flowchart\n' +
   '\n' +
   '```flow\n' +
   'st=>start: 用户登陆\n' +
