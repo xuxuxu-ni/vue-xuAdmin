@@ -133,9 +133,10 @@ export default {
           padding-#{$bottom}: 20px;
           @include flex(column);
           span{
-            margin: 10px;
+            height: 44px;
           }
           .num{
+            line-height: 44px;
             font-size: 42px;
             color: $bluee;
             margin: 0px;
@@ -188,7 +189,7 @@ export default {
       }
     }
     .table{
-      padding: 20px;
+      padding: 21px;
       p{
         height: 52px;
         line-height: 52px;
