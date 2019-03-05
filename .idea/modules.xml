@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/xu-admin.iml" filepath="$PROJECT_DIR$/.idea/xu-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vue-xuadmin.iml" filepath="$PROJECT_DIR$/.idea/vue-xuadmin.iml" />
     </modules>
   </component>
 </project>
