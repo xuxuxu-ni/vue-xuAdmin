@@ -6,7 +6,8 @@
 
 vue-xuAdmin是基于vue2.0全家桶 + element-ui 开发的一个后台模板，实现了无限级菜单，页面、按钮级别的权限管理，为了减少前后端的沟通成本，页面、按钮级别的权限验证和动态路由表的存储校验，也都由前端完成，这样前端新建页面或者删除页面都不需要告诉后台去增加删除路由表
 
-![enter description here](https://i.loli.net/2018/12/12/5c102baf4f986.jpg)
+![enter description here](https://www.github.com/Nirongxu/xiaoshujiang/raw/master/1552796499128.png)
+![enter description here](https://www.github.com/Nirongxu/xiaoshujiang/raw/master/1552796567032.png)
 ![enter description here](https://i.loli.net/2018/12/12/5c10a2f90e38a.jpg)
 ![enter description here](https://i.loli.net/2018/12/16/5c153f4998458.jpg)
 ![enter description here](https://i.loli.net/2018/12/16/5c153fe516daf.jpg)
