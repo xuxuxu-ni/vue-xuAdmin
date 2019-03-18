@@ -19,9 +19,11 @@ const DataTable = () => import('@/views/table/dataTables')
 const FilterTable = () => import('@/views/table/filterTable')
 const DragTable = () => import('@/views/table/dragTabe')
 const Upload = () => import('@/views/upload/upload')
-const Markdown = () => import('@/views/markdown/markdownView')
+const Markdown = () => import('@/views/editor/markdownView')
+const WangeditorView = () => import('@/views/editor/wangeditorView')
 const NotFound = () => import('@/page404')
 const AddArticle = () => import('@/views/article/addArticle')
+const AddArticleEditor = () => import('@/views/article/addArticleEditor')
 const NavClassify = () => import('@/views/syssetting/navClassify')
 const pagePermissions = () => import('@/views/permissions/pagePermissions')
 const btnPermissions = () => import('@/views/permissions/btnPermissions')
@@ -78,6 +80,13 @@ let addRouter = [
         iconCls: 'el-icon-edit-outline', // 图标样式class
         name: routeNmae.publishArticle,
         component: AddArticle,
+        children: []
+      },
+      {
+        path: '/addArticleEditor',
+        iconCls: 'el-icon-edit-outline', // 图标样式class
+        name: routeNmae.publishArticleEditor,
+        component: AddArticleEditor,
         children: []
       }
     ]
@@ -266,6 +275,13 @@ let addRouter = [
         iconCls: 'fa fa-file-code-o', // 图标样式class
         name: routeNmae.markdown,
         component: Markdown,
+        children: []
+      },
+      {
+        path: '/wangeditor',
+        iconCls: 'fa fa-file-code-o', // 图标样式class
+        name: routeNmae.wangeditor,
+        component: WangeditorView,
         children: []
       }
     ]
