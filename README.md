@@ -1,3 +1,48 @@
+<h1 align="center">Welcome to vue-xuadmin 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/node-%3E%3D%206.0.0-blue.svg" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D%203.0.0-blue.svg" />
+  <a href="https://github.com/Nirongxu/vue-xuAdmin/blob/master/README.md">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/Nirongxu/vue-xuAdmin/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+  </a>
+</p>
+
+> vue + element-ui 无限级菜单 权限管理 后台模板 
+
+### 🏠 [Homepage](https://nirongxu.github.io/vue-xuAdmin/dist/)
+## Author
+
+👤 **NiRongxu**
+
+* Github: [@NiRongxu](https://github.com/NiRongxu)
+
+## Prerequisites
+
+- node >= 6.0.0
+- npm >= 3.0.0
+
+## Install
+
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+npm run dev
+```
+
+## Run tests
+
+```sh
+npm run test
+```
+
 ## 小提示
 > 这个框架权限是由前端控制的,如果不需要这个模式,可以看我另外一个全栈CMS项目,后台使用的是node框架egg.js+mysql,那个的权限是由后台返回有权限的路由,前端拿到路由后和前端路由表做筛选,得出最终的路由表生成菜单,好处是角色和角色所拥有的权限路由是动态的后台可随时编辑配置的,两种模式按需使用
 ![](https://i.loli.net/2019/06/27/5d143742c27c944341.png)
@@ -154,3 +199,19 @@ npm run unit
 ```
 ## 结语
 如果这个框架对你有帮助的话，请给个星点个star
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Nirongxu/vue-xuAdmin/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2019 [NiRongxu](https://github.com/NiRongxu).<br />
+This project is [MIT](https://github.com/Nirongxu/vue-xuAdmin/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
