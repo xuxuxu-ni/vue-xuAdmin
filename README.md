@@ -19,6 +19,9 @@
 👤 **NiRongxu**
 
 * Github: [@NiRongxu](https://github.com/NiRongxu)
+* QQ: 595485548
+* email: 595485548@qq.com
+
 
 ## Prerequisites
 
