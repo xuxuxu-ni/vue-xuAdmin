@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a9835fd-ab8f-45b0-854d-0e4a3f0246d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/css/app.c9ac944aa47ab861ea9e1a592945e7d9.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/0.a0770adcec9fb1c7f373.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/1.2228238d84d5236a8720.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/1.2228238d84d5236a8720.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/10.90a682b9a86bf57c5e08.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/10.90a682b9a86bf57c5e08.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/11.f818f6bd6a44ad0a701d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/11.f818f6bd6a44ad0a701d.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/12.fae98b270aa8d49cc7b3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/12.fae98b270aa8d49cc7b3.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/13.0c44804c4eff77f70797.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/13.0c44804c4eff77f70797.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/14.47a9617f9343569a290b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/14.47a9617f9343569a290b.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/15.5da0581bd5c97c03d678.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/16.704e617262c7e393d786.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/16.704e617262c7e393d786.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/17.1fb492c4ab90282f9c79.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/17.1fb492c4ab90282f9c79.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/18.b071378670f4087d8b40.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/18.b071378670f4087d8b40.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/19.68611539e52cac367bac.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/19.68611539e52cac367bac.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/2.9a8b27b93657af6decfe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/2.9a8b27b93657af6decfe.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/4.d7e0897bdb9bbb2a27da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/4.d7e0897bdb9bbb2a27da.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/5.74c336a88840142e3649.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/6.251a41f91926e87ea774.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/6.251a41f91926e87ea774.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/7.82e8975c6e742db31d91.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/7.82e8975c6e742db31d91.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/8.b72111c921bd0f8908b3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/8.b72111c921bd0f8908b3.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/9.72499b4877a7530b979a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/9.72499b4877a7530b979a.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/app.c18387d0c5ea119cfe04.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/app.c18387d0c5ea119cfe04.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/js/manifest.b14a6c36bb1f29714483.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/app.adbe5cb863868e0162107cfc32eed0db.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/css/app.c9ac944aa47ab861ea9e1a592945e7d9.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/app.adbe5cb863868e0162107cfc32eed0db.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/img/iconfont.ba161ba.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/img/iconfont.dd8285f.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/0.03d8d50ae05c74d6d449.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/0.a0770adcec9fb1c7f373.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/0.03d8d50ae05c74d6d449.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/1.3bde148a807a2470ecb6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/1.3bde148a807a2470ecb6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/10.c1d651c55171dbf04cdf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/10.c1d651c55171dbf04cdf.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/11.d514b28177d9dbf4dd16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/11.d514b28177d9dbf4dd16.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/12.4032c1e7efc3717b8a56.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/12.4032c1e7efc3717b8a56.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/13.c64dc75e7ed1687aa272.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/13.c64dc75e7ed1687aa272.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/14.8440e8b78b84a0c3e3d4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/14.8440e8b78b84a0c3e3d4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/15.b9147e5b11e518ecdc09.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/15.5da0581bd5c97c03d678.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/15.b9147e5b11e518ecdc09.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/16.13b9d15950458444b1b4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/16.13b9d15950458444b1b4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/17.1851caba4cdfebcf6ae6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/17.1851caba4cdfebcf6ae6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/18.5835c5330d16805a21bf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/18.5835c5330d16805a21bf.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/19.7c5ddd90935ef311643c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/19.7c5ddd90935ef311643c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/2.d83ebec68528193dd871.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/2.d83ebec68528193dd871.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/3.ba8330e2bd738c464440.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/3.ba8330e2bd738c464440.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/4.fcb8553daac0b89eaadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/3.59eacd122894bb735072.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/4.fcb8553daac0b89eaadd.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/3.59eacd122894bb735072.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/5.cbf56b1aefabc90b2d45.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/5.74c336a88840142e3649.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/5.cbf56b1aefabc90b2d45.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/6.fa9d41f70112b8315262.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/6.fa9d41f70112b8315262.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/7.7ef2f9773493e4ccf07a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/7.7ef2f9773493e4ccf07a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/8.fb0860c23d8aecc124ef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/8.fb0860c23d8aecc124ef.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/9.095193998130591d0c37.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/9.095193998130591d0c37.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/app.ccf3d7a347609148ad3c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/app.ccf3d7a347609148ad3c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/manifest.0ca6f47ece8ef6ba80c9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/manifest.0ca6f47ece8ef6ba80c9.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/manifest.b14a6c36bb1f29714483.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/layout/aside/aside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layout/aside/aside.vue" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/../xu-webplatform/.tmp/" />
+    <ignored path="$PROJECT_DIR$/../xu-webplatform/temp/" />
+    <ignored path="$PROJECT_DIR$/../xu-webplatform/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/layout/aside/aside.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="94" column="35" lean-forward="true" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>#5e6d82</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/views/layout/aside/aside.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="80" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vue-xuAdmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-xuAdmin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-xuAdmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-xuAdmin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-xuAdmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-xuAdmin" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a9835fd-ab8f-45b0-854d-0e4a3f0246d5" name="Default Changelist" comment="" />
+      <created>1555304823062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555304823062</updated>
+      <workItem from="1555304824158" duration="1125000" />
+      <workItem from="1555306926062" duration="849000" />
+      <workItem from="1555582522672" duration="1058000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3032000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2553305" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297244" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="DB Execution Console" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3297244" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="DB Browser" order="3" weight="0.32942432" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="打包前的左上角项目名字颜色" />
+    <option name="LAST_COMMIT_MESSAGE" value="打包前的左上角项目名字颜色" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/views/upload/upload.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3537">
+          <caret line="131" column="11" selection-start-line="131" selection-start-column="11" selection-end-line="131" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="167" selection-start-column="167" selection-end-column="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/layout/aside/aside.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="94" column="35" lean-forward="true" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

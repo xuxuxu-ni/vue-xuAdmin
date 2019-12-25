@@ -104,7 +104,6 @@
     flex-direction: column;
     border-right: solid 1px #e6e6e6;
     .logo-name {
-      color: rgba(255, 255, 255, .8);
       background-color: #03152A !important;
       @extend %w100;
       font-weight: 300;
@@ -114,6 +113,7 @@
         line-height: 50px;
         text-align: center;
         font-size: 16px;
+        color: #5e6d82;
       }
     }
     .el-menu-vertical:not(.el-menu--collapse) {

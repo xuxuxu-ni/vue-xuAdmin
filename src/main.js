@@ -28,7 +28,11 @@ router.beforeEach((to, from, next) => {
       if (!store.getters.info.role) {
         // const role = ['/markdown', '/erji', '/erji2', '/siji', '/wuji']
         !async function getAddRouters () {
-          await store.dispatch('getInfo', store.getters.token)
+          // 省略 axios 请求代码 通过 token 向后台请求用户权限等信息，这里用假数据赋值
+          await store.dispatch('getInfo', {
+            role: 'superAdmin',
+            permissions: '超级管理员'
+          })
           await store.dispatch('newRoutes', store.getters.info.role)
           console.log(store.getters.addRouters)
           await router.addRoutes(store.getters.addRouters)

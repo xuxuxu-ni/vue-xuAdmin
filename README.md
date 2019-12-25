@@ -1,3 +1,56 @@
+<h1 align="center">Welcome to vue-xuadmin 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/node-%3E%3D%206.0.0-blue.svg" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D%203.0.0-blue.svg" />
+  <a href="https://github.com/Nirongxu/vue-xuAdmin/blob/master/README.md">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/Nirongxu/vue-xuAdmin/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+  </a>
+</p>
+
+> vue + element-ui 无限级菜单 权限管理 后台模板 
+
+### 🏠 [Homepage](https://nirongxu.github.io/vue-xuAdmin/dist/)
+## Author
+
+👤 **NiRongxu**
+
+* Github: [@NiRongxu](https://github.com/NiRongxu)
+* QQ: 595485548
+* email: 595485548@qq.com
+
+
+## Prerequisites
+
+- node >= 6.0.0
+- npm >= 3.0.0
+
+## Install
+
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+npm run dev
+```
+
+## Run tests
+
+```sh
+npm run test
+```
+
+## 小提示
+> 这个框架权限是由前端控制的,如果不需要这个模式,可以看我另外一个全栈CMS项目,后台使用的是node框架egg.js+mysql,那个的权限是由后台返回有权限的路由,前端拿到路由后和前端路由表做筛选,得出最终的路由表生成菜单,好处是角色和角色所拥有的权限路由是动态的后台可随时编辑配置的,两种模式按需使用
+![](https://i.loli.net/2019/06/27/5d143742c27c944341.png)
+
+项目地址: https://github.com/Nirongxu/nodePlatform
 ## 1. vue-xuAdmin 后台模板简介
 > 这个权限管理就是为了方便,跟系统安全真的不沾边，只是根据后台返回的角色信息来生成他可以看见的菜单和按钮，显示菜单的方法是根据权限删除掉路由表里没有权限的路由，然后再动态添加，原本包含没有访问权限的原路由表只要打开页面运行代码就已经不存在了，并且404页面除了过滤掉项目没有的路由外，同时每次的路由跳转都会鉴权。如果你知道了没有权限的路由试着强行跳转会因为没有权限直接会跳转404。
 **就算通过查看代码或者其他方法获取全部路由，并且绕过404，花了这么大精力，，那你也看不到新世界的大门，因为所有数据都是通过后台请求返回来的，你没权限后台不会给你数据的，也不会让你去操作，，除非后台不验证权限，只要有人请求我就给你所有数据，，，，**
@@ -6,8 +59,8 @@
 
 vue-xuAdmin是基于vue2.0全家桶 + element-ui 开发的一个后台模板，实现了无限级菜单，页面、按钮级别的权限管理，为了减少前后端的沟通成本，页面、按钮级别的权限验证和动态路由表的存储校验，也都由前端完成，这样前端新建页面或者删除页面都不需要告诉后台去增加删除路由表
 
-![enter description here](https://www.github.com/Nirongxu/xiaoshujiang/raw/master/1552796499128.png)
-![enter description here](https://www.github.com/Nirongxu/xiaoshujiang/raw/master/1552796567032.png)
+![enter description here](https://i.loli.net/2019/12/24/Ocs7n45uaMDhKef.png)
+![enter description here](https://i.loli.net/2019/12/24/8dZaITtQOY7uNbF.png)
 ![enter description here](https://i.loli.net/2018/12/12/5c10a2f90e38a.jpg)
 ![enter description here](https://i.loli.net/2018/12/16/5c153f4998458.jpg)
 ![enter description here](https://i.loli.net/2018/12/16/5c153fe516daf.jpg)
@@ -149,3 +202,19 @@ npm run unit
 ```
 ## 结语
 如果这个框架对你有帮助的话，请给个星点个star
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Nirongxu/vue-xuAdmin/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2019 [NiRongxu](https://github.com/NiRongxu).<br />
+This project is [MIT](https://github.com/Nirongxu/vue-xuAdmin/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
