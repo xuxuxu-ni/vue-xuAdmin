@@ -29,7 +29,7 @@ const pagePermissions = () => import('@/views/permissions/pagePermissions')
 const btnPermissions = () => import('@/views/permissions/btnPermissions')
 
 Vue.use(Router)
-let routeNmae = en.routeNmae
+let routeName = en.routeName
 let defaultRouter = [
   { path: '/',
     redirect: '/index',
@@ -46,7 +46,7 @@ let defaultRouter = [
   {
     path: '/index',
     iconCls: 'fa fa-dashboard', // 图标样式class
-    name: routeNmae.home,
+    name: routeName.home,
     component: Layout,
     alone: true,
     children: [
@@ -72,20 +72,20 @@ let addRouter = [
   {
     path: '/',
     iconCls: 'el-icon-tickets', // 图标样式class
-    name: routeNmae.article,
+    name: routeName.article,
     component: Layout,
     children: [
       {
         path: '/addArticle',
         iconCls: 'el-icon-edit-outline', // 图标样式class
-        name: routeNmae.publishArticle,
+        name: routeName.publishArticle,
         component: AddArticle,
         children: []
       },
       {
         path: '/addArticleEditor',
         iconCls: 'el-icon-edit-outline', // 图标样式class
-        name: routeNmae.publishArticleEditor,
+        name: routeName.publishArticleEditor,
         component: AddArticleEditor,
         children: []
       }
@@ -94,13 +94,13 @@ let addRouter = [
   {
     path: '/',
     iconCls: 'fa fa-paw', // 图标样式class
-    name: routeNmae.icon,
+    name: routeName.icon,
     component: Layout,
     children: [
       {
         path: '/icon',
         iconCls: 'fa fa-life-ring', // 图标样式class
-        name: routeNmae.builtInIcon,
+        name: routeName.builtInIcon,
         component: Icon,
         children: []
       }
@@ -109,13 +109,13 @@ let addRouter = [
   {
     path: '/',
     iconCls: 'fa fa-exchange', // 图标样式class
-    name: routeNmae.shuttleBox,
+    name: routeName.shuttleBox,
     component: Layout,
     children: [
       {
         path: '/transfer',
         iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeNmae.demoShuttle,
+        name: routeName.demoShuttle,
         component: Transfer,
         children: []
       }
@@ -124,20 +124,20 @@ let addRouter = [
   {
     path: '/',
     iconCls: 'fa fa-universal-access', // 图标样式class
-    name: routeNmae.permissions,
+    name: routeName.permissions,
     component: Layout,
     children: [
       {
         path: '/pagePermissions',
         iconCls: 'fa fa-expeditedssl', // 图标样式class
-        name: routeNmae.pageControl,
+        name: routeName.pageControl,
         component: pagePermissions,
         children: []
       },
       {
         path: '/btnPermissions',
         iconCls: 'fa fa-toggle-on', // 图标样式class
-        name: routeNmae.btnControl,
+        name: routeName.btnControl,
         component: btnPermissions,
         children: []
       }
@@ -146,27 +146,27 @@ let addRouter = [
   {
     path: '/',
     iconCls: 'fa fa-newspaper-o', // 图标样式class
-    name: routeNmae.table,
+    name: routeName.table,
     component: Layout,
     children: [
       {
         path: '/dataTable',
         iconCls: 'fa fa-sliders', // 图标样式class
-        name: routeNmae.multiDataTable,
+        name: routeName.multiDataTable,
         component: DataTable,
         children: []
       },
       {
         path: '/filterTable',
         iconCls: 'fa fa-sort-amount-asc', // 图标样式class
-        name: routeNmae.filterTable,
+        name: routeName.filterTable,
         component: FilterTable,
         children: []
       },
       {
         path: '/dragTabe',
         iconCls: 'fa fa-hand-stop-o', // 图标样式class
-        name: routeNmae.dragSort,
+        name: routeName.dragSort,
         component: DragTable,
         children: []
       }
@@ -176,66 +176,66 @@ let addRouter = [
   {
     path: '/',
     iconCls: 'fa fa-server',
-    name: routeNmae.multiDirectory,
+    name: routeName.multiDirectory,
     component: Layout,
     children: [
       {
         path: '/erji1',
         iconCls: 'fa fa-server',
-        name: routeNmae['menu2-1'],
+        name: routeName['menu2-1'],
         component: Erji,
         children: []
       },
       {
         path: '/erji2',
         iconCls: 'fa fa-server',
-        name: routeNmae['menu2-2'],
+        name: routeName['menu2-2'],
         component: Erji2,
         children: []
       },
       {
         path: '/erji3',
         iconCls: 'fa fa-server',
-        name: routeNmae['menu2-3'],
+        name: routeName['menu2-3'],
         component: CommerViews, // 无限极菜单的容器
         children: [
           {
             path: '/sanji1',
             iconCls: 'fa fa-server',
-            name: routeNmae['menu3-1'],
+            name: routeName['menu3-1'],
             component: Sanji,
             children: []
           },
           {
             path: '/sanji2',
             iconCls: 'fa fa-server',
-            name: routeNmae['menu3-2'],
+            name: routeName['menu3-2'],
             component: Sanji2,
             children: []
           },
           {
             path: '/sanji3',
             iconCls: 'fa fa-server',
-            name: routeNmae['menu3-3'],
+            name: routeName['menu3-3'],
             component: CommerViews,
             children: [
               {
                 path: '/siji',
                 iconCls: 'fa fa-server',
-                name: routeNmae['menu4-1'],
+                name: routeName['menu4-1'],
                 component: Siji,
                 children: []
               },
               {
                 path: '/siji1',
                 iconCls: 'fa fa-server',
-                name: routeNmae['menu4-2'],
+                name: routeName['menu4-2'],
                 component: CommerViews,
                 children: [
                   {
                     path: '/wuji',
                     iconCls: 'fa fa-server',
-                    name: routeNmae['menu5-1'],
+                    name: routeName['menu5-1'],
                     component: Wuji,
                     children: []
                   }
@@ -250,14 +250,14 @@ let addRouter = [
   {
     path: '/',
     iconCls: 'fa fa-cloud-upload', // 图标样式class
-    name: routeNmae.upload,
+    name: routeName.upload,
     component: Layout,
     meta: {role: ['superAdmin']},
     children: [
       {
         path: '/upload',
         iconCls: 'el-icon-upload2', // 图标样式class
-        name: routeNmae.fileUpload,
+        name: routeName.fileUpload,
         component: Upload,
         children: []
       }
@@ -266,21 +266,21 @@ let addRouter = [
   {
     path: '/',
     iconCls: 'el-icon-edit', // 图标样式class
-    name: routeNmae.editor,
+    name: routeName.editor,
     component: Layout,
     meta: {role: ['superAdmin', 'admin']},
     children: [
       {
         path: '/markdown',
         iconCls: 'fa fa-file-code-o', // 图标样式class
-        name: routeNmae.markdown,
+        name: routeName.markdown,
         component: Markdown,
         children: []
       },
       {
         path: '/wangeditor',
         iconCls: 'fa fa-file-code-o', // 图标样式class
-        name: routeNmae.wangeditor,
+        name: routeName.wangeditor,
         component: WangeditorView,
         children: []
       }
@@ -289,14 +289,14 @@ let addRouter = [
   {
     path: '/',
     iconCls: 'el-icon-setting', // 图标样式class
-    name: routeNmae.systemSettings,
+    name: routeName.systemSettings,
     component: Layout,
     meta: {role: ['superAdmin']},
     children: [
       {
         path: '/navClassifies',
         iconCls: 'el-icon-menu', // 图标样式class
-        name: routeNmae.navMenu,
+        name: routeName.navMenu,
         component: NavClassify,
         children: []
       }

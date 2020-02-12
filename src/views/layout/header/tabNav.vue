@@ -4,7 +4,7 @@
       <transition-group name="list" tag="ul">
         <li v-for="(item, index) in $store.getters.tabnavBox" @contextmenu.prevent="openMenu(item,$event,index)"
             :key="item.title" class="tabnav" :class="{ active: $route.path === item.path }">
-          <router-link :to="item.path">{{ $t(`routeNmae.${item.title}`) }}</router-link>
+          <router-link :to="item.path">{{ $t(`routeName.${item.title}`) }}</router-link>
           <i @click="removeTab(item)" class="el-icon-error" v-if="index !== 0"></i>
         </li>
       </transition-group>

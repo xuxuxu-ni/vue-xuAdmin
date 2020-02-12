@@ -7,7 +7,7 @@
 
 import enLocale from 'element-ui/lib/locale/lang/en'
 const en = {
-  routeNmae: {
+  routeName: {
     home: 'home',
     article: 'article',
     publishArticle: 'publishArticle',

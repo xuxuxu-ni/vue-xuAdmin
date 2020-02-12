@@ -6,7 +6,7 @@
  */
 import zhLocale from 'element-ui/lib/locale/lang/zh-CN'
 const cn = {
-  routeNmae: {
+  routeName: {
     home: '主页',
     article: '文章管理',
     publishArticle: '发表文章',
