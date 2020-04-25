@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e457dea1-08eb-48b1-b116-02fe7ccd8d76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../src/components/markdown/markdown-editor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../src/views/markdown/markdownView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fit.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUGS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CHANGE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/editormd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/editormd.logo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/editormd.logo.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/editormd.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/editormd.preview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/editormd.preview.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/googleCodePrettifyThemes/tranquil-heart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/editormd.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Bold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Bold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-BoldItalic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-BoldItalic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-BoldItalic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Italic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Italic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Italic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Light-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Light-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-LightItalic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-LightItalic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-LightItalic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fonts/OpenSans-Regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/scripts/linenumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/scripts/prettify/Apache-License-2.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/scripts/prettify/lang-css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/scripts/prettify/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/styles/jsdoc-default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/styles/prettify-jsdoc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/styles/prettify-tomorrow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editormd.amd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editormd.amd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editormd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editormd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/@links.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/auto-height.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/change-mode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/code-fold.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/custom-keyboard-shortcuts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/custom-toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/define-plugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/delay-renderer-preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/dynamic-create-editormd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/emoji.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/extends.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/external-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/flowchart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/form-get-value.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/full.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/goto-line.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/html-preview-markdown-to-html-custom-toc-container.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/html-preview-markdown-to-html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/html-tags-decode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/image-cross-domain-upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/image-upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/images/editormd-screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/js/require.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/js/sea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/js/seajs-main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/js/zepto.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/katex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/manually-load-modules.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/multi-editormd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/multi-languages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/on-off.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/onchange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/onfullscreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/onload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/onpreviewing-onpreviewed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/onresize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/onscroll-onpreviewscroll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/onwatch-onunwatch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/page-break.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/php/cross-domain-upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/php/editormd.uploader.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/php/post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/php/upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/php/upload_callback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/resettings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/search-replace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/sequence-diagram.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/set-get-replace-selection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/sync-scrolling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/task-lists.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/test.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/themes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/toc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/toolbar-auto-fixed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/use-requirejs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/use-seajs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/use-zepto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/editormd-logo.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/editormd-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/editormd-logo.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/editormd-logo.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/loading@2x.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/loading@3x.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-favicon-16x16.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-favicon-24x24.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-favicon-32x32.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-favicon-48x48.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-favicon-64x64.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-114x114.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-120x120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-144x144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-180x180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-240x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-24x24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-320x320.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-57x57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-64x64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-72x72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/editormd-logo-96x96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/vi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-2.1.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/comment/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/comment/continuecomment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/dialog/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/dialog/dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/display/fullscreen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/display/fullscreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/display/panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/display/placeholder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/display/rulers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/edit/closebrackets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/edit/closetag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/edit/continuelist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/edit/matchbrackets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/edit/matchtags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/edit/trailingspace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/fold/brace-fold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/fold/comment-fold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/fold/foldcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/fold/foldgutter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/fold/foldgutter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/fold/indent-fold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/fold/markdown-fold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/fold/xml-fold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/hint/anyword-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/hint/css-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/hint/html-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/hint/javascript-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/hint/show-hint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/hint/show-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/hint/sql-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/hint/xml-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/lint/coffeescript-lint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/lint/css-lint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/lint/javascript-lint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/lint/json-lint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/lint/lint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/lint/lint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/lint/yaml-lint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/merge/merge.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/merge/merge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/mode/loadmode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/mode/multiplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/mode/multiplex_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/mode/overlay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/mode/simple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/runmode/colorize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/runmode/runmode-standalone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/runmode/runmode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/runmode/runmode.node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/scroll/annotatescrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/scroll/scrollpastend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/scroll/simplescrollbars.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/scroll/simplescrollbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/search/match-highlighter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/search/matchesonscrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/search/matchesonscrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/search/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/search/searchcursor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/selection/active-line.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/selection/mark-selection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/selection/selection-pointer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/tern/tern.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/tern/tern.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/tern/worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addon/wrap/hardwrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/addons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/codemirror.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/codemirror.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/lib/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/lib/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/apl/apl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/apl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/asterisk/asterisk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/asterisk/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/clike/clike.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/clike/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/clike/scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/clojure/clojure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/clojure/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/cobol/cobol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/cobol/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/coffeescript/coffeescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/coffeescript/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/commonlisp/commonlisp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/commonlisp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/css/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/css/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/css/less.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/css/less_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/css/scss.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/css/scss_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/css/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/cypher/cypher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/cypher/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/d/d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/d/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/dart/dart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/dart/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/diff/diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/diff/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/django/django.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/django/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/dockerfile/dockerfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/dockerfile/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/dtd/dtd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/dtd/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/dylan/dylan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/dylan/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/ebnf/ebnf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/ebnf/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/ecl/ecl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/ecl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/eiffel/eiffel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/eiffel/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/erlang/erlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/erlang/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/forth/forth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/forth/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/fortran/fortran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/fortran/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/gas/gas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/gas/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/gfm/gfm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/gfm/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/gfm/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/gherkin/gherkin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/gherkin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/go/go.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/go/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/groovy/groovy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/groovy/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/haml/haml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/haml/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/haml/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/haskell/haskell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/haskell/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/haxe/haxe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/haxe/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/htmlembedded/htmlembedded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/htmlembedded/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/htmlmixed/htmlmixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/htmlmixed/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/http/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/http/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/idl/idl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/idl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/jade/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/jade/jade.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/javascript/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/javascript/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/javascript/json-ld.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/javascript/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/javascript/typescript.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/jinja2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/jinja2/jinja2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/julia/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/julia/julia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/kotlin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/kotlin/kotlin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/livescript/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/livescript/livescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/lua/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/lua/lua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/markdown/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/markdown/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/markdown/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/meta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/mirc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/mirc/mirc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/mllike/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/mllike/mllike.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/modelica/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/modelica/modelica.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/nginx/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/nginx/nginx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/ntriples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/ntriples/ntriples.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/octave/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/octave/octave.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/pascal/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/pascal/pascal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/pegjs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/pegjs/pegjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/perl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/perl/perl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/php/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/php/php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/php/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/pig/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/pig/pig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/properties/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/properties/properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/puppet/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/puppet/puppet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/python/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/python/python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/q/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/q/q.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/r/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/r/r.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/rpm/changes/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/rpm/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/rpm/rpm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/rst/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/rst/rst.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/ruby/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/ruby/ruby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/ruby/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/rust/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/rust/rust.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/sass/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/sass/sass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/scheme/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/scheme/scheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/shell/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/shell/shell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/shell/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/sieve/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/sieve/sieve.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/slim/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/slim/slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/slim/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/smalltalk/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/smalltalk/smalltalk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/smarty/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/smarty/smarty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/smartymixed/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/smartymixed/smartymixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/solr/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/solr/solr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/soy/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/soy/soy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/sparql/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/sparql/sparql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/spreadsheet/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/spreadsheet/spreadsheet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/sql/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/sql/sql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/stex/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/stex/stex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/stex/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/stylus/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/stylus/stylus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tcl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tcl/tcl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/textile/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/textile/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/textile/textile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tiddlywiki/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tiddlywiki/tiddlywiki.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tiki/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tiki/tiki.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tiki/tiki.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/toml/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/toml/toml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tornado/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/tornado/tornado.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/turtle/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/turtle/turtle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/vb/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/vb/vb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/vbscript/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/vbscript/vbscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/velocity/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/velocity/velocity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/verilog/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/verilog/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/verilog/verilog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/xml/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/xml/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/xml/xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/xquery/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/xquery/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/xquery/xquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/yaml/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/yaml/yaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/z80/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/mode/z80/z80.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/modes.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/3024-day.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/3024-night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/ambiance-mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/ambiance.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/base16-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/base16-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/blackboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/cobalt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/colorforth.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/eclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/elegant.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/erlang-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/lesser-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/mbo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/mdn-like.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/midnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/monokai.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/neat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/neo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/paraiso-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/paraiso-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/pastel-on-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/rubyblue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/solarized.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/the-matrix.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/tomorrow-night-bright.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/tomorrow-night-eighties.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/twilight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/vibrant-ink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/xq-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/xq-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/codemirror/theme/zenburn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/flowchart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jquery.flowchart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/marked.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/prettify.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/raphael.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sequence-diagram.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/underscore.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/code-block-dialog/code-block-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/+1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/109.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/1234.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/8ball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/abc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/abcd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/accept.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/aerial_tramway.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/airplane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/alarm_clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/alien.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ambulance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/angel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/anger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/angry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/anguished.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/apple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/aquarius.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/aries.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_backward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_double_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_double_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_down_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_forward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_heading_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_heading_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_lower_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_lower_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_right_hook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_up_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_up_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_upper_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrow_upper_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrows_clockwise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/arrows_counterclockwise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/art.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/articulated_lorry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/astonished.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/atm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/baby.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/baby_bottle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/baby_chick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/baby_symbol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/baggage_claim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/balloon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ballot_box_with_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bamboo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/banana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bangbang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bar_chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/barber.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/baseball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/basketball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bath.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bathtub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/battery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/beer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/beers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/beetle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/beginner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bento.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bicyclist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bikini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bird.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/birthday.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/black_circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/black_joker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/black_medium_small_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/black_medium_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/black_nib.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/black_small_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/black_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/black_square_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/blossom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/blowfish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/blue_book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/blue_car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/blue_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/blush.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/boar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/boat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bomb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bookmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bookmark_tabs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/books.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/boom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/boot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bouquet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bowling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bowtie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/boy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bread.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bride_with_veil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bridge_at_night.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/briefcase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/broken_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bug.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bulb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bullettrain_front.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bullettrain_side.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/busstop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/bust_in_silhouette.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/busts_in_silhouette.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cactus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/calling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/camel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cancer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/candy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/capital_abcd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/capricorn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/card_index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/carousel_horse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cat2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/chart_with_downwards_trend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/chart_with_upwards_trend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/checkered_flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cherries.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cherry_blossom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/chestnut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/chicken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/children_crossing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/chocolate_bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/christmas_tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/church.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cinema.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/circus_tent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/city_sunrise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/city_sunset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clapper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clipboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock1030.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock1130.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock1230.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock130.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock230.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock330.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock430.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock530.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock630.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock730.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock830.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clock930.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/closed_book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/closed_lock_with_key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/closed_umbrella.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/clubs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cocktail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/coffee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cold_sweat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/collision.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/confetti_ball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/confounded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/confused.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/congratulations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/construction.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/construction_worker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/convenience_store.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cookie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/copyright.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/corn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/couple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/couple_with_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/couplekiss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cow2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/credit_card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/crocodile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/crossed_flags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/crown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/crying_cat_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/crystal_ball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cupid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/curly_loop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/currency_exchange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/curry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/custard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/customs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/cyclone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dancer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dancers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dango.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/date.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/de.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/deciduous_tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/department_store.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/diamond_shape_with_a_dot_inside.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/diamonds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/disappointed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/disappointed_relieved.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dizzy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dizzy_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/do_not_litter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dollar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dolls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dolphin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/donut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/door.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/doughnut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dragon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dragon_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dromedary_camel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/droplet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/dvd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/e-mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ear_of_rice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/earth_africa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/earth_americas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/earth_asia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/egg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/eggplant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/eight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/eight_pointed_black_star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/eight_spoked_asterisk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/electric_plug.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/elephant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/emojify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/end.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/envelope.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/es.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/euro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/european_castle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/european_post_office.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/evergreen_tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/exclamation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/expressionless.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/eyeglasses.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/eyes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/facepunch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/factory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fallen_leaf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/family.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fast_forward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fax.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fearful.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/feelsgood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/feet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ferris_wheel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/file_folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/finnadie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fire_engine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fireworks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/first_quarter_moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/first_quarter_moon_with_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fish_cake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fishing_pole_and_fish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/five.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/flags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/flashlight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/floppy_disk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/flower_playing_cards.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/flushed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/foggy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/football.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fork_and_knife.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fountain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/four.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/four_leaf_clover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/free.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fried_shrimp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fries.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/frog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/frowning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/fuelpump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/full_moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/full_moon_with_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/game_die.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/gb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/gem.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/gemini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ghost.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/gift.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/gift_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/girl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/globe_with_meridians.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/goat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/goberserk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/godmode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/golf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/grapes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/green_apple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/green_book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/green_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/grey_exclamation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/grey_question.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/grimacing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/grin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/grinning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/guardsman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/guitar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/gun.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/haircut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hamburger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hammer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hamster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/handbag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hankey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hatched_chick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hatching_chick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/headphones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hear_no_evil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heart_decoration.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heart_eyes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heart_eyes_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heartbeat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heartpulse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heavy_check_mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heavy_division_sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heavy_dollar_sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heavy_exclamation_mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heavy_minus_sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heavy_multiplication_x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/heavy_plus_sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/helicopter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/herb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hibiscus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/high_brightness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/high_heel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hocho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/honey_pot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/honeybee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/horse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/horse_racing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hospital.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hotel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hotsprings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hourglass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hourglass_flowing_sand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/house.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/house_with_garden.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hurtrealbad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/hushed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ice_cream.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/icecream.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/id.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ideograph_advantage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/imp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/inbox_tray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/incoming_envelope.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/information_desk_person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/information_source.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/innocent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/interrobang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/iphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/it.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/izakaya_lantern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/jack_o_lantern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/japan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/japanese_castle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/japanese_goblin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/japanese_ogre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/jeans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/joy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/joy_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/jp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/keycap_ten.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/kimono.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/kiss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/kissing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/kissing_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/kissing_closed_eyes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/kissing_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/kissing_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/kissing_smiling_eyes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/koala.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/koko.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/kr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/large_blue_circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/large_blue_diamond.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/large_orange_diamond.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/last_quarter_moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/last_quarter_moon_with_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/laughing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/leaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ledger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/left_luggage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/left_right_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/leftwards_arrow_with_hook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/lemon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/leo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/leopard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/libra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/light_rail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/lips.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/lipstick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/lock_with_ink_pen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/lollipop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/loop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/loudspeaker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/love_hotel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/love_letter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/low_brightness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mag_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mahjong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mailbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mailbox_closed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mailbox_with_mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mailbox_with_no_mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/man_with_gua_pi_mao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/man_with_turban.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mans_shoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/maple_leaf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/massage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/meat_on_bone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mega.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/melon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/memo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mens.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/metal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/metro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/microphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/microscope.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/milky_way.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/minibus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/minidisc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mobile_phone_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/money_with_wings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/moneybag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/monkey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/monkey_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/monorail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mortar_board.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mount_fuji.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mountain_bicyclist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mountain_cableway.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mountain_railway.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mouse2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/movie_camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/moyai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/muscle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mushroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/musical_keyboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/musical_note.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/musical_score.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/mute.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/nail_care.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/name_badge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/neckbeard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/necktie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/negative_squared_cross_mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/neutral_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/new_moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/new_moon_with_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/newspaper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/nine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/no_bell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/no_bicycles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/no_entry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/no_entry_sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/no_good.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/no_mobile_phones.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/no_mouth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/no_pedestrians.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/no_smoking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/non-potable_water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/nose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/notebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/notebook_with_decorative_cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/notes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/nut_and_bolt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/o.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/o2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ocean.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/octocat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/octopus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/oden.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/office.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ok_hand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ok_woman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/older_man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/older_woman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/oncoming_automobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/oncoming_bus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/oncoming_police_car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/oncoming_taxi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/open_file_folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/open_hands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/open_mouth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ophiuchus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/orange_book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/outbox_tray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/package.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/page_facing_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/page_with_curl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/palm_tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/panda_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/paperclip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/parking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/part_alternation_mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/partly_sunny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/passport_control.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/paw_prints.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/peach.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pencil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pencil2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/penguin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pensive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/performing_arts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/persevere.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/person_frowning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/person_with_blond_hair.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/person_with_pouting_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pig2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pig_nose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pineapple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pisces.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/plus1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/point_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/point_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/point_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/point_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/point_up_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/police_car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/poodle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/poop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/post_office.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/postal_horn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/postbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/potable_water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pouch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/poultry_leg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pouting_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/princess.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/punch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/purple_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/purse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/pushpin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/put_litter_in_its_place.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/question.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rabbit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rabbit2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/racehorse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/radio_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rage1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rage2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rage3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rage4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/railway_car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rainbow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/raised_hand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/raised_hands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/raising_hand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ramen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/recycle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/red_car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/red_circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/registered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/relaxed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/relieved.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/repeat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/repeat_one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/restroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/revolving_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rewind.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ribbon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rice_ball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rice_cracker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rice_scene.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rocket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/roller_coaster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rooster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rotating_light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/round_pushpin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rowboat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ru.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/rugby_football.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/runner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/running.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/running_shirt_with_sash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sagittarius.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sailboat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sandal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/santa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/satellite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/satisfied.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/saxophone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/school.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/school_satchel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/scissors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/scorpius.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/scream.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/scream_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/scroll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/seat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/secret.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/see_no_evil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/seedling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/seven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/shaved_ice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sheep.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/shell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ship.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/shipit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/shirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/shit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/shoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/shower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/signal_strength.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/six.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/six_pointed_star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ski.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/skull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sleeping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sleepy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/slot_machine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/small_blue_diamond.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/small_orange_diamond.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/small_red_triangle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/small_red_triangle_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/smile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/smile_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/smiley.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/smiley_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/smiling_imp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/smirk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/smirk_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/smoking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/snail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/snake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/snowboarder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/snowflake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/snowman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/soccer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/soon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/space_invader.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/spades.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/spaghetti.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sparkle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sparkler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sparkles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sparkling_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/speak_no_evil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/speaker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/speech_balloon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/speedboat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/squirrel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/star2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/stars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/station.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/statue_of_liberty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/steam_locomotive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/stew.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/straight_ruler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/strawberry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/stuck_out_tongue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/stuck_out_tongue_closed_eyes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/stuck_out_tongue_winking_eye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sun_with_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sunflower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sunglasses.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sunny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sunrise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sunrise_over_mountains.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/surfer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sushi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/suspect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/suspension_railway.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sweat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sweat_drops.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sweat_smile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/sweet_potato.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/swimmer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/symbols.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/syringe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tada.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tanabata_tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tangerine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/taurus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/taxi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/telephone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/telephone_receiver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/telescope.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tennis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/thought_balloon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/thumbsdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/thumbsup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/ticket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tiger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tiger2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tired_face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/toilet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tokyo_tower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tomato.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tongue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tophat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tractor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/traffic_light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/train2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/triangular_flag_on_post.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/triangular_ruler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/trident.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/triumph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/trolleybus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/trollface.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/trophy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tropical_drink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tropical_fish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/truck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/trumpet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tshirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tulip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/turtle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/tv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/twisted_rightwards_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/two.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/two_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/two_men_holding_hands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/two_women_holding_hands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u5272.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u5408.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u55b6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u6307.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u6708.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u6709.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u6e80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u7121.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u7533.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u7981.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/u7a7a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/uk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/umbrella.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/unamused.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/underage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/unlock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/vertical_traffic_light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/vhs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/vibration_mode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/video_camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/video_game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/violin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/virgo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/volcano.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/vs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/walking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/waning_crescent_moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/waning_gibbous_moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/watch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/water_buffalo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/watermelon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wavy_dash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/waxing_crescent_moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/waxing_gibbous_moon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/weary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wedding.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/whale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/whale2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wheelchair.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/white_check_mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/white_circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/white_flower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/white_large_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/white_medium_small_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/white_medium_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/white_small_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/white_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/white_square_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wind_chime.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wine_glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wink2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wolf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/woman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/womans_clothes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/womans_hat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/womens.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/worried.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/wrench.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/yellow_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/yen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/yum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/zap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/zero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/emoji-dialog/emoji/zzz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/goto-line-dialog/goto-line-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/help-dialog/help-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/help-dialog/help.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/html-entities-dialog/html-entities-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/html-entities-dialog/html-entities.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/image-dialog/image-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/link-dialog/link-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/plugin-template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/preformatted-text-dialog/preformatted-text-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/reference-link-dialog/reference-link-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/table-dialog/table-dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/test-plugin/test-plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.codemirror.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.dialog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.logo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.preview.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.preview.themes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.tab.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/editormd.themes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/github-markdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/lib/prefixes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/lib/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/prettify.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/editormd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/bootstrap-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/codemirror-searchbox-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/codemirror-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/js/searchbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/katex-tests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/marked-@at-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/marked-emoji-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/marked-heading-link-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/marked-todo-list-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/qunit/qunit-1.16.0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/qunit/qunit-1.16.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/static/fit.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/static/images/icon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../images/icon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/views/MenuBar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/views/MenuTree11111.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/views/Select.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/views/Table.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/views/icon/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/views/icon/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/views/memberbox.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/views/table/dragTabe.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/views/table/dragTabe.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/components/markdown/config.editor.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1602890536">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/_gulp-ruby-sass@1.4.0@gulp-ruby-sass/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4481">
+              <caret line="337" column="18" selection-start-line="337" selection-start-column="11" selection-end-line="337" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/Gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/lib/codemirror/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="290" />
+    <option name="y" value="47" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="markdown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e457dea1-08eb-48b1-b116-02fe7ccd8d76" name="Default Changelist" comment="" />
+      <created>1536743848645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536743848645</updated>
+      <workItem from="1536743849866" duration="994000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="994000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Gulp" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/node_modules/_gulp-ruby-sass@1.4.0@gulp-ruby-sass/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4481">
+          <caret line="337" column="18" selection-start-line="337" selection-start-column="11" selection-end-line="337" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
