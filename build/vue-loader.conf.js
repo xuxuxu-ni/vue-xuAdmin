@@ -1,6 +1,7 @@
 'use strict'
 const utils = require('./utils')
 const config = require('../config')
+const path = require('path')
 const isProduction = process.env.NODE_ENV === 'production'
 const sourceMapEnabled = isProduction
   ? config.build.productionSourceMap
@@ -18,5 +19,7 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
-  }
+  },
+  cacheDirectory: path.resolve(__dirname, '../node_modules/.cache/vue-loader'),
+  cacheIdentifier: 'cache-loader:{version} {process.env.NODE_ENV}'
 }

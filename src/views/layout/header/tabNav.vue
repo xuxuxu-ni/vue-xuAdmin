@@ -18,49 +18,49 @@
 </template>
 
 <script>
-  export default {
-    name: 'tabNav',
-    data () {
-      return {
-        rightMenuShow: false,
-        left: 0,
-        top: 0
+export default {
+  name: "tabNav",
+  data () {
+    return {
+      rightMenuShow: false,
+      left: 0,
+      top: 0
+    }
+  },
+  methods: {
+    openMenu (item, e, index) {
+      if (index === 0) {
+        return false
       }
+      this.rightMenuShow = true
+      this.left = e.clientX + 10
+      this.top = e.clientY
+      this.$store.dispatch("openMenu", item)
     },
-    methods: {
-      openMenu (item, e, index) {
-        if (index === 0) {
-          return false
-        }
-        this.rightMenuShow = true
-        this.left = e.clientX + 10
-        this.top = e.clientY
-        this.$store.dispatch('openMenu', item)
-      },
-      removeTab (tabItem) {
-        this.$store.dispatch('removeTab', {tabItem, fullPath: this.$route.fullPath, router: this.$router})
-      },
-      removeOtherTab (tabItem) {
-        this.$store.dispatch('removeOtherTab', {tabItem, router: this.$router})
-      },
-      removeAllTab () {
-        this.$store.dispatch('removeOtherTab', {all: true, router: this.$router})
-      }
+    removeTab (tabItem) {
+      this.$store.dispatch("removeTab", {tabItem, fullPath: this.$route.fullPath, router: this.$router})
     },
-    watch: {
-      rightMenuShow (value) {
-        if (value) {
-          document.body.addEventListener('click', () => {
-            this.rightMenuShow = false
-          })
-        } else {
-          document.body.removeEventListener('click', () => {
-            this.rightMenuShow = false
-          })
-        }
+    removeOtherTab (tabItem) {
+      this.$store.dispatch("removeOtherTab", {tabItem, router: this.$router})
+    },
+    removeAllTab () {
+      this.$store.dispatch("removeOtherTab", {all: true, router: this.$router})
+    }
+  },
+  watch: {
+    rightMenuShow (value) {
+      if (value) {
+        document.body.addEventListener("click", () => {
+          this.rightMenuShow = false
+        })
+      } else {
+        document.body.removeEventListener("click", () => {
+          this.rightMenuShow = false
+        })
       }
     }
   }
+}
 </script>
 <style>
   .tabnav {
@@ -68,9 +68,7 @@
     transition: all 0.5s;
   }
 
-  .list-enter, .list-leave-to
-    /* .list-leave-active for below version 2.1.8 */
-  {
+  .list-enter, .list-leave-to {
     opacity: 0;
     transform: translateY(30px);
 
@@ -129,6 +127,8 @@
       li {
         height: 30px;
         line-height: 31px;
+        display: flex;
+        align-items: center;
         @extend %cursor;
         margin-#{$top}: 6px;
         margin-#{$right}: 5px;

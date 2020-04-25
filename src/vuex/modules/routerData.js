@@ -1,4 +1,4 @@
-import {defaultRouter, addRouter} from '@/router/index'
+import {defaultRouter, addRouter} from "@/router/index"
 
 const routerData = {
   state: {
@@ -7,7 +7,7 @@ const routerData = {
   },
   mutations: {
     setRouters: (state, routers) => {
-      state.addRouters = routers  // 保存动态路由用来addRouter
+      state.addRouters = routers // 保存动态路由用来addRouter
       state.routers = defaultRouter.concat(routers) // 所有有权限的路由表，用来生成菜单列表
     }
   },
@@ -25,11 +25,10 @@ const routerData = {
           }
         }
       }
-      // 拷贝这个数组是因为做权限测试的时候可以从低级切回到高级角色，仅限演示，正式开发时省略这步直接使用 addRouter
       // 仅限演示
-      let newArr = [...addRouter]
+      let newArr = [...addRouter] // 拷贝这个数组是因为做权限测试的时候可以从低级切回到高级角色，仅限演示，正式开发时省略这步直接使用 addRouter
       eachSelect(newArr, role)
-      commit('setRouters', newArr)
+      commit("setRouters", newArr)
 
       // 正式开发
       // eachSelect(addRouter, role)

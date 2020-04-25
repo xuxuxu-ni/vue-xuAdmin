@@ -17,8 +17,8 @@
                     夏洛克丶旭<i class="el-icon-arrow-down el-icon--right"></i>
                   </span>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item command="a">{{ $t('userDropdownMenu.basicInfor') }}</el-dropdown-item>
-              <el-dropdown-item command="b">{{ $t('userDropdownMenu.changePassword') }}</el-dropdown-item>
+              <el-dropdown-item command="info">{{ $t('userDropdownMenu.basicInfor') }}</el-dropdown-item>
+              <el-dropdown-item command="editPassword">{{ $t('userDropdownMenu.changePassword') }}</el-dropdown-item>
               <el-dropdown-item command="logout" divided>{{ $t('userDropdownMenu.logout') }}</el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
@@ -27,62 +27,81 @@
       </ul>
     </el-header>
     <tabNav></tabNav>
+    <user-info v-if="dialogInfoVisible" :title="title" :dialogVisible="dialogInfoVisible" :userId="userId" @successCallback="successCallback"/>
+    <edit-password v-if="dialogPassVisible" :dialogVisible="dialogPassVisible" @editPwdCallback="editPwdCallback"/>
   </div>
 </template>
 
 <script>
-  import Cookies from 'js-cookie'
-  import langSelect from '../../../components/lang/langSelect'
-  import tabNav from './tabNav'
+import Cookies from "js-cookie"
+import langSelect from "../../../components/lang/langSelect"
+import tabNav from "./tabNav"
+import UserInfo from "../../../components/userForm/userInfo"
+import EditPassword from "../../../components/userForm/editPassword"
 
-  export default {
-    name: 'Header',
-    components: {tabNav, langSelect},
-    data () {
-      return {
-        isfullScreen: true,
-        avatar: './static/images/icon.jpg'
+export default {
+  name: "Header",
+  components: {EditPassword, tabNav, langSelect, UserInfo},
+  data () {
+    return {
+      isfullScreen: true,
+      avatar: "./static/images/icon.jpg",
+      dialogInfoVisible: false,
+      dialogPassVisible: false,
+      title: "",
+      userId: ""
+    }
+  },
+  methods: {
+    collapse () {
+      this.$store.dispatch("collapse")
+    },
+    successCallback () {
+      this.dialogInfoVisible = false
+    },
+    editPwdCallback () {
+      this.dialogPassVisible = false
+    },
+    fullScreen () {
+      if (this.isfullScreen) {
+        var docElm = document.documentElement
+        if (docElm.requestFullscreen) {
+          docElm.requestFullscreen()
+        } else if (docElm.mozRequestFullScreen) {
+          docElm.mozRequestFullScreen()
+        } else if (docElm.webkitRequestFullScreen) {
+          docElm.webkitRequestFullScreen()
+        } else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen()
+        }
+        this.isfullScreen = false
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen()
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen()
+        } else if (document.webkitCancelFullScreen) {
+          document.webkitCancelFullScreen()
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen()
+        }
+        this.isfullScreen = true
       }
     },
-    methods: {
-      collapse () {
-        this.$store.dispatch('collapse')
-      },
-      fullScreen () {
-        if (this.isfullScreen) {
-          var docElm = document.documentElement
-          if (docElm.requestFullscreen) {
-            docElm.requestFullscreen()
-          } else if (docElm.mozRequestFullScreen) {
-            docElm.mozRequestFullScreen()
-          } else if (docElm.webkitRequestFullScreen) {
-            docElm.webkitRequestFullScreen()
-          } else if (elem.msRequestFullscreen) {
-            elem.msRequestFullscreen()
-          }
-          this.isfullScreen = false
-        } else {
-          if (document.exitFullscreen) {
-            document.exitFullscreen()
-          } else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen()
-          } else if (document.webkitCancelFullScreen) {
-            document.webkitCancelFullScreen()
-          } else if (document.msExitFullscreen) {
-            document.msExitFullscreen()
-          }
-          this.isfullScreen = true
-        }
-      },
-      handleCommand (command) {
-        if (command === 'logout') {
-          Cookies.remove('token');
-          location.reload()
-
-        }
+    handleCommand (command) {
+      if (command === "info") {
+        this.dialogInfoVisible = true
+        this.title = "编辑信息"
+        // this.userId = this.$store.getters.info.uid
+      } else if (command === "editPassword") {
+        this.dialogPassVisible = true
+      } else if (command === "logout") {
+        Cookies.remove("token")
+        location.reload()
       }
     }
   }
+}
 </script>
 
 <style lang="scss">

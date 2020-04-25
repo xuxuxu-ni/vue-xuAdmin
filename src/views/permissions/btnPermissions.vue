@@ -10,9 +10,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'btnPermissions'
-  }
+export default {
+  name: "btnPermissions"
+}
 </script>
 
 <style scoped>
