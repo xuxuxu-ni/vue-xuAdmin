@@ -60,7 +60,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         let max = 2
         let res = []
         for (let i = 0; i < max; i++) {
-          const dllName = require(path.resolve(__dirname, `../dllManifest/vendor${i}-manifest.json`)).name.split('_')
+          const dllName = require(path.resolve(__dirname, `../dllManifest/xuAdmin${i}-manifest.json`)).name.split('_')
           res.push(`/static/dll/${dllName[0]}.${dllName[1]}.dll.js`)
         }
         return res
