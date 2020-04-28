@@ -31,13 +31,13 @@
 
 <script>
 export default {
-  name: 'navClassify',
+  name: "navClassify",
   data () {
     return {
       dynamicValidateForm: {
         domains: [],
-        indexName: '首页',
-        indexHref: '/index'
+        indexName: "首页",
+        indexHref: "/index"
       }
     }
   },
@@ -49,7 +49,7 @@ export default {
       }
       function coppyArray (arr) {
         return arr.map((e) => {
-          if (typeof e === 'object') {
+          if (typeof e === "object") {
             return Object.assign({}, e)
           } else {
             return e
@@ -62,7 +62,7 @@ export default {
       let that = this
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          this.$axios.post('/api/setting/setNavClassify', {
+          this.$axios.post("/api/setting/setNavClassify", {
             navClassifyData: formData
           })
             .then(response => {
@@ -70,7 +70,7 @@ export default {
               that.$message({
                 showClose: true,
                 message: response.data.msg,
-                type: 'success'
+                type: "success"
               })
             })
             .catch(err => {
@@ -78,11 +78,11 @@ export default {
               that.$message({
                 showClose: true,
                 message: err,
-                type: 'error'
+                type: "error"
               })
             })
         } else {
-          console.log('error submit!!')
+          console.log("error submit!!")
           return false
         }
       })
@@ -98,8 +98,8 @@ export default {
     },
     addDomain () {
       this.dynamicValidateForm.domains.push({
-        indexName: '',
-        indexHref: '',
+        indexName: "",
+        indexHref: "",
         key: Date.now()
       })
     }

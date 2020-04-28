@@ -31,12 +31,18 @@
 
 
 ## 更新日志
+### v1.2.2
+1. 增加DllPlugin优化构建速度,编译速度更快 yarn startdll
+2. 增加build版本控制
+3. 增加 刷新浏览器会保持继续显示当前组件,不会使系统跳转到首页
+### v1.2.1
 1. 升级webpack 4.0, 做了一些性能优化,编译时间从13秒优化到2-3秒,速度最高提升90%(第一次启动时间是正常时间,启动后Ctrl+c 关闭项目重新启动速度会变快)
 2. 封装了axios 请求
 3. 增加了一些全局公共方法/utils/global,和一些工具函数/utils/index,封装了表单验证/utils/rules
 4. 项目结构做了一些调整
 5. 重做了404页面
 6. 修复了几个小bug
+7. 增加build打包结果分析 yarn analyz
 
 
 
@@ -89,6 +95,8 @@ vue-xuAdmin是基于vue2.0全家桶 + element-ui 开发的一个后台模板，�
 + tab标签导航
 	- 右击快捷功能
 - 表格拖拽排序
+- 封装了 axios
+- 封装了全局方法,和一些工具函数
 - 编辑器
 	- markdown（编辑器目前只封装了这一个组件，重写了markdown编辑和预览的皮肤，实时获取：markdown，html，json 三种格式文本）
 - Echarts 组件封装
@@ -130,10 +138,20 @@ yarn e2e
 or
  npm run e2e
 
-# 启动编译打包生产环境
+# 启动编译打包 生产环境
 yarn build
 or
  npm run build
+
+# 启动编译打包 并生成打包结果 生产环境
+yarn analyz
+or
+npm run analyz
+
+# 抽取分离公共依赖
+yarn startdll
+or
+npm run startdll
 ```
 
 ### 4.2使用
@@ -176,16 +194,21 @@ or
 |------------node_modules         node的依赖包
 
 |------------src
+    |---------api                 封装了 axios
 
     |---------assets                 资源目录，这里的资源会被webpack构建
 
     |---------components        		组件目录
+
+    |---------directive        		    自定义指令
 
     |---------i18n					        多语言国际化
 
     |---------router
 
     |-----------index.js               前端路由
+
+    |---------utils					全局方法和工具函数
 
     |---------views					页面文件
 
@@ -194,6 +217,8 @@ or
     |--------App.vue                	根组件
 
     |--------main.js                 入口js文件
+
+    |--------markData.js                 markdown 初始数据
 
 |------------static             纯静态资源，不会被webpack构建
 

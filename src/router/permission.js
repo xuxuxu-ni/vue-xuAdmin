@@ -1,12 +1,9 @@
 import router from "./index"
 import store from "../vuex"
+
 //  获取角色信息，根据用户权限动态加载路由
 router.beforeEach((to, from, next) => {
-  console.log(store.getters.token)
-  // debugger
-
   if (store.getters.token) {
-    store.dispatch("setToken", store.getters.token)
     if (to.path === "/login") {
       next({path: "/"})
     } else {
@@ -19,8 +16,9 @@ router.beforeEach((to, from, next) => {
           })
           await store.dispatch("newRoutes", store.getters.info.role)
           console.log(store.getters.addRouters)
-          await router.addRoutes(store.getters.addRouters)
-          next({path: "/index"})
+          let newAddRouters = store.getters.addRouters
+          await router.addRoutes(newAddRouters)
+          next({path: to.path})
         }())
       } else {
         let is404 = to.matched.some(record => {

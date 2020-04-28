@@ -54,8 +54,17 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
-      favicon: path.resolve(__dirname, '../src/assets/favicon.ico'),
-      inject: true
+      favicon: path.resolve(__dirname, '../static/images/favicon.ico'),
+      inject: true,
+      dll: (function () {
+        let max = 2
+        let res = []
+        for (let i = 0; i < max; i++) {
+          const dllName = require(path.resolve(__dirname, `../dllManifest/vendor${i}-manifest.json`)).name.split('_')
+          res.push(`/static/dll/${dllName[0]}.${dllName[1]}.dll.js`)
+        }
+        return res
+      })()
     }),
     // copy custom static assets
     new CopyWebpackPlugin([

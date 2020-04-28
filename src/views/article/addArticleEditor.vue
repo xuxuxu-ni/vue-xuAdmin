@@ -26,90 +26,90 @@
 </template>
 
 <script>
-  import E from 'wangeditor'
+import E from "wangeditor"
 
-  export default {
-    name: 'addArticle',
-    data() {
-      return {
-        article: {
-          title: '文章测试-标题',
-          sort: '',
-          top: true,
-          contentHtml: '',
-        },
-        initData: "",
-        restaurants: [],
+export default {
+  name: "addArticle",
+  data () {
+    return {
+      article: {
+        title: "文章测试-标题",
+        sort: "",
+        top: true,
+        contentHtml: ""
+      },
+      initData: "",
+      restaurants: []
+    }
+  },
+  methods: {
+    querySearch (queryString, cb) {
+      var restaurants = this.restaurants
+      var results = queryString ? restaurants.filter(this.createFilter(queryString)) : restaurants
+      // 调用 callback 返回建议列表的数据
+      cb(results)
+    },
+    createFilter (queryString) {
+      return (restaurant) => {
+        return (restaurant.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0)
       }
     },
-    methods: {
-      querySearch(queryString, cb) {
-        var restaurants = this.restaurants
-        var results = queryString ? restaurants.filter(this.createFilter(queryString)) : restaurants
-        // 调用 callback 返回建议列表的数据
-        cb(results)
-      },
-      createFilter(queryString) {
-        return (restaurant) => {
-          return (restaurant.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0)
-        }
-      },
-      loadAll() {
-        return [
-          {'value': 'vue'},
-          {'value': 'node.js'}
-        ]
-      },
-      handleSelect(item) {
-        console.log(item)
-      },
+    loadAll () {
+      return [
+        {"value": "vue"},
+        {"value": "node.js"}
+      ]
+    },
+    handleSelect (item) {
+      console.log(item)
+    },
 
-      getContent: function () {
-        alert(this.article.contentHtml)
-      },
-      submitArticle() {
-        this.$axios.post('/article/addArticle', {
-          data: this.article
+    getContent: function () {
+      alert(this.article.contentHtml)
+    },
+    submitArticle () {
+      this.$axios.post("/article/addArticle", {
+        data: this.article
+      })
+        .then(function (response) {
+          console.log(response)
         })
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
+        .catch(function (error) {
+          console.log(error)
+        })
+    }
+  },
+  mounted () {
+    let that = this
+    this.restaurants = this.loadAll()
+    var editor = new E(this.$refs.editor)
+    editor.customConfig.onchange = (html) => {
+      that.article.contentHtml = html
+    }
+    editor.customConfig.uploadImgServer = "/editor/uploadImg" // 上传图片到服务器
+    editor.customConfig.uploadImgHooks = {
+      success: function (xhr, editor, result) {
+        // 图片上传并返回结果，图片插入成功之后触发
+        // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象，result 是服务器端返回的结果
+      },
+      fail: function (xhr, editor, result) {
+        // 图片上传并返回结果，但图片插入错误时触发
+        // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象，result 是服务器端返回的结果
+      },
+      error: function (xhr, editor) {
+        // 图片上传出错时触发
+        // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象
+      },
+      timeout: function (xhr, editor) {
+        // 图片上传超时时触发
+        // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象
       }
-    },
-    mounted() {
-      let that = this
-      this.restaurants = this.loadAll()
-      var editor = new E(this.$refs.editor)
-      editor.customConfig.onchange = (html) => {
-        that.article.contentHtml = html
-      }
-      editor.customConfig.uploadImgServer = '/editor/uploadImg'  // 上传图片到服务器
-      editor.customConfig.uploadImgHooks = {
-        success: function (xhr, editor, result) {
-          // 图片上传并返回结果，图片插入成功之后触发
-          // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象，result 是服务器端返回的结果
-        },
-        fail: function (xhr, editor, result) {
-          // 图片上传并返回结果，但图片插入错误时触发
-          // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象，result 是服务器端返回的结果
-        },
-        error: function (xhr, editor) {
-          // 图片上传出错时触发
-          // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象
-        },
-        timeout: function (xhr, editor) {
-          // 图片上传超时时触发
-          // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象
-        },
 
 
-      }
+    }
     editor.create()
   }
-  }
+}
 </script>
 
 <style scoped>

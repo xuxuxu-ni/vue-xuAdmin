@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import scriptjs from 'scriptjs'
-import { defaultConfig, codeThemes } from './config.editor'
+import scriptjs from "scriptjs"
+import { defaultConfig, codeThemes } from "./config.editor"
 export default {
-  name: 'markdown-editor',
+  name: "markdown-editor",
   props: {
     editorId: {
-      'type': String,
-      'default': 'markdown-editor'
+      "type": String,
+      "default": "markdown-editor"
     },
     onchange: { // 内容改变时回调，返回（html, markdown, text）
       type: Function
@@ -23,15 +23,15 @@ export default {
       type: Object
     },
     codeTheme: { // 代码高亮主题
-      'type': String,
-      'default': 'vibrant-ink.min.css'
+      "type": String,
+      "default": "vibrant-ink.min.css"
     },
     initData: {
-      'type': String
+      "type": String
     },
     initDataDelay: {
-      'type': Number, // 延迟初始化数据时间，单位毫秒
-      'default': 0
+      "type": Number, // 延迟初始化数据时间，单位毫秒
+      "default": 0
     }
   },
   data: function () {
@@ -58,18 +58,18 @@ export default {
     },
     initEditor: function () {
       (async () => {
-        await this.fetchScript('./static/markdown/jquery.min.js')
-        await this.fetchScript('./static/markdown/editormd.min.js')
+        await this.fetchScript("./static/markdown/jquery.min.js")
+        await this.fetchScript("./static/markdown/editormd.min.js")
         // await this.fetchScript('./static/editor.md/editormd.js');
         this.$nextTick(() => {
           let editor = window.editormd(this.editorId, this.getConfig())
-          editor.on('load', () => {
+          editor.on("load", () => {
             setTimeout(() => { // hack bug: 一个页面多个编辑器只能初始化其中一个数据问题
               this.editorLoaded = true
               this.initData && editor.setMarkdown(this.initData)
             }, this.initDataDelay)
           })
-          this.onchange && editor.on('change', () => {
+          this.onchange && editor.on("change", () => {
             let html = editor.getPreviewedHTML()
             this.onchange({
               markdown: editor.getMarkdown(),
@@ -86,7 +86,7 @@ export default {
     this.initEditor()
   },
   watch: {
-    'initData': function (newVal) {
+    "initData": function (newVal) {
       if (newVal) {
         this.editorLoaded && this.editor.setMarkdown(newVal)
       }

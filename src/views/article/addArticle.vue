@@ -25,15 +25,15 @@
 </template>
 
 <script>
-import Markdown from '../../components/markdown/markdown-editor'
-import initData from '../../markData.js'
+import Markdown from "../../components/markdown/markdown-editor"
+import initData from "../../markData.js"
 export default {
-  name: 'addArticle',
+  name: "addArticle",
   data () {
     return {
       article: {
-        title: '',
-        tag: '',
+        title: "",
+        tag: "",
         top: false,
         content: {}
       },
@@ -60,23 +60,23 @@ export default {
     },
     loadAll () {
       return [
-        { 'value': 'vue' },
-        { 'value': 'node.js' }
+        { "value": "vue" },
+        { "value": "node.js" }
       ]
     },
     handleSelect (item) {
       console.log(item)
     },
     submitArticle () {
-      this.$axios.post('/api/addArticle', {
+      this.$axios.post("/api/addArticle", {
         data: this.article
       })
         .then(function (response) {
-          console.log(response);
+          console.log(response)
         })
         .catch(function (error) {
-          console.log(error);
-        });
+          console.log(error)
+        })
     }
   },
   mounted () {

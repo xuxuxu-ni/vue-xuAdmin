@@ -85,6 +85,20 @@ export default {
         })
         return false
       } else {
+        // 真实请求参考
+        // this.$request.fetchLogin({
+        //   username: that.loginForm.username,
+        //   password: that.loginForm.password
+        // }).then(res => {
+        //   that.$restBack(res.data, () => {
+        //     that.$store.dispatch("setToken", res.data.data.access_token).then(res => {
+        //       that.$router.push({path: "/"})
+        //     })
+        //   }, "登录成功")
+        // }).catch((err) => {
+        //   console.log(err)
+        // })
+
         // 将 username 设置为 token 存储在 store，仅为测试效果，实际存储 token 以后台返回为准
         that.$store.dispatch("setToken", that.loginForm.username).then(() => {
           that.$router.push({path: "/"})
@@ -101,7 +115,7 @@ export default {
       const h = this.$createElement
       this.$notify({
         title: "账号密码",
-        message: h("i", { style: "color: teal"}, "账号密码可以随意填写，为了测试效果填写的账号将会被存储为临时假 token"),
+        message: h("i", {style: "color: teal"}, "账号密码可以随意填写，为了测试效果填写的账号将会被存储为临时假 token"),
         duration: 6000
       })
     }

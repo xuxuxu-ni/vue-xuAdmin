@@ -92,7 +92,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         ? 'index.html'
         : config.build.index,
       template: 'index.html',
-      favicon: path.resolve(__dirname, '../src/assets/favicon.ico'),
+      favicon: path.resolve(__dirname, '../static/images/favicon.ico'),
       inject: true,
       minify: {
         removeComments: true,
@@ -102,7 +102,16 @@ const webpackConfig = merge(baseWebpackConfig, {
         // https://github.com/kangax/html-minifier#options-quick-reference
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-      chunksSortMode: 'manual'
+      chunksSortMode: 'manual',
+      dll: (function () {
+        let max = 2
+        let res = []
+        for (let i = 0; i < max; i++) {
+          const dllName = require(path.resolve(__dirname, `../dllManifest/vendor${i}-manifest.json`)).name.split('_')
+          res.push(`./static/dll/${dllName[0]}.${dllName[1]}.dll.js`)
+        }
+        return res
+      })()
     }),
     // keep module.id stable when vendor modules does not change
     new webpack.HashedModuleIdsPlugin(),

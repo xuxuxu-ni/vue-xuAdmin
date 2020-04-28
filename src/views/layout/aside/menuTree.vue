@@ -19,8 +19,8 @@
 
 <script>
 export default {
-  name: 'menuTree',
-  props: ['menuData']
+  name: "menuTree",
+  props: ["menuData"]
 }
 </script>
 

@@ -59,59 +59,59 @@
 </template>
 
 <script>
-import Sortable from 'sortablejs'
+import Sortable from "sortablejs"
 export default {
-  name: 'dragTabe',
+  name: "dragTabe",
   data () {
     return {
       tableData: [{
-        date: '2016-05-03',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: "2016-05-03",
+        name: "王小虎",
+        province: "上海",
+        city: "普陀区",
+        address: "上海市普陀区金沙江路 1518 弄",
         zip: 200333,
-        tag: '家'
+        tag: "家"
       }, {
-        date: '2016-05-02',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: "2016-05-02",
+        name: "王小虎",
+        province: "上海",
+        city: "普陀区",
+        address: "上海市普陀区金沙江路 1518 弄",
         zip: 200333,
-        tag: '公司'
+        tag: "公司"
       }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: "2016-05-04",
+        name: "王小虎",
+        province: "上海",
+        city: "普陀区",
+        address: "上海市普陀区金沙江路 1518 弄",
         zip: 200333,
-        tag: '家'
+        tag: "家"
       }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: "2016-05-01",
+        name: "王小虎",
+        province: "上海",
+        city: "普陀区",
+        address: "上海市普陀区金沙江路 1518 弄",
         zip: 200333,
-        tag: '公司'
+        tag: "公司"
       }]
     }
   },
   methods: {
     handleEdit (index, row) {
-      console.log(index, row);
+      console.log(index, row)
     },
     handleDelete (index, row) {
-      console.log(index, row);
+      console.log(index, row)
     },
     filterTag (value, row) {
-      return row.tag === value;
-    },
+      return row.tag === value
+    }
   },
   mounted () {
-    let el = document.querySelectorAll('.el-table__body-wrapper > table > tbody')[0]
+    let el = document.querySelectorAll(".el-table__body-wrapper > table > tbody")[0]
     this.sortable = Sortable.create(el)
   }
 }

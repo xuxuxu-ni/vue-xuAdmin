@@ -56,29 +56,29 @@
 
 <script>
 export default {
-  name: 'filterTable',
+  name: "filterTable",
   data () {
     return {
       tableData5: [{
-        date: '2016-05-02',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄',
-        tag: '家'
+        date: "2016-05-02",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1518 弄",
+        tag: "家"
       }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1517 弄',
-        tag: '公司'
+        date: "2016-05-04",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1517 弄",
+        tag: "公司"
       }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1519 弄',
-        tag: '家'
+        date: "2016-05-01",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1519 弄",
+        tag: "家"
       }, {
-        date: '2016-05-03',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄',
-        tag: '公司'
+        date: "2016-05-03",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1516 弄",
+        tag: "公司"
       }]
     }
   },
@@ -87,20 +87,22 @@ export default {
       console.log(index, row)
       this.$message({
         showClose: true,
-        message: index, row,
-        type: 'success'
+        message: index,
+        row,
+        type: "success"
       })
     },
     handleDelete (index, row) {
       console.log(index, row)
       this.$message({
         showClose: true,
-        message: index, row,
-        type: 'success'
+        message: index,
+        row,
+        type: "success"
       })
     },
     filterHandler (value, row, column) {
-      const property = column['property']
+      const property = column["property"]
       return row[property] === value
     },
     formatter (row, column) {

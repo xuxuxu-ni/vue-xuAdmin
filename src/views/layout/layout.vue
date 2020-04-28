@@ -24,15 +24,12 @@ import Bottom from "./Footer/bottom"
 import langSelect from "../../components/lang/langSelect"
 
 export default {
-  name: "dc-home",
+  name: "layout",
   components: {
     layoutHeader,
     Bottom,
     langSelect,
     layoutAside
-  },
-  created () {
-    this.$router.push("/index")
   }
 }
 </script>

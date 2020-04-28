@@ -60,10 +60,10 @@
 </template>
 
 <script>
-import LineEcharts from '../../components/ECharts/lineEcharts'
-import Maintable from '../table/maintable'
+import LineEcharts from "../../components/ECharts/lineEcharts"
+import Maintable from "../table/maintable"
 export default {
-  name: 'mainIndex',
+  name: "mainIndex",
   components: {Maintable, LineEcharts},
   mounted () {
     this.selfAdaption()

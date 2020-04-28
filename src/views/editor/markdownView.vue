@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import Markdown from '../../components/markdown/markdown-editor'
-import initData from '../../markData.js'
+import Markdown from "../../components/markdown/markdown-editor"
+import initData from "../../markData.js"
 export default {
-  name: 'markdownView',
+  name: "markdownView",
   data () {
     return {
-      initData: initData,
+      initData: initData
     }
   },
   components: {Markdown},

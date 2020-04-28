@@ -3,12 +3,24 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
+const devEnv = require('./dev.env')
+var version = ''
+
+if(process.env.NODE_ENV === 'production'){
+  var d = new Date();
+  var yy = d.getFullYear().toString().slice(2);
+  var MM = d.getMonth() + 1 >= 10 ? (d.getMonth() + 1) : '0' + (d.getMonth() + 1);
+  var DD = d.getDate() >= 10 ? d.getDate() : '0' + d.getDate();
+  var h  = d.getHours() >= 10 ? d.getHours() : '0' + d.getHours();
+  var mm = d.getMinutes() >= 10 ? d.getMinutes() : '0' + d.getMinutes();
+  version =  yy + MM + DD + h + mm;
+}
 
 module.exports = {
   dev: {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {
+    proxyTable:  devEnv.PROXY_REQUEST === false ? {} :{
       '/api': {
         target: 'http://127.0.0.1:7001',
         changeOrigin: true,
@@ -51,10 +63,10 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, `../dist/${version}/index.html`),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, `../dist/${version}`),
     assetsSubDirectory: 'static',
     assetsPublicPath: './',
 
@@ -64,7 +76,7 @@ module.exports = {
 
     productionSourceMap: true,
     // https://webpack.js.org/configuration/devtool/#production
-    devtool: '#source-map',
+    devtool: 'cheap-module-source-map',
 
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.

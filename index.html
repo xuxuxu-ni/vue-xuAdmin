@@ -8,6 +8,9 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <% for (let i of htmlWebpackPlugin.options.dll) { %>
+    <script src="<%= i %>"></script>
+    <% } %>
   </body>
 
 </html>

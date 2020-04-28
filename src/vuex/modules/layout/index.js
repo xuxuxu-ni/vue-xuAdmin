@@ -1,3 +1,5 @@
+import store from "../../index"
+
 /**
  * Created by WebStorm.
  * User: nirongxu
@@ -10,16 +12,21 @@ export default {
     logoShow: false,
     uniquerouter: true,
     rightNav: {},
-    tabnavBox: [
-      {
-        title: 'home',
-        path: '/index'
-      }
-    ]
+    tabnavBox: JSON.parse(sessionStorage.getItem("addTab")) || [{
+      title: "home",
+      path: "/index"
+    }]
   },
   mutations: {
     addTab (state, arg) {
       state.isActive = arg.path
+      if (state.tabnavBox[0] && state.tabnavBox[0].title !== "home") {
+        state.tabnavBox.unshift({
+          title: "home",
+          path: "/index"
+        })
+      }
+
       for (let i = 0; i < state.tabnavBox.length; i++) {
         if (state.tabnavBox[i].path === arg.path) {
           return false
@@ -29,6 +36,8 @@ export default {
         title: arg.title,
         path: arg.path
       })
+
+      sessionStorage.setItem("addTab", JSON.stringify(state.tabnavBox))
     },
     openMenu (state, arg) {
       state.rightNav = arg
@@ -45,11 +54,11 @@ export default {
     },
     removeOtherTab (state, arg) {
       state.tabnavBox = [{
-        title: 'home',
-        path: '/index'
+        title: "home",
+        path: "/index"
       }]
       if (arg.all) {
-        arg.router.push('/index')
+        arg.router.push("/index")
         return false
       }
       state.tabnavBox.push(arg.tabItem)
@@ -64,23 +73,23 @@ export default {
       } else {
         state.logoShow = true
       }
-    },
+    }
   },
   actions: {
     addTab ({commit}, arg) {
-      commit('addTab', arg)
+      commit("addTab", arg)
     },
     openMenu ({commit}, arg) {
-      commit('openMenu', arg)
+      commit("openMenu", arg)
     },
     removeTab ({commit}, arg) {
-      commit('removeTab', arg)
+      commit("removeTab", arg)
     },
     removeOtherTab ({commit}, arg) {
-      commit('removeOtherTab', arg)
+      commit("removeOtherTab", arg)
     },
     collapse ({commit}, arg) {
-      commit('collapse', arg)
-    },
+      commit("collapse", arg)
+    }
   }
 }

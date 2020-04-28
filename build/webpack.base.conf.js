@@ -1,5 +1,6 @@
 'use strict'
 const path = require('path')
+const webpack = require('webpack')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
@@ -40,27 +41,18 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new HardSourceWebpackPlugin({
-      // cacheDirectory是在高速缓存写入。默认情况下，将缓存存储在node_modules下的目录中，因此如
-      // 果清除了node_modules，则缓存也是如此
-      cacheDirectory: '../node_modules/.cache/hard-source/[confighash]',
-      // Either an absolute path or relative to webpack's options.context.
-      // Sets webpack's recordsPath if not already set.
-      recordsPath: '../node_modules/.cache/hard-source/[confighash]/records.json',
-      // configHash在启动webpack实例时转换webpack配置，并用于cacheDirectory为不同的webpack配
-      // 置构建不同的缓存
-      configHash: function(webpackConfig) {
-        // node-object-hash on npm can be used to build this.
-        return require('node-object-hash')({sort: false}).hash(webpackConfig);
-      },
-      // 当加载器，插件，其他构建时脚本或其他动态依赖项发生更改时，hard-source需要替换缓存以确保输
-      // 出正确。environmentHash被用来确定这一点。如果散列与先前的构建不同，则将使用新的缓存
-      environmentHash: {
-        root: process.cwd(),
-        directories: [],
-        files: ['package-lock.json', 'yarn.lock'],
+    new HardSourceWebpackPlugin(),
+    ...(function () {
+      let max = 2
+      let res = []
+      for (let i = 0; i < max; i++) {
+        res.push(new webpack.DllReferencePlugin({
+          context: path.resolve(__dirname, '../'),
+          manifest: require(resolve(`./dllManifest/vendor${i}-manifest.json`))
+        }))
       }
-    })
+      return res
+    })()
   ],
   output: {
     path: config.build.assetsRoot,
@@ -78,7 +70,7 @@ module.exports = {
   },
   module: {
     rules: [
-      // ...(config.dev.useEslint ? [createLintingRule()] : []),
+      ...(config.dev.useEslint ? [createLintingRule()] : []),
       {
         test: /\.vue$/,
         use:[

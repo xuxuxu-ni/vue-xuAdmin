@@ -1,6 +1,6 @@
 {
   "name": "vue-xuadmin",
-  "version": "1.0.0",
+  "version": "1.2.4",
   "description": "vue + element-ui 无限级菜单 权限管理 后台模板 ",
   "author": "NiRongxu",
   "private": true,
@@ -11,7 +11,9 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "analyz": "NODE_ENV=production npm_config_report=true npm run build",
+    "startdll": "webpack --config build/webpack.dll.config.js"
   },
   "dependencies": {
     "axios": "^0.19.2",

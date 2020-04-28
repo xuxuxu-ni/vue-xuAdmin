@@ -39,37 +39,37 @@
 
 <script>
 export default {
-  name: 'dataTables',
+  name: "dataTables",
   data () {
     return {
       tableData4: [{
-        date: '2016-05-03',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
+        date: "2016-05-03",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1518 弄"
       }, {
-        date: '2016-05-02',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
+        date: "2016-05-02",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1518 弄"
       }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
+        date: "2016-05-04",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1518 弄"
       }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
+        date: "2016-05-01",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1518 弄"
       }, {
-        date: '2016-05-08',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
+        date: "2016-05-08",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1518 弄"
       }, {
-        date: '2016-05-06',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
+        date: "2016-05-06",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1518 弄"
       }, {
-        date: '2016-05-07',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
+        date: "2016-05-07",
+        name: "王小虎",
+        address: "上海市普陀区金沙江路 1518 弄"
       }],
       multipleSelection: []
     }
@@ -78,14 +78,14 @@ export default {
     toggleSelection (rows) {
       if (rows) {
         rows.forEach(row => {
-          this.$refs.multipleTable.toggleRowSelection(row);
-        });
+          this.$refs.multipleTable.toggleRowSelection(row)
+        })
       } else {
-        this.$refs.multipleTable.clearSelection();
+        this.$refs.multipleTable.clearSelection()
       }
     },
     handleSelectionChange (val) {
-      this.multipleSelection = val;
+      this.multipleSelection = val
     }
   }
 }

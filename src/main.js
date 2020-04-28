@@ -10,7 +10,7 @@ import globalPlugin from "./utils/global"
 import permission from "./directive/permission/button"
 
 import "element-ui/lib/theme-chalk/index.css"
-import "./assets/iconfont/iconfont.css"
+import "@/assets/iconfont/iconfont.css"
 import "font-awesome/css/font-awesome.css"
 import "@/router/permission"
 

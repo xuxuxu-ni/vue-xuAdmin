@@ -16,7 +16,7 @@
                :collapse-transition="true"
       >
         <template v-for="(item,index) in $store.getters.routers" v-if="!item.hidden">
-          <el-submenu v-if="!item.alone && item.children.length>0" :index="index+''">
+          <el-submenu v-if="!item.alone && item.children.length>0" :index="index+''" :key="index">
             <template slot="title">
               <i :class="item.iconCls?item.iconCls:[fa,fa-server]"></i>
               <span slot="title">{{ $t(`routeName.${item.name}`) }}</span>
@@ -25,8 +25,8 @@
             <menu-tree :menuData="item.children"></menu-tree>
 
           </el-submenu>
-          <el-menu-item :index="item.path" v-else>
-            <i :class="item.iconCls?item.iconCls:[fa,fa-file]"></i>
+          <el-menu-item :index="item.path" v-else :key="item.path">
+            <i :class="item.iconCls?item.iconCls:[fa,fa-file]"/>
             <span slot="title">{{ $t(`routeName.${item.name}`) }}</span>
           </el-menu-item>
         </template>
@@ -37,42 +37,43 @@
 </template>
 
 <script>
-  import menuTree from './menuTree'
+import menuTree from "./menuTree"
+import store from "../../../vuex"
 
-  export default {
-    name: 'asideNav',
-    components: {
-      menuTree,
-    },
-    watch: {
-      // 监听浏览器直接输入路由，将此路由添加到tabnavBox
-      '$route.path': function (val) {
-        this.selectmenu(val)
-      }
-    },
-    methods: {
-      selectmenu (key) {
-        let router = this.$store.getters.routers
-        let name = ''
-        let navTitle = function (path, routerARR) {
-          for (let i = 0; i < routerARR.length; i++) {
-            if (routerARR[i].children.length > 0 || routerARR[i].path === path) {
-              if (routerARR[i].path === path && routerARR[i].children.length < 1) {
-                name = routerARR[i].name
-                break
-              }
-              navTitle(path, routerARR[i].children)
+export default {
+  name: "asideNav",
+  components: {
+    menuTree
+  },
+  watch: {
+    // 监听浏览器直接输入路由，将此路由添加到tabnavBox
+    "$route.path": function (val) {
+      this.selectmenu(val)
+    }
+  },
+  methods: {
+    selectmenu (key) {
+      let router = this.$store.getters.routers
+      let name = ""
+      let navTitle = function (path, routerARR) {
+        for (let i = 0; i < routerARR.length; i++) {
+          if (routerARR[i].children.length > 0 || routerARR[i].path === path) {
+            if (routerARR[i].path === path && routerARR[i].children.length < 1) {
+              name = routerARR[i].name
+              break
             }
+            navTitle(path, routerARR[i].children)
           }
-          return name
         }
-        this.$store.dispatch('addTab', {
-          title: navTitle(key, router),
-          path: key
-        })
+        return name
       }
+      this.$store.dispatch("addTab", {
+        title: navTitle(key, router),
+        path: key
+      })
     }
   }
+}
 </script>
 
 <style lang="scss">
