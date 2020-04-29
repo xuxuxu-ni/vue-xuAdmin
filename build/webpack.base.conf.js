@@ -48,7 +48,7 @@ module.exports = {
       for (let i = 0; i < max; i++) {
         res.push(new webpack.DllReferencePlugin({
           context: path.resolve(__dirname, '../'),
-          manifest: require(resolve(`./dllManifest/vendor${i}-manifest.json`))
+          manifest: require(resolve(`./dllManifest/xuAdmin${i}-manifest.json`))
         }))
       }
       return res
