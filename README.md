@@ -31,7 +31,7 @@
 
 
 ## 更新日志
-### v1.2.4
+### v1.2.5
 1. 增加DllPlugin优化构建速度,编译速度更快 yarn startdll
 2. 增加build版本控制
 3. 增加 刷新浏览器会保持继续显示当前组件,不会使系统跳转到首页
@@ -238,6 +238,16 @@ npm run startdll
 ```
 ## 结语
 如果这个框架对你有帮助的话，请给个星点个star
+
+## 捐赠
+> 捐杯咖啡或者一瓶肥宅快乐水
+<table>
+    <tr>
+        <td ><img style="display: inline-block;width: 300px;height: 300px" src="https://i.loli.net/2020/04/30/PJ1UlOGjrZNgAK6.jpg" ><p style="text-align: center">支付宝</p></td>
+        <td ><img style="display: inline-block;width: 300px;height: 300px" src="https://i.loli.net/2020/04/30/quwJb2GvSt3kpfF.jpg" ><p style="text-align: center">微信</p></td>
+    </tr>
+</table>
+
 
 ## 🤝 Contributing
 
