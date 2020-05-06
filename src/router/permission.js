@@ -15,7 +15,6 @@ router.beforeEach((to, from, next) => {
             permissions: "超级管理员"
           })
           await store.dispatch("newRoutes", store.getters.info.role)
-          console.log(store.getters.addRouters)
           let newAddRouters = store.getters.addRouters
           await router.addRoutes(newAddRouters)
           next({path: to.path})

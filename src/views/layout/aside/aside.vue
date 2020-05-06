@@ -38,7 +38,6 @@
 
 <script>
 import menuTree from "./menuTree"
-import store from "../../../vuex"
 
 export default {
   name: "asideNav",
