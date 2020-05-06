@@ -39,7 +39,7 @@
             <p><span class="tit">获取渠道</span>
                 <span class="gitbox">
                   <a target="_blank" href="https://github.com/Nirongxu/vue-xuAdmin.git"><el-button type="primary" icon="el-icon-download" size="small">github</el-button></a>
-                  <a target="_blank" href="https://gitee.com/nirongxu/xu-webplatform.git"><el-button type="primary" icon="el-icon-download" size="small">码云</el-button></a>
+                  <a target="_blank" href="https://gitee.com/nirongxu/vue-xuAdmin.git"><el-button type="primary" icon="el-icon-download" size="small">码云</el-button></a>
                 </span>
             </p>
           </div>

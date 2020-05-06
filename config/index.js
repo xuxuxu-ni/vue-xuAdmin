@@ -4,9 +4,10 @@
 
 const path = require('path')
 const devEnv = require('./dev.env')
+const prodEnv = require('./prod.env')
 var version = ''
 
-if(process.env.NODE_ENV === 'production'){
+if(process.env.NODE_ENV === 'production' && prodEnv.VERSION_CONTROL){
   var d = new Date();
   var yy = d.getFullYear().toString().slice(2);
   var MM = d.getMonth() + 1 >= 10 ? (d.getMonth() + 1) : '0' + (d.getMonth() + 1);

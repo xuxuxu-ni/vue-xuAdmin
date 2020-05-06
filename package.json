@@ -1,11 +1,11 @@
 {
   "name": "vue-xuadmin",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "vue + element-ui 无限级菜单 权限管理 后台模板 ",
   "author": "NiRongxu",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
