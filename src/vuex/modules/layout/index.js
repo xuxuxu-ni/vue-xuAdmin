@@ -51,6 +51,7 @@ export default {
         let tabActive = state.tabnavBox[index] || state.tabnavBox[index - 1]
         arg.router.push(tabActive.path)
       }
+      sessionStorage.setItem("addTab", JSON.stringify(state.tabnavBox))
     },
     removeOtherTab (state, arg) {
       state.tabnavBox = [{
@@ -63,6 +64,7 @@ export default {
       }
       state.tabnavBox.push(arg.tabItem)
       arg.router.push(arg.tabItem.path)
+      sessionStorage.setItem("addTab", JSON.stringify(state.tabnavBox))
     },
     collapse (state, arg) {
       state.isCollapse = !state.isCollapse
