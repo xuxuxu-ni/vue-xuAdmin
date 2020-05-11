@@ -5,14 +5,14 @@
   "author": "NiRongxu",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
-    "analyz": "NODE_ENV=production npm_config_report=true npm run build",
+    "analyz": "cross-env NODE_ENV=production npm_config_report=true npm run build",
     "startdll": "webpack --config build/webpack.dll.config.js"
   },
   "dependencies": {
@@ -49,6 +49,7 @@
     "chromedriver": "^2.27.2",
     "compression-webpack-plugin": "^3.1.0",
     "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^6.0.3",
     "cross-spawn": "^5.0.1",
     "css-loader": "^3.5.2",
     "eslint": "^4.15.0",
