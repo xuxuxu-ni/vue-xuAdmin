@@ -3,6 +3,7 @@
   "version": "1.2.7",
   "description": "vue + element-ui 无限级菜单 权限管理 后台模板 ",
   "author": "NiRongxu",
+  "email": "595485548@qq.com",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
