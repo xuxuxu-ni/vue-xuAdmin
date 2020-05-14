@@ -1,16 +1,16 @@
 <template>
     <div>
-      <template v-for="(child,index) in menuData">
-        <el-submenu v-if="child.children.length > 0" :index="child.path">
+      <template v-for="(child) in menuData">
+        <el-submenu v-if="child.children.length > 0" :index="child.path" :key="child.path">
           <template slot="title">
-            <i :class="child.iconCls?child.iconCls:[fa,fa-file]"></i>
+            <i :class="child.iconCls?child.iconCls:[fa,fa-file]"/>
             <span slot="title">{{ $t(`routeName.${child.name}`) }}</span>
           </template>
-          <menu-tree :menuData="child.children"></menu-tree>
+          <menu-tree :menuData="child.children"/>
         </el-submenu>
 
-        <el-menu-item v-else-if="!child.hidden" :index="child.path">
-          <i :class="child.iconCls?child.iconCls:[fa,fa-file]"></i>
+        <el-menu-item v-else-if="!child.hidden" :index="child.path" :key="child.path">
+          <i :class="child.iconCls?child.iconCls:[fa,fa-file]"/>
           <span slot="title">{{ $t(`routeName.${child.name}`) }}</span>
         </el-menu-item>
       </template>

@@ -40,4 +40,8 @@ a{
 .fade-leave-active {
 	opacity: 0;
 }
+#nprogress .bar {
+  height: 3px !important;
+  background: #56a9ff !important; //自定义颜色
+}
 </style>

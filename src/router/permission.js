@@ -1,8 +1,11 @@
+import NProgress from "nprogress"
+
 import router from "./index"
 import store from "../vuex"
 
 //  获取角色信息，根据用户权限动态加载路由
 router.beforeEach((to, from, next) => {
+  NProgress.start()
   if (store.getters.token) {
     if (to.path === "/login") {
       next({path: "/"})
@@ -38,6 +41,10 @@ router.beforeEach((to, from, next) => {
     }
     next({path: "/login"})
   }
+})
+
+router.afterEach(() => {
+  NProgress.done()
 })
 
 

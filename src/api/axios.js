@@ -6,6 +6,7 @@
  */
 import axios from "axios"
 import Cookies from "js-cookie"
+import NProgress from "nprogress"
 import { Message } from "element-ui"
 // axios默认配置
 axios.defaults.timeout = 10000 // 超时时间
@@ -13,6 +14,7 @@ axios.defaults.baseURL = process.env.API_HOST
 
 // http request 拦截器
 axios.interceptors.request.use(config => {
+  NProgress.start()
   config.headers["Content-Type"] = "application/json;charset=UTF-8"
   if (Cookies.get("access_token")) {
     config.headers.Authorization = "Bearer" + Cookies.get("access_token")
@@ -26,6 +28,7 @@ error => {
 // http response 拦截器
 axios.interceptors.response.use(
   response => {
+    NProgress.done()
     if (response.data.code === 11000) {
       Cookies.set("access_token", response.data.message, { expires: 1 / 12 })
       return Promise.resolve()
