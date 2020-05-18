@@ -48,7 +48,7 @@
 
 ## 小提示
 > 这个框架权限是由前端控制的,如果不需要这个模式,可以看我另外一个全栈CMS项目,后台使用的是node框架egg.js+mysql,那个的权限是由后台返回有权限的路由,前端拿到路由后和前端路由表做筛选,得出最终的路由表生成菜单,好处是角色和角色所拥有的权限路由是动态的后台可随时编辑配置的,两种模式按需使用
-![](https://i.loli.net/2019/06/27/5d143742c27c944341.png)
+![image.png](https://i.loli.net/2020/05/13/67n2YkZwxLBFDMy.png)
 
 项目地址: https://github.com/Nirongxu/nodePlatform
 ## 1. vue-xuAdmin 后台模板简介
