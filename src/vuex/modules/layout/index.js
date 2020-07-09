@@ -1,5 +1,3 @@
-import store from "../../index"
-
 /**
  * Created by WebStorm.
  * User: nirongxu

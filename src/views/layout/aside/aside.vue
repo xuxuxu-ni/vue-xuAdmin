@@ -51,7 +51,9 @@ export default {
     }
   },
   methods: {
-    selectmenu (key) {
+    selectmenu (key, indexpath) {
+      // 如果不使用 elemenUI 菜单的 vue-router 的模式将用以下方式进行页面跳转 el-menu的router设置为false
+      // this.$router.push(indexpath.join("/"))
       let router = this.$store.getters.routers
       let name = ""
       let navTitle = function (path, routerARR) {
