@@ -17,7 +17,7 @@
     "startdll": "webpack --config build/webpack.dll.config.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "echarts": "^4.1.0",
     "element-ui": "^2.13.1",
     "font-awesome": "^4.7.0",
