@@ -83,7 +83,7 @@ vue-xuAdmin是基于vue2.0全家桶 + element-ui 开发的一个后台模板，�
 - element-ui v2.4+
 
 ## 3. 实现功能
-```
+
 - 登录、退出
 + 基于token
 	- 状态拦截、404页面
