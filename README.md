@@ -2,7 +2,7 @@
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/node-%3E%3D%206.0.0-blue.svg" />
-  <img src="https://img.shields.io/badge/npm-%3E%3D%203.0.0-blue.svg" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D%204.0.0-blue.svg" />
   <a href="https://github.com/xuxuxu-ni/vue-xuAdmin/blob/master/README.md">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
   </a>
@@ -13,6 +13,9 @@
 
 > vue + element-ui 无限级菜单 权限管理 后台模板
 
+### vue3+Pinia+ts 版本
+- github：https://github.com/xuxuxu-ni/vue3-elementPlus-admin
+- 码云：https://gitee.com/nirongxu/vue3-elementPlus-admin
 ### 🏠 [Homepage](https://xuxuxu-ni.github.io/vue-xuAdmin/dist/)
 ## Author
 
